@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, initial-scale=0">
+    <meta name="viewport" content="width=1320, initial-scale=0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
     <title>Главная страница</title>
@@ -13,20 +13,10 @@
         <div class="b-header__wrap">
           <div class="b-header__logo"></div>
           <div class="b-header__center">
-            <div class="b-header__menu">
-              <div class="b-header__menu-item js-main-anchor active">Главная</div>
-              <div class="b-header__menu-item js-company-anchor">О компании</div>
+            <div class="b-header__menu"><a class="b-header__menu-item js-main-anchor active" href="#js-main-anchor">Главная</a><a class="b-header__menu-item js-company-anchor" href="#js-company-anchor">О компании</a>
               <div class="b-header__menu-item js-type-anchor">Виды услуг
-                <div class="b-header__dropdown">
-                  <div class="b-header__dropdown-item js-anchor-multi">Мультимодальные контейнерные перевозки</div>
-                  <div class="b-header__dropdown-item js-anchor-tank">Перевозки наливных грузов в танк-контейнерах</div>
-                  <div class="b-header__dropdown-item js-anchor-danger">Опасные грузы</div>
-                  <div class="b-header__dropdown-item js-anchor-combined">Сборные грузы</div>
-                  <div class="b-header__dropdown-item js-anchor-car">Автомобильные перевозки</div>
-                  <div class="b-header__dropdown-item js-anchor-air">Авиагрузы</div>
-                </div>
-              </div>
-              <div class="b-header__menu-item js-contact">Контакты
+                <div class="b-header__dropdown"><a class="b-header__dropdown-item js-anchor-multi" href="#js-anchor-multi">Мультимодальные контейнерные перевозки</a><a class="b-header__dropdown-item js-anchor-tank" href="#js-anchor-tank">Перевозки наливных грузов в танк-контейнерах</a><a class="b-header__dropdown-item js-anchor-danger" href="#js-anchor-danger">Опасные грузы</a><a class="b-header__dropdown-item js-anchor-combined" href="#js-anchor-combined">Сборные грузы</a><a class="b-header__dropdown-item js-anchor-car" href="#js-anchor-car">Автомобильные перевозки</a><a class="b-header__dropdown-item js-anchor-air" href="#js-anchor-air">Авиагрузы</a></div>
+              </div><a class="b-header__menu-item js-contact" href="#js-contact">Контакты
                 <div class="b-header__contacts">
                   <div class="b-header__contacts-map"></div>
                   <div class="b-header__contacts-wrap">
@@ -39,8 +29,7 @@
                       <p><b>E-mail:</b><a href="mailto:stflog@stflog.com"> stflog@stflog.com</a></p>
                     </div>
                   </div>
-                </div>
-              </div><a class="b-header__menu-item b-header__menu-item--btn js-popup" href="#popup">Запрос ставки</a>
+                </div></a><a class="b-header__menu-item b-header__menu-item--btn js-popup" href="#popup">Запрос ставки</a>
             </div>
             <div class="b-header__lang"><a class="b-header__lang-item b-header__lang-item--active" href="">Ru</a><a class="b-header__lang-item" href="">En</a></div>
           </div><a class="b-header__phone" href="tel:84959564817">8 (495) 956 - 48-17</a>
@@ -62,7 +51,7 @@
       </div>
     </div>
     <div id="fullpage">
-      <div class="b-section b-section--slider">
+      <div class="b-section b-section--slider" id="js-main-anchor">
         <div class="container">
           <div class="b-section-slider__arrow"></div>
           <div class="b-section-slider__counter">
@@ -124,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section">
+      <div class="b-section" id="js-company-anchor">
         <div class="container">
           <div class="b-section__wrap">
             <div class="b-section__title b-section__title--company">
@@ -152,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--single">
+      <div class="b-section b-section--single" id="js-anchor-multi">
         <div class="b-line-pattern b-line-pattern--image">
           <div class="container">
             <div class="b-line-pattern__line"></div>
@@ -186,7 +175,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--auto">
+      <div class="b-section b-section--auto" id="js-anchor-car">
         <div class="container">
           <div class="b-section__wrap">
             <div class="b-section__title">
@@ -206,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--single">
+      <div class="b-section b-section--single" id="js-anchor-tank">
         <div class="b-line-pattern b-line-pattern--image">
           <div class="container">
             <div class="b-line-pattern__line"></div>
@@ -230,7 +219,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--air">
+      <div class="b-section b-section--air" id="js-anchor-air">
         <div class="container">
           <div class="b-section__wrap">
             <div class="b-section__title">
@@ -247,7 +236,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--single b-section--single-gradient">
+      <div class="b-section b-section--single b-section--single-gradient" id="js-anchor-combined">
         <div class="b-section__single-img"><img src="./images/section__7.jpg"></div>
         <div class="container">
           <div class="b-section__title">
@@ -258,7 +247,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--danger">
+      <div class="b-section b-section--danger" id="js-anchor-danger">
         <div class="container">
           <div class="b-section__wrap">
             <div class="b-section__title">
@@ -285,7 +274,7 @@
           </div>
         </div>
       </div>
-      <div class="b-section b-section--map">
+      <div class="b-section b-section--map" id="js-contact">
         <div id="map"></div>
         <div class="container">
           <div class="b-section__title">
@@ -312,7 +301,7 @@
         </div>
       </div>
     </div>
-    <div class="b-popup" id="popup">
+    <div class="b-popup mfp-hide" id="popup">
       <div class="b-popup__wrap">
         <div class="b-popup__title">Запрос ставки</div>
         <form class="b-form">
