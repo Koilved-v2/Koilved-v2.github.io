@@ -12,12 +12,28 @@
     <!--link(rel='apple-touch-icon-precomposed' sizes='180x180' href='/favicons/apple-touch-icon-180x180-precomposed.png')-->
     <!--link(rel='icon' sizes='192x192' href='/favicons/touch-icon-192x192.png')-->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Статья</title>
   </head>
   <body>
     <div class="b-header">
       <div class="b-header__top">
-        <div class="container"><a class="b-header__logo" href=""></a>
+        <div class="container">
+          <div class="b-header__mobile-menu">
+            <div class="mobile-menu__close js-close-mobile-menu"></div>
+            <div class="mobile-menu__links"><a href="">О проекте</a><a href="">Реклама</a></div>
+            <div class="main-menu">
+              <div class="main-menu__link"><a href="">Новости</a></div>
+              <div class="main-menu__link"><a href="">Мнения</a></div>
+              <div class="main-menu__link"><a href="">Аналитика</a></div>
+              <div class="main-menu__link"><a href="">Рейтинги</a></div>
+              <div class="main-menu__link"><a href="">Проекты</a></div>
+            </div>
+            <div class="mobile-menu__social">
+              <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            </div>
+          </div>
+          <div class="b-header__hamburgers js-mobile-menu"></div><a class="b-header__logo" href=""></a>
           <div class="b-header__main-menu">
             <div class="main-menu">
               <div class="main-menu__link main-menu__link--active"><a href="">Новости</a></div>
@@ -40,6 +56,12 @@
       </div>
       <div class="b-header__bottom">
         <div class="container">
+          <div class="b-header__mobile-sub-menu">
+            <div class="mobile-sub-menu">
+              <div class="mobile-sub-menu__item js-mobile-submenu">Главное</div>
+              <div class="mobile-sub-menu__dropdown"><a href="">Протесты в Армении</a><a href="">Битва за Telegram</a><a href="">Война в Сирии</a></div>
+            </div>
+          </div>
           <div class="b-header__sub-menu">
             <div class="sub-menu">
               <div class="sub-menu__link sub-menu__link--active"><a href="">Главное</a></div>
@@ -161,10 +183,16 @@
         </div>
       </div>
     </aside>
+    <div class="scroll-up js-scrolltop"></div>
+    <div class="edit-text js-fixed-sroll">
+      <div class="edit-text__wrap">
+        <div class="edit-text__tooltip">Нашли опечатку?<br>Выделите текст и нажмите Ctrl+Enter</div>
+      </div>
+    </div>
     <div class="b-page">
       <div class="container">
         <div class="b-article typography typography--container">
-          <h1>Власти Алтайского края прокомментировали возможную продажу тепличного комплекса «Индустриальный» «Сибирской генерирующей компании»</h1>
+          <h1 class="js-edit-text">Власти Алтайскогоо края прокомментировали возможную продажу тепличного комплекса «Индустриальный» «Сибирской генерирующей компании»</h1>
           <div class="b-article__info">
             <div class="b-article__label label label--black">Общество</div>
             <time>26 апреля 2018, 15:10</time>
@@ -174,7 +202,7 @@
           <p>Судьба зданий Барнаульского меде-сереброплавильного завода, основанного Акинфием Демидовым  в середине XVIII века, до сих пор не ясна.  Новые собственники исторического памятника до сих пор  не обнародовали<a href="">планы</a> использования территории, на которой расположен завод. Барнаульцы опасаются, что вокруг зданий XVIII – XIX веков, с которых начинался город, появятся типовые торгово-развлекательные центры, которые исказят облик исторического центра.</p>
           <div class="b-article__divider">
             <div class="b-article__divider-wrap">
-              <p><b>«Политсиб.ру»</b><i> проследил историю Барнаульского завода</i></p>
+              <p><b><i>«Политсиб.ру»</i></b><i> проследил историю Барнаульского завода</i></p>
             </div>
           </div>
           <div class="b-article__chapter"><span>1</span>
@@ -191,11 +219,15 @@
             <div class="b-article__sociality">
               <div class="b-article__hashtag">
                 <div class="hash-tag">
-                  <div class="hash-tag__item">#Общество</div>
-                  <div class="hash-tag__item">#История</div>
-                  <div class="hash-tag__item">#Архитектура</div>
-                  <div class="hash-tag__item">#Строения</div>
-                  <div class="hash-tag__more"></div>
+                  <div class="hash-tag__item"><span>#</span>Общество</div>
+                  <div class="hash-tag__item"><span>#</span>История</div>
+                  <div class="hash-tag__item"><span>#</span>Архитектура</div>
+                  <div class="hash-tag__item hidden"><span>#</span>Общество</div>
+                  <div class="hash-tag__item hidden"><span>#</span>История</div>
+                  <div class="hash-tag__item hidden"><span>#</span>Архитектура</div>
+                  <div class="hash-tag__item hidden"><span>#</span>Общество</div>
+                  <div class="hash-tag__item hidden"><span>#</span>История</div>
+                  <div class="hash-tag__more js-show-hash-tag"></div>
                 </div>
               </div>
               <div class="b-article__share"><span>Поделиться:</span>
@@ -209,10 +241,10 @@
             <div class="b-comments__count">5 комментариев</div>
             <form class="b-form">
               <p class="b-form__item">
-                <textarea name="comment" placeholder="Написать комментарий"></textarea><span class="b-form__count-symb"><span>0</span> / 1000</span>
+                <textarea name="comment" placeholder="Написать комментарий"></textarea><span class="b-form__count-symb js-limit"><span>1000</span></span>
               </p>
               <div class="b-form__submit">
-                <button type="submit">Отправить</button>
+                <button class="js-login" type="submit">Отправить</button>
               </div>
             </form>
             <div class="b-comments__list">
@@ -226,7 +258,10 @@
                     <div class="comment-item__user-text">
                       <p>У ЕР не было, нет и не будет поддержки масс. Многие из этих классовых персонажей- ЕР политиков, Путина В.В. не слышат, но шанс просветлеть есть у каждого, в каждом человеке заложено зерно Духовности развивать его или нет- это выбор и право каждого.</p>
                     </div>
-                    <div class="comment-item__reply">Ответить</div>
+                    <div class="comment-item__footer">
+                      <div class="comment-item__like like js-login">20</div>
+                      <div class="comment-item__reply js-login">Ответить</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -240,15 +275,18 @@
                     <div class="comment-item__user-text">
                       <p>У ЕР не было, нет и не будет поддержки масс. Многие из этих классовых персонажей- ЕР политиков, Путина В.В. не слышат, но шанс просветлеть есть у каждого, в каждом человеке заложено зерно Духовности развивать его или нет- это выбор и право каждого.</p>
                     </div>
-                    <div class="comment-item__reply">Ответить</div>
+                    <div class="comment-item__footer">
+                      <div class="comment-item__like like like--active js-login">20</div>
+                      <div class="comment-item__reply js-login">Ответить</div>
+                    </div>
                   </div>
                 </div>
                 <form class="b-form">
                   <p class="b-form__item">
-                    <textarea name="comment" placeholder="Написать комментарий"></textarea>
+                    <textarea name="comment" placeholder="Ответить на комментарий"></textarea>
                   </p>
                   <div class="b-form__submit">
-                    <button type="submit">Отправить</button>
+                    <button class="js-login" type="submit">Отправить</button>
                   </div>
                 </form>
                 <div class="comment-item__answer-list">
@@ -260,9 +298,10 @@
                         <time>04 мая, 2018 в 16:24</time>
                       </div>
                       <div class="answer-item__text">У ЕР не было, нет и не будет поддержки масс. Многие из этих классовых персонажей- ЕР политиков, Путина В.В. не слышат, но шанс просветлеть есть у каждого, в каждом человеке заложено зерно Духовности развивать его или нет- это выбор и право каждого.</div>
+                      <div class="answer-item__like like js-login"></div>
                     </div>
                   </div>
-                  <div class="answer-item"><img src="./images/search/search_1.png"/>
+                  <div class="answer-item"><img src="./images/icon/i-anonym.svg"/>
                     <div class="answer-item__user">
                       <div class="answer-item__header">
                         <div class="answer-item__user-name">Аноним</div>
@@ -270,19 +309,59 @@
                         <time>04 мая, 2018 в 16:24</time>
                       </div>
                       <div class="answer-item__text">Дорогостоящее мероприятие. Время и средства можно использовать на полезное дело.</div>
+                      <div class="answer-item__like like like--active js-login">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-item">
+                <div class="comment-item__wrap"><img src="./images/search/search_1.png"/>
+                  <div class="comment-item__user">
+                    <div class="comment-item__user-header">
+                      <div class="comment-item__user-name">Нина</div>
+                      <time>04 мая, 2018 в 16:24</time>
+                    </div>
+                    <div class="comment-item__user-text">
+                      <p>У ЕР не было, нет и не будет поддержки масс. Многие из этих классовых персонажей- ЕР политиков, Путина В.В. не слышат, но шанс просветлеть есть у каждого, в каждом человеке заложено зерно Духовности развивать его или нет- это выбор и право каждого.</p>
+                    </div>
+                    <div class="comment-item__footer">
+                      <div class="comment-item__like like like--active js-login">20</div>
+                      <div class="comment-item__reply js-login">Ответить</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="b-banner">
-              <div class="b-banner__fish"></div>
+            <div class="b-commercial"><span>Место для рекламы</span></div>
+          </div>
+        </div>
+        <div class="b-popup mfp-hide" id="popup">
+          <div class="b-popup__wrap">
+            <div class="b-popup__title">Ошибка на сайте</div>
+            <div class="b-popup__error"></div>
+            <form class="b-form">
+              <div class="b-form__item">
+                <textarea placeholder="Опишите ошибку"></textarea>
+              </div>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="b-login">
+          <div class="b-login__wrap">
+            <div class="b-login__title">Авторизоваться на сайте</div>
+            <div class="b-login__social">
+              <div class="social social--login"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a><a class="social__item social__item--gplus" href=""></a></div>
             </div>
+            <div class="b-login__desc">Авторизуясь , Вы даете согласие на обработку своих<a href=""> персональных данных</a></div>
+            <div class="b-login__desc b-login__desc--divider"><span>или</span></div>
+            <div class="b-login__desc">Ответить ананимно:</div>
+            <div class="g-recaptcha" data-sitekey="6LdQ8VsUAAAAAIJU0EhwKLReIK_JlBiCN-GR3HOR"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="b-footer">
+    <footer class="b-footer">
       <div class="container">
         <div class="b-footer__top">
           <div class="b-footer__main-menu">
@@ -317,7 +396,7 @@
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
               <div class="partners-slider__item"><img src="./images/partners/km_pravda.png" width="135px"></div>
-              <div class="partners-slider__item"><img src="./images/partners/our_news.png" width="90px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/buisk.png" width="126px"></div>
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
             </div>
@@ -339,7 +418,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
   <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
   <script src="//yastatic.net/share2/share.js"></script>

@@ -12,12 +12,28 @@
     <!--link(rel='apple-touch-icon-precomposed' sizes='180x180' href='/favicons/apple-touch-icon-180x180-precomposed.png')-->
     <!--link(rel='icon' sizes='192x192' href='/favicons/touch-icon-192x192.png')-->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Типографика</title>
   </head>
   <body>
     <div class="b-header">
       <div class="b-header__top">
-        <div class="container"><a class="b-header__logo" href=""></a>
+        <div class="container">
+          <div class="b-header__mobile-menu">
+            <div class="mobile-menu__close js-close-mobile-menu"></div>
+            <div class="mobile-menu__links"><a href="">О проекте</a><a href="">Реклама</a></div>
+            <div class="main-menu">
+              <div class="main-menu__link"><a href="">Новости</a></div>
+              <div class="main-menu__link"><a href="">Мнения</a></div>
+              <div class="main-menu__link"><a href="">Аналитика</a></div>
+              <div class="main-menu__link"><a href="">Рейтинги</a></div>
+              <div class="main-menu__link"><a href="">Проекты</a></div>
+            </div>
+            <div class="mobile-menu__social">
+              <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            </div>
+          </div>
+          <div class="b-header__hamburgers js-mobile-menu"></div><a class="b-header__logo" href=""></a>
           <div class="b-header__main-menu">
             <div class="main-menu">
               <div class="main-menu__link main-menu__link--active"><a href="">Новости</a></div>
@@ -40,6 +56,12 @@
       </div>
       <div class="b-header__bottom">
         <div class="container">
+          <div class="b-header__mobile-sub-menu">
+            <div class="mobile-sub-menu">
+              <div class="mobile-sub-menu__item js-mobile-submenu">Главное</div>
+              <div class="mobile-sub-menu__dropdown"><a href="">Протесты в Армении</a><a href="">Битва за Telegram</a><a href="">Война в Сирии</a></div>
+            </div>
+          </div>
           <div class="b-header__sub-menu">
             <div class="sub-menu">
               <div class="sub-menu__link sub-menu__link--active"><a href="">Главное</a></div>
@@ -156,21 +178,29 @@
         </div>
       </div>
     </aside>
+    <div class="scroll-up js-scrolltop"></div>
+    <div class="edit-text">
+      <div class="edit-text__tooltip">Нашли опечатку?<br>Выделите текст и нажмите Ctrl+Enter</div>
+    </div>
     <div class="b-page">
       <div class="container">
-        <div class="b-article typography">
+        <div class="b-article typography typography--container">
           <h1>Власти Алтайского края прокомментировали возможную продажу тепличного комплекса «Индустриальный» «Сибирской генерирующей компании»</h1>
           <div class="b-article__info">
-            <div class="b-article__label">Общество</div>
+            <div class="b-article__label label label--black"> Общество</div>
             <time>26 апреля 2018, 15:10</time>
-            <div class="b-article__views">438</div>
-            <div class="b-article__comments comments">10</div>
-          </div><img src="./images/article/news_fullpage.png"/>
+            <div class="b-article__views views">438</div>
+            <div class="b-article__comments comments comments--gray">10</div>
+          </div><img src="./images/article/article_1.png"/>
           <p>Судьба зданий Барнаульского меде-сереброплавильного завода, основанного Акинфием Демидовым  в середине XVIII века, до сих пор не ясна.  Новые собственники исторического памятника до сих пор  не обнародовали<a href=""> планы</a>использования территории, на которой расположен завод. Барнаульцы опасаются, что вокруг зданий XVIII – XIX веков, с которых начинался город, появятся типовые торгово-развлекательные центры, которые исказят облик исторического центра.</p>
-          <div class="b-article__divider"><b>«Политсиб.ру»<i>проследил историю Барнаульского завода</i></b></div>
+          <div class="b-article__divider">
+            <div class="b-article__divider-wrap">
+              <p><b><i>«Политсиб.ру»</i></b><i> проследил историю Барнаульского завода</i></p>
+            </div>
+          </div>
           <div class="b-article__chapter"><span>1</span>
             <h3>Когда и почему стали строить завод в Барнауле? - h3</h3>
-            <p>Специалисты предложили Демидову найти место на реке, где есть лес, поставить там завод  и сплавлять туда руду на специальных судах. Такое место нашли у впадения Барнаулки в Обь.  На левом берегу Барнаулки был прекрасный бор, который в ширину простирался примерно  до сегодняшней улицы Молодежной. И в 1739 году на демидовские деньги демидовские люди начали строить здесь завод.</p><img/><i>Бревна, торчащие из воды, - остатки основания заводской плотины.</i>
+            <p>Специалисты предложили Демидову найти место на реке, где есть лес, поставить там завод  и сплавлять туда руду на специальных судах. Такое место нашли у впадения Барнаулки в Обь.  На левом берегу Барнаулки был прекрасный бор, который в ширину простирался примерно  до сегодняшней улицы Молодежной. И в 1739 году на демидовские деньги демидовские люди начали строить здесь завод.</p><img src="./images/article/article_1.png"/><i>Бревна, торчащие из воды, - остатки основания заводской плотины.</i>
           </div>
           <div class="b-article__chapter"><span>2</span>
             <h3>Когда и почему стали строить завод в Барнауле? - h3</h3>
@@ -179,12 +209,19 @@
           <p>В октябре 1739 года началось возведение плотины, а в 1740 году стали класть плавильные печи. Об этом писал сам<a href=""> Демидов</a>, хотя на заводе он никогда не был. Известны имена людей, которые  руководили строительством, - приказчик Иван Осипов и плотинный мастер Роман Латников.</p>
           <p>Бревна, которые до сих пор торчат из Барнаулки, - это остатки крепежа, реальные свидетели демидовских времен. Плотина была не просто земляным валом, который река могла бы легко размыть. Это было достаточно сложное инженерное сооружение. Вода по специальным деревянным желобам под небольшим уклоном уходила в корпуса плавильных фабрик (они стояли на обоих<a href=""> берегах Барнаулки</a>), там падала на водоналивные колеса. Никакого другого источника энергии не было. Колеса вращали валы, которые поднимали и опускали мехи, – таким образом работала воздуходувка металлургических печей.</p>
           <div class="b-article__link"><span>Читайте также:</span><a href="">Барнаульская уникальность: станет ли музеем бывший сереброплавильный завод</a></div>
-          <h2>Что сегодня осталось от завода XVIII – XIX веков? - h2</h2>
+          <h2><b>Что сегодня осталось от завода XVIII – XIX веков? - h2</b></h2>
           <p>Корпуса Барнаульского завода сначала были деревянными. Из кирпича были построены только пороховой погреб (вокруг завода была крепость с башнями и пушками), палатка для хранения выплавленного серебра и, естественно, печи. Среди дошедших до нашего времени остатков завода есть несколько кирпичных построек конца XVIII века. Они значатся в описи 1785 года. Это важня (весовая) и кузница. Они помнят страшное барнаульское наводнение 1793 года, когда из-за таяния снега переполнился пруд, и вода затопила Петропавловскую улицу (сейчас – Ползунова), смыла многие постройки.</p>
-          <div class="b-article__slider js-article-slider">
-            <div class="b-article__slider-item"><img/>
-            </div>
-            <div class="b-article__slider-item"><img/>
+          <div class="b-article__slider">
+            <div class="b-article__slider-count"><span>1</span> из 4</div>
+            <div class="b-article__slider-wrap js-article-slider">
+              <div class="b-article__slider-item"><img src="./images/article/typogr_slide_1.jpg"/>
+              </div>
+              <div class="b-article__slider-item"><img src="./images/article/typogr_slide_2.jpg"/>
+              </div>
+              <div class="b-article__slider-item"><img src="./images/article/typogr_slide_1.jpg"/>
+              </div>
+              <div class="b-article__slider-item"><img src="./images/article/typogr_slide_2.jpg"/>
+              </div>
             </div>
           </div>
           <p>В мае активисты очистят гору Бобырган от вандальных надписей. В акции примут участие члены Русского географического общества из Барнаула, Бийска, активисты Молодежного клуба РГО и представители общественных объединений, сообщают в Минприроды Алтайского края.</p>
@@ -209,37 +246,41 @@
             <li>А трекеры как-то изменятся в будущем, кроме того, что станут точнее?</li>
           </ul>
           <p>Грамотное и культурное освоение территории Барнаульского сереброплавильного завода неизбежно требует музеефикации. Если к нашему славному и уникальному историческому наследию добавить историческую память, то в результате как раз и получится туристско-привлекательный, неповторимый облик города.</p>
-          <h4><i>Таблица №1. Как должна выглядить таблица в современном вебе</i></h4>
-          <table>
-            <tr>
-              <th> Столбец №1</th>
-              <th> Столбец №2</th>
-              <th> Столбец №3</th>
-              <th> Столбец №4</th>
-              <th> Столбец №5</th>
-            </tr>
-            <tr>
-              <td> Мы знаем, где ее искать – существует много открытых источников и есть наши зрители, читатели, которые приходят в СМГ со своими проблемами и документами.</td>
-              <td> 20/10/2018</td>
-              <td> 3 985 руб.</td>
-              <td> 48 кв.м</td>
-              <td> Статья №24</td>
-            </tr>
-            <tr>
-              <td> СМГ со своими проблемами  и документами.</td>
-              <td> 20/10/2018</td>
-              <td> 3 985 руб.</td>
-              <td> 48 кв.м</td>
-              <td> Статья №24</td>
-            </tr>
-            <tr>
-              <td> А трекеры как-то изменятся в будущем, кроме того, что станут точнее?</td>
-              <td> 20/10/2018</td>
-              <td> 3 985 руб.</td>
-              <td> 48 кв.м</td>
-              <td> Статья №24</td>
-            </tr>
-          </table>
+          <div class="b-article__table">
+            <h4><i>Таблица №1. Как должна выглядить таблица в современном вебе</i></h4>
+            <div class="b-article__table-wrap">
+              <table>
+                <tr>
+                  <th> Столбец №1</th>
+                  <th> Столбец №2</th>
+                  <th> Столбец №3</th>
+                  <th> Столбец №4</th>
+                  <th> Столбец №5</th>
+                </tr>
+                <tr>
+                  <td> Мы знаем, где ее искать – существует много открытых источников и есть наши зрители, читатели, которые приходят в СМГ со своими проблемами и документами.</td>
+                  <td> 20/10/2018</td>
+                  <td> 3 985 руб.</td>
+                  <td> 48 кв.м</td>
+                  <td> Статья №24</td>
+                </tr>
+                <tr>
+                  <td> СМГ со своими проблемами  и документами.</td>
+                  <td> 20/10/2018</td>
+                  <td> 3 985 руб.</td>
+                  <td> 48 кв.м</td>
+                  <td> Статья №24</td>
+                </tr>
+                <tr>
+                  <td> А трекеры как-то изменятся в будущем, кроме того, что станут точнее?</td>
+                  <td> 20/10/2018</td>
+                  <td> 3 985 руб.</td>
+                  <td> 48 кв.м</td>
+                  <td> Статья №24</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <div class="b-article__text"><i>Автор благодарит научных сотрудников лаборатории исторического краеведения Алтайского государственного педагогического университета Дмитрия Бородаева и Аркадия Контева за помощь в подготовке этого материала.</i></div>
           <div class="b-article__footer">
             <div class="b-article__signature">
@@ -248,21 +289,22 @@
             </div>
             <div class="b-article__sociality">
               <div class="b-article__hashtag">
-                <div class="hashtag">
-                  <div class="hashtag-item">#Общество</div>
-                  <div class="hashtag-item">#История</div>
-                  <div class="hashtag-item">#Архитектура</div>
-                  <div class="hashtag-item">#Строения</div>
-                  <div class="hashtag-more"></div>
+                <div class="hash-tag">
+                  <div class="hash-tag__item"><span>#</span>Общество</div>
+                  <div class="hash-tag__item"><span>#</span>История</div>
+                  <div class="hash-tag__item"><span>#</span>Архитектура</div>
+                  <div class="hash-tag__more"></div>
                 </div>
               </div>
-              <div class="b-article__share"><span>Поделиться:</span></div>
+              <div class="b-article__share"><span>Поделиться:</span>
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="b-footer">
+    <footer class="b-footer">
       <div class="container">
         <div class="b-footer__top">
           <div class="b-footer__main-menu">
@@ -297,7 +339,7 @@
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
               <div class="partners-slider__item"><img src="./images/partners/km_pravda.png" width="135px"></div>
-              <div class="partners-slider__item"><img src="./images/partners/our_news.png" width="90px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/buisk.png" width="126px"></div>
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
             </div>
@@ -319,8 +361,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
+  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="//yastatic.net/share2/share.js"></script>
   <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
   <script src="./js/bundle.js"></script>
 </html>

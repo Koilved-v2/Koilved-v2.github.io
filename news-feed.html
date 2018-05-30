@@ -12,12 +12,28 @@
     <!--link(rel='apple-touch-icon-precomposed' sizes='180x180' href='/favicons/apple-touch-icon-180x180-precomposed.png')-->
     <!--link(rel='icon' sizes='192x192' href='/favicons/touch-icon-192x192.png')-->
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Новостная лента</title>
   </head>
   <body>
     <div class="b-header">
       <div class="b-header__top">
-        <div class="container"><a class="b-header__logo" href=""></a>
+        <div class="container">
+          <div class="b-header__mobile-menu">
+            <div class="mobile-menu__close js-close-mobile-menu"></div>
+            <div class="mobile-menu__links"><a href="">О проекте</a><a href="">Реклама</a></div>
+            <div class="main-menu">
+              <div class="main-menu__link"><a href="">Новости</a></div>
+              <div class="main-menu__link"><a href="">Мнения</a></div>
+              <div class="main-menu__link"><a href="">Аналитика</a></div>
+              <div class="main-menu__link"><a href="">Рейтинги</a></div>
+              <div class="main-menu__link"><a href="">Проекты</a></div>
+            </div>
+            <div class="mobile-menu__social">
+              <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            </div>
+          </div>
+          <div class="b-header__hamburgers js-mobile-menu"></div><a class="b-header__logo" href=""></a>
           <div class="b-header__main-menu">
             <div class="main-menu">
               <div class="main-menu__link main-menu__link--active"><a href="">Новости</a></div>
@@ -40,6 +56,12 @@
       </div>
       <div class="b-header__bottom">
         <div class="container">
+          <div class="b-header__mobile-sub-menu">
+            <div class="mobile-sub-menu">
+              <div class="mobile-sub-menu__item js-mobile-submenu">Главное</div>
+              <div class="mobile-sub-menu__dropdown"><a href="">Протесты в Армении</a><a href="">Битва за Telegram</a><a href="">Война в Сирии</a></div>
+            </div>
+          </div>
           <div class="b-header__sub-menu">
             <div class="sub-menu">
               <div class="sub-menu__link sub-menu__link--active"><a href="">Главное</a></div>
@@ -156,52 +178,78 @@
         </div>
       </div>
     </aside>
+    <div class="scroll-up js-scrolltop"></div>
+    <div class="edit-text">
+      <div class="edit-text__tooltip">Нашли опечатку?<br>Выделите текст и нажмите Ctrl+Enter</div>
+    </div>
     <div class="b-page">
       <div class="container">
         <div class="b-news-feed">
           <h1>Новостная лента</h1>
-          <div class="b-news-feed__list"><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_1.png"/>
+          <div class="b-news-feed__list"><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Известный в Барнауле арт-критик, журналист и драматург Вадим Климов выпустил книгу «Свободные пьесы». Ее презентация пройдет 28 апреля в галерее «Республика ИЗО».</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_2.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_2.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_1.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_2.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Известный в Барнауле арт-критик, журналист и драматург Вадим Климов выпустил книгу «Свободные пьесы». Ее презентация пройдет 28 апреля в галерее «Республика ИЗО».</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_1.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_2.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_2.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img src="./images/news_feed/news_1.png"/>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
               <div class="b-news-feed__item-wrap">
                 <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
                 <p>Известный в Барнауле арт-критик, журналист и драматург Вадим Климов выпустил книгу «Свободные пьесы». Ее презентация пройдет 28 апреля в галерее «Республика ИЗО».</p>
                 <time>26 апреля 2018</time>
-              </div></a><a class="b-news-feed__item" href=""><img/>
-              <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
-              <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
-              <time>26 апреля 2018</time></a><a class="b-news-feed__item" href=""><img/>
-              <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
-              <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
-              <time>26 апреля 2018</time></a></div>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_2.png"/>
+              </div>
+              <div class="b-news-feed__item-wrap">
+                <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
+                <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
+                <time>26 апреля 2018</time>
+              </div></a><a class="b-news-feed__item" href="">
+              <div class="b-news-feed__item-img"><img src="./images/news_feed/news_1.png"/>
+              </div>
+              <div class="b-news-feed__item-wrap">
+                <h2>Барнаульский арт-критик Вадим Климов презентует сборник пьес</h2>
+                <p>Более 90 иностранцев, незаконно владеющих сельхозугодиями, нашли в Алтайском крае</p>
+                <time>26 апреля 2018</time>
+              </div></a></div>
           <div class="b-pagination">
             <div class="b-pagination__wrap">
               <div class="b-pagination__arrow b-pagination__arrow--prev b-pagination__arrow--disabled"></div>
@@ -218,7 +266,7 @@
         </div>
       </div>
     </div>
-    <div class="b-footer">
+    <footer class="b-footer">
       <div class="container">
         <div class="b-footer__top">
           <div class="b-footer__main-menu">
@@ -253,7 +301,7 @@
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
               <div class="partners-slider__item"><img src="./images/partners/km_pravda.png" width="135px"></div>
-              <div class="partners-slider__item"><img src="./images/partners/our_news.png" width="90px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/buisk.png" width="126px"></div>
               <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
               <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
             </div>
@@ -275,8 +323,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
+  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="//yastatic.net/share2/share.js"></script>
   <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
   <script src="./js/bundle.js"></script>
 </html>
