@@ -104,6 +104,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -132,16 +135,15 @@
       <updated>1525507826895</updated>
       <workItem from="1525507828259" duration="240000" />
       <workItem from="1527779827206" duration="1438000" />
-      <workItem from="1528041582867" duration="785000" />
+      <workItem from="1528041582867" duration="1463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2463000" />
+    <option name="totallyTimeSpent" value="3141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="521" y="-1303" width="1680" height="1028" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11633514" />
       <window_info anchor="bottom" id="TODO" order="6" />
