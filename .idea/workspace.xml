@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f21bda71-b0c4-45e9-b407-4f20ecf00604" name="Default" comment="" />
+    <list default="true" id="f21bda71-b0c4-45e9-b407-4f20ecf00604" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,8 +44,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="521" />
-    <option name="y" value="-1303" />
+    <option name="x" value="-261" />
+    <option name="y" value="-1335" />
     <option name="width" value="1680" />
     <option name="height" value="1028" />
   </component>
@@ -80,11 +82,6 @@
             <path>
               <item name="Koilved-v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Koilved-v2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Koilved-v2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Koilved-v2" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,14 +133,17 @@
       <workItem from="1525507828259" duration="240000" />
       <workItem from="1527779827206" duration="1438000" />
       <workItem from="1528041582867" duration="2060000" />
+      <workItem from="1528904911335" duration="599000" />
+      <workItem from="1529409910704" duration="450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3738000" />
+    <option name="totallyTimeSpent" value="4787000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="-1303" width="1680" height="1028" extended-state="0" />
+    <frame x="151" y="-1210" width="1680" height="1028" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11633514" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -168,6 +168,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../../typescript/app.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
