@@ -2,217 +2,624 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1280, initial-scale=0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Главная страница</title>
   </head>
   <body>
     <div class="b-header">
+      <div class="b-header__top">
+        <div class="container">
+          <div class="b-header__mobile-menu">
+            <div class="mobile-menu__close js-close-mobile-menu"></div>
+            <div class="mobile-menu__links"><a href="">О проекте</a><a href="">Реклама</a></div>
+            <div class="main-menu">
+              <div class="main-menu__link"><a href="">Афиша</a></div>
+              <div class="main-menu__link"><a href="">Культура</a></div>
+              <div class="main-menu__link"><a href="">Спорт</a></div>
+              <div class="main-menu__link"><a href="">Политика</a></div>
+              <div class="main-menu__link"><a href="">Образование</a></div>
+            </div>
+            <div class="mobile-menu__social">
+              <div class="social social--login"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+            </div>
+          </div>
+          <div class="b-header__hamburgers js-mobile-menu"></div>
+          <div class="b-heade__mobile-content">
+            <div class="b-aside__weather js-weather">
+              <div class="icon"></div><span>+24</span>
+            </div>
+            <div class="b-aside__forex">
+              <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
+              <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
+            </div>
+          </div><a class="b-header__logo" href=""></a>
+          <div class="b-header__main-menu">
+            <div class="main-menu">
+              <div class="main-menu__link main-menu__link--active"><a href="">Афиша</a></div>
+              <div class="main-menu__link"><a href="">Культура</a></div>
+              <div class="main-menu__link"><a href="">Спорт</a></div>
+              <div class="main-menu__link"><a href="">Политика</a></div>
+              <div class="main-menu__link"><a href="">Образование</a></div>
+            </div>
+          </div><a class="b-header__web-cam" href="">Веб-камеры Бийск</a>
+          <div class="b-header__search js-search">
+            <div class="b-header__search-ico"></div>
+            <form class="b-form">
+              <p class="b-form__item">
+                <input placeholder="Поиск">
+              </p>
+            </form>
+          </div>
+          <div class="b-header__search-close js-search-close"></div>
+          <div class="b-header__calendar">
+            <input class="js-calendar" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="b-header__bottom">
+        <div class="container">
+          <div class="b-header__mobile-sub-menu">
+            <div class="mobile-sub-menu">
+              <div class="mobile-sub-menu__item js-mobile-submenu">Главное</div>
+              <div class="mobile-sub-menu__dropdown"><a href="">Дорожный ремонт - 2018</a><a href="">Паводок - 2018</a><a href="">Комфортная среда. Бийск - 2018</a></div>
+            </div>
+            <div class="b-aside__forex">
+              <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
+              <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
+            </div>
+          </div>
+          <div class="b-header__main-menu-second">
+            <div class="main-menu">
+              <div class="main-menu__link main-menu__link--active-bold"><a href="">Главное</a></div>
+              <div class="main-menu__link"><a href="">Дорожный ремонт - 2018</a></div>
+              <div class="main-menu__link"><a href="">Паводок - 2018</a></div>
+              <div class="main-menu__link"><a href="">Комфортная среда. Бийск - 2018</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-up js-scrolltop"></div>
+    <div class="edit-text">
+      <div class="edit-text__tooltip">Нашли опечатку?<br>Выделите текст и нажмите Ctrl+Enter</div>
+    </div>
+    <div class="b-page">
       <div class="container">
-        <div class="b-header__wrap">
-          <div class="b-header__logo"></div>
-          <div class="b-header__center">
-            <div class="b-header__menu"><a class="b-header__menu-item js-main-anchor active" href="#js-main-anchor">Главная</a><a class="b-header__menu-item js-company-anchor" href="#js-company-anchor">О компании</a><a class="b-header__menu-item js-robinson-anchor" href="#js-robinson-anchor">C.H. Robinson</a>
-              <div class="b-header__menu-item js-type-anchor">Наши услуги
-                <div class="b-header__dropdown"><a class="b-header__dropdown-item js-anchor-multi" href="#js-anchor-multi">Мультимодальные контейнерные перевозки</a><a class="b-header__dropdown-item js-anchor-air" href="#js-anchor-air">Авиаперевозки</a><a class="b-header__dropdown-item js-anchor-combined" href="#js-anchor-combined">Сборные грузы</a><a class="b-header__dropdown-item js-anchor-car" href="#js-anchor-car">Автомобильные перевозки</a></div>
-              </div><a class="b-header__menu-item js-contact" href="#js-contact">Контакты
-                <div class="b-header__contacts">
-                  <div class="b-header__contacts-map"></div>
-                  <div class="b-header__contacts-wrap">
-                    <div class="b-section__address-item">
-                      <p><b>Адрес:</b> Москва,</p>
-                      <p>ул. Малая Почтовая д. 12, оф 306</p>
+        <div class="b-main">
+          <div class="b-main__mobile-tabs js-tab">
+            <button class="active">Главные новости</button>
+            <button>Новостная лента</button>
+          </div>
+          <div class="js-tab-content">
+            <div class="b-main__news-container active">
+              <div class="b-main__news">
+                <div class="b-main__news-wrap">
+                  <div class="news-slider">
+                    <div class="news-slider__count"><span class="js-slider-count">1</span><span> из</span><span> 3</span></div>
+                    <div class="news-slider__arrow b-arrow js-arrow-container">
+                      <div class="b-arrow__item b-arrow__item--prev js-arrow-prev"></div>
+                      <div class="b-arrow__item b-arrow__item--next js-arrow-next"></div>
                     </div>
-                    <div class="b-section__address-item">
-                      <p><b>Телефон:</b><a href="tel:94959564817"> 8 (495) 956-48-17</a></p>
-                      <p><b>E-mail:</b><a href="mailto:stflog@stflog.com"> stflog@stflog.com</a></p>
+                    <div class="news-slider__wrap js-news-slider">
+                      <div class="news news--col-3">
+                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_fullpage.jpg"/>
+                        <div class="news__wrap"><a class="news__label label label--white" href="">#Путеводитель</a><a href="">
+                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a>
+                          <div class="news__footer">
+                            <time>20:07, 25 мая</time>
+                            <div class="news__comments comments comments--white">10</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="news news--col-3">
+                        <div class="news__btn-play"></div>
+                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_fullpage.jpg"/>
+                        <div class="news__wrap">
+                          <div class="news__label-container"><a class="news__label label label--white" href="">#Путеводитель</a><a class="news__label-subcrib js-youtube" href="" data-link="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ?sub_confirmation=1">Подписаться на канал</a></div><a href="">
+                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a>
+                          <div class="news__footer">
+                            <time>20:07, 25 мая</time>
+                            <div class="news__comments comments comments--white">10</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="news news--col-3">
+                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_fullpage.jpg"/>
+                        <div class="news__wrap"><a class="news__label label label--white" href="">#Путеводитель</a><a href="">
+                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a>
+                          <div class="news__footer">
+                            <time>20:07, 25 мая</time>
+                            <div class="news__comments comments comments--white">10</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div></a><a class="b-header__menu-item b-header__menu-item--btn js-popup" href="#popup">Запрос ставки</a>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Праздник мокрых бантиков: одиннадцатиклассники Бийска попрощались со школой</h2></a><a class="news__label label label--pale-purple" href="">#Фотовзгляд</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
+                    <div class="news__content">
+                      <h2>Судьба «Прогресса»: как спасались и как погибали бийские стадионы</h2><a class="news__label label label--squash" href="">#Спорт</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
+                      </div></a>
+                    <div class="news__content">
+                      <h2>Две школы в Бийске закрыты на карантин из-за роста числа заболевших ОРВИ</h2><a class="news__label label label--mid-green" href="">#Здоровье</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-2">
+                    <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_2-col_2.jpg"/>
+                    <div class="news__wrap"><a class="news__label label label--white" href="">#История</a><a href="">
+                        <h2>Угроза оползня на склонах Нагорного парка Барнаула обострилась</h2></a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--white">100</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1 news--mobile-fullpage">
+                    <div class="news__info-icon news__info-icon--video news__info-icon--top"></div>
+                    <div class="news__img"><img src="./images/news/news_2_col_1.jpg"/>
+                    </div>
+                    <div class="news__wrap"><a class="news__label label label--white" href="">#Афиша</a><a href="">
+                        <h2>Что посмотреть в кино и куда сходить 5 и 6 мая в Бийске</h2></a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--white">7</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__cards b-main__cards--view-leaders">
+                <div class="b-main__header">
+                  <h3>Лидеры просмотров</h3>
+                  <div class="b-main__arrow b-arrow b-arrow--white js-arrow-container">
+                    <div class="b-arrow__item b-arrow__item--prev js-arrow-prev"></div>
+                    <div class="b-arrow__item b-arrow__item--next js-arrow-next"></div>
+                  </div>
+                </div>
+                <div class="b-main__container js-slider-leaders">
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Владимир Путин принял отставку Карлина</h2></a><a class="news__label label label--black" href="">#Власть</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Двухэтажный жилой дом горит в Бийске в районе льнокомб…</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Сразу двух жителей Бийска искусали гадюки</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Владимир Путин принял отставку Карлина</h2></a><a class="news__label label label--black" href="">#Власть</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Двухэтажный жилой дом горит в Бийске в районе льнокомб…</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Сразу двух жителей Бийска искусали гадюки</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__views views">438</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__cards">
+                <div class="b-main__header">
+                  <h3>Афиша</h3><a class="b-main__more" href="">Все новости</a>
+                </div>
+                <div class="b-main__container">
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Праздник мокрых бантиков: одиннадцатиклассники Бийска попрощались со школой</h2></a><a class="news__label label label--black" href="">#Афиша</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Судьба «Прогресса»: как спасались и как погибали бийские стадионы</h2></a><a class="news__label label label--black" href="">#Афиша</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Две школы в Бийске закрыты на карантин из-за роста числа заболевших ОРВИ</h2></a><a class="news__label label label--black" href="">#Афиша</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__cards">
+                <div class="b-main__header">
+                  <h3>Культура</h3><a class="b-main__more" href="">Все новости</a>
+                </div>
+                <div class="b-main__container">
+                  <div class="news news--col-2 news--mobile-half"><a class="news__label label label--white label--top" href="">#Культура</a><img src="./images/news/news_2-col_2.jpg"/>
+                    <div class="news__wrap"><a href="">
+                        <h2>Поп-звезда Пелагея выступит в Бийском районе на закрытии шукшинского фестиваля</h2></a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--white">100</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1 news--mobile-half"><a class="news__label label label--white label--top" href="">#Культура</a>
+                    <div class="news__img"><img src="./images/news/news_2_col_1.jpg"/>
+                    </div>
+                    <div class="news__wrap"><a href="">
+                        <h2>Бийский драмтеатр встречает весну премьерным водевилем «Ограбление в полночь»</h2></a>
+                      <div class="news__footer">
+                        <time>20:07, 12 сентября</time>
+                        <div class="news__comments comments comments--white">7</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__cards">
+                <div class="b-main__header">
+                  <h3>Спорт</h3><a class="b-main__more" href="">Все новости</a>
+                </div>
+                <div class="b-main__container">
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Серебро этапа Кубка мира завоевал бийчанин Сергей Каменский</h2></a><a class="news__label label label--squash" href="">#Спорт</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
+                      </div>
+                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Выпускников спортивных школ чествовали в ГДК</h2></a><a class="news__label label label--squash" href="">#Спорт</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="news news--col-1"><a class="news__card" href="">
+                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
+                      </div></a>
+                    <div class="news__content"><a href="">
+                        <h2>Уроженец Бийска стал обладателем высшего хоккейного кубка России</h2></a><a class="news__label label label--squash" href="">#Спорт</a>
+                      <div class="news__footer">
+                        <time>20:07, 25 мая</time>
+                        <div class="news__comments comments comments--gray">10</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-main__cards">
+                <div class="b-main__header">
+                  <h3>Опросы</h3><a class="b-main__more" href="">Все новости</a>
+                </div>
+                <div class="b-main__poll">
+                  <div class="b-poll">
+                    <div class="b-poll__info">
+                      <div class="b-poll__card">
+                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
+                        <div class="b-poll__content b-poll__content--complete">
+                          <div class="b-poll__item">
+                            <h4>Да, практически всё сбылось</h4>
+                            <div class="b-poll__progress">
+                              <div class="progress-bar" style="width: 12%"></div><span>33</span>
+                            </div>
+                            <div class="b-poll__persent">12%</div>
+                          </div>
+                          <div class="b-poll__item">
+                            <h4>Частично мечты и планы сбылись</h4>
+                            <div class="b-poll__progress">
+                              <div class="progress-bar" style="width: 21%"></div><span>60</span>
+                            </div>
+                            <div class="b-poll__persent">21%</div>
+                          </div>
+                          <div class="b-poll__item">
+                            <h4>Нет, все пошло совсем по-другому</h4>
+                            <div class="b-poll__progress">
+                              <div class="progress-bar" style="width: 44%"></div><span>124</span>
+                            </div>
+                            <div class="b-poll__persent">44%</div>
+                          </div>
+                          <div class="b-poll__item">
+                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
+                            <div class="b-poll__progress">
+                              <div class="progress-bar" style="width: 6%"></div><span>17</span>
+                            </div>
+                            <div class="b-poll__persent">6%</div>
+                          </div>
+                          <div class="b-poll__item">
+                            <h4>Вообще не было никаких планов</h4>
+                            <div class="b-poll__progress">
+                              <div class="progress-bar" style="width: 17%"></div><span>48</span>
+                            </div>
+                            <div class="b-poll__persent">17%</div>
+                          </div>
+                        </div>
+                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
+                      </div>
+                    </div>
+                    <div class="b-poll__tabs">
+                      <div class="b-poll__tabs-item">
+                        <h4>Какие средства вы используете в сезон простуд чаще всего?</h4>
+                        <p>Всего проголосовало:<b> 382</b> человека</p>
+                      </div>
+                      <div class="b-poll__tabs-item b-poll__tabs-item--active">
+                        <h4>Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</h4>
+                        <p>Всего проголосовало:<b> 282</b> человека</p>
+                      </div>
+                      <div class="b-poll__tabs-item">
+                        <h4>Какие средства вы используете в сезон простуд чаще всего?</h4>
+                        <p>Всего проголосовало:<b>382</b> человека</p>
+                      </div>
+                      <div class="b-poll__tabs-item">
+                        <h4>Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</h4>
+                        <p>Всего проголосовало:<b> 382</b> человека</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="b-header__lang"><a class="b-header__lang-item b-header__lang-item--active" href="">Ru</a><a class="b-header__lang-item" href="">En</a></div>
-          </div><a class="b-header__phone" href="tel:84952349942">8 (495) 234-99-42</a>
+            <div class="b-main__aside">
+              <aside class="b-aside">
+                <div class="b-aside__wrap">
+                  <div class="b-aside__header">
+                    <div class="b-aside__weather js-weather">
+                      <div class="icon"></div><span>+24</span>
+                    </div>
+                    <div class="b-aside__forex">
+                      <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
+                      <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
+                    </div>
+                  </div>
+                  <div class="b-aside__live-news">
+                    <div class="b-aside__live-news-wrapper">
+                      <div class="b-aside__live-news-scroll">
+                        <div class="live-news"><a class="live-news__item live-news__item--fixed js-news-fixed" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Афиша Бийска на выходные 26 и 27 мая</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Сколько зарабатывают и чем владеют бийские чиновники и депутаты</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Коллектор на проводе: как быть, если вас достают звонками о несуществующих задолженностях</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Бийские гребцы перенесли тренировочную базу с городского пляжа</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Сколько зарабатывают и чем владеют бийские чиновники и депутаты</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
+                            <div class="live-news__desc">
+                              <div class="live-news__title">Алтайский край вошел в число регионов с недостаточной безопасностью дорог</div>
+                              <div class="live-news__date">26 апреля 2018</div>
+                            </div>
+                            <div class="live-news__comments comments comments--black">10</div></a></div>
+                        <div class="b-aside__more">Показать еще</div>
+                      </div>
+                      <!--a(href='').live-news__item-->
+                      <!--    .live-news__pic-->
+                      <!--        +img(img1)-->
+                      <!--    .live-news__desc-->
+                      <!--        .live-news__title Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики-->
+                      <!--        .live-news__date 26 апреля 2018-->
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="b-section__develop">Разработка сайта —<a href="">Студия Первее</a></div>
-    <div id="fullpage">
-      <div class="b-section" id="js-main-anchor">
-        <div class="b-section__single-img b-section__single-img--right"><img src="./images/jpg/1.jpg"></div>
-        <div class="container">
-          <div class="b-section__skew b-section__skew--left"></div>
-          <div class="b-section__title">
-            <h1>Компания «Пролог»</h1>
-            <div class="b-section__title-slogan">Компания «Пролог» специализируется на комплексных услугах по доставке грузов морским, наземным и воздушным транспортом по системе «от двери до двери».</div>
-            <div class="btn js-company-anchor">Подробнее</div>
+    <footer class="b-footer">
+      <div class="container">
+        <div class="b-footer__top">
+          <div class="b-footer__main-menu">
+            <div class="main-menu">
+              <div class="main-menu__link"><a href="">Афиша</a></div>
+              <div class="main-menu__link"><a href="">Культура</a></div>
+              <div class="main-menu__link"><a href="">Спорт</a></div>
+              <div class="main-menu__link"><a href="">Политика</a></div>
+              <div class="main-menu__link"><a href="">Образование</a></div>
+            </div>
           </div>
-          <div class="b-section__next-slide js-scroll-company"></div>
+          <div class="b-footer__sub-menu">
+            <div class="sub-menu">
+              <div class="sub-menu__link"><a href="">О проекте</a></div>
+              <div class="sub-menu__link"><a href="">Редакция</a></div>
+              <div class="sub-menu__link"><a href="">Реклама</a></div>
+              <div class="sub-menu__link"><a href="">Подписка на газету</a></div>
+            </div>
+          </div>
+          <div class="b-footer__social">
+            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
+          </div>
         </div>
-      </div>
-      <div class="b-section" id="js-company-anchor">
-        <div class="b-section__single-img b-section__single-img--no-bg"><img src="./images/bg-1.png"></div>
-        <div class="container">
-          <div class="b-section__title b-section__title--center">
-            <h2>О компании</h2>
-            <div class="b-section__text-content b-section__text-content--center">
-              <p>Являясь единственным официальным агентом международного транспортно-логистического оператора C.H. Robinson на территории России и большинства стран СНГ, мы способны предложить нашим клиентам сервис самого высокого качества в любой точке мира.</p>
-              <p>Опираясь на широкую агентскую сеть своего принципала и тесные партнерские отношения с ведущими судоходными линиями, авиакомпаниями, а также железнодорожными и автомобильными операторами, наша команда разработает оптимальные логистические решения и гарантирует беспрерывный контроль над процессом транспортировки на всем пути следования вашего груза.</p>
+        <div class="b-footer__middle">
+          <div class="b-footer__description">
+            <div class="b-footer__links"><a href="">Пользовательское соглашение</a><a href="">Политика конфиденциальности</a></div>
+            <p>Сайт газеты "Бийский рабочий". Свидетельство о регистрации СМИ ПИ № ТУ 22 0135 от 29.12.2009 г. При перепечатке и при другом использовании материалов ссылка на «Бийский рабочий» обязательна.</p>
+          </div>
+        </div>
+        <div class="b-footer__bottom">
+          <div class="b-footer__description">
+            <div class="b-footer__copy">© 2018, Бийский рабочий</div><a class="b-footer__subscription" href="">Подписаться на газету</a>
+            <div class="b-footer__icons"><a class="b-footer__rambler" href=""></a>
+              <div class="b-footer__adult">+16</div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="b-section" id="js-robinson-anchor">
-        <div class="b-section__single-img b-section__single-img--no-bg"><img src="./images/bg-2.png"></div>
-        <div class="container">
-          <div class="b-section__wrapper">
-            <div class="b-section__title b-section__title--right">
-              <h2>C.H. Robinson</h2>
-              <div class="b-section__desc">Представительства компании C.H. Robinson расположены в Европе, Азии, Северной и Южной Америке, а также в Африке и Австралии. Глобальная сеть.</div>
-              <div class="b-section__video js-video">
-                <div class="b-section__video-play"></div>
-              </div>
-            </div>
-            <div class="b-section__right-content b-section__right-content--scroll js-scroll-text">
-              <p>Это предприятие с более чем вековой историей является одним из ведущих игроков на мировом логистическом рынке и входит в пятерку крупнейших 3PL-провайдеров. За 2017 г. профессиональный штат из 15 000 сотрудников позволил C.H. Robinson достичь рекордной прибыли в 14,87 млрд. долларов.</p>
-              <div class="b-section__statistic">
-                <div class="b-section__statistic-item">
-                  <div class="b-section__statistic-num">225</div>
-                  <div class="b-section__statistic-text">офиосв по<br>всему миру</div>
-                </div>
-                <div class="b-section__statistic-item">
-                  <div class="b-section__statistic-num">68</div>
-                  <div class="b-section__statistic-text">стран</div>
-                </div>
-                <div class="b-section__statistic-item">
-                  <div class="b-section__statistic-num">120К</div>
-                  <div class="b-section__statistic-text">клиентов<br>по всему миру</div>
-                </div>
-                <div class="b-section__statistic-item">
-                  <div class="b-section__statistic-num">15К</div>
-                  <div class="b-section__statistic-text">опытных<br>сотрудников</div>
-                </div>
-              </div>
-              <p>Партнерство с сетью таких масштабов открывает беспрецедентные возможности для наших клиентов, включая, среди прочего, обширную географию перевозок, высокий уровень сервиса и конкурентоспособные ставки.</p>
-              <div class="b-section__blockquote">Мы в C.H. Robinson верим в ускорение глобальной торговли для стимулирования мировой экономики. Используя сильные стороны наших людей, процессов и технологий, мы помогаем клиентам работать умнее, а не больше. Являясь одним из крупнейших 3PL-провайдеров в мире, мы предоставляем широкий спектр транспортных и логистических услуг, услуг удаленного управления, а также специализируемся на организации каналов поставок свежих овощей и фруктов. Будь то наземные, морские или воздушные перевозки, мы всегда используем силу нашей глобальной сети и прозрачность, обеспечиваемую технологической платформой Navisphere, чтобы интегрировать каналы поставок на всем протяжении.</div>
-              <div class="b-section__blockquote-link">Если вы хотите узнать больше о C.H. Robinson, посетите<a href="www.chrobinson.com" target="_blank"> www.chrobinson.com</a></div>
+        <div class="b-footer__last">
+          <div class="b-footer__partners">
+            <div class="partners-slider js-partners-slider">
+              <div class="partners-slider__item"><img src="./images/partners/km_pravda.png" width="135px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/arg_fac.png" width="135px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/our_news.png" width="100px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/authgr.png" width="145px"></div>
+              <div class="partners-slider__item"><img src="./images/partners/buisk.png" width="126px"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="b-section" id="js-anchor-multi">
-        <div class="b-section__single-img b-section__single-img--no-bg b-section__single-img--v1"><img src="./images/bg-3.png"></div>
-        <div class="b-section__single-img"><img src="./images/jpg/2.jpg"></div>
-        <div class="container">
-          <div class="b-section__skew b-section__skew--left"></div>
-          <div class="b-section__title b-section__title--center">
-            <h2>Мультимодальные<br>контейнерные<br>перевозки</h2>
-            <div class="b-section__info b-section__info--first-gray">
-              <p>Специалисты нашей компании успешно организуют импортные и экспортные перевозки крупнотоннажных контейнеров на территории России, государств СНГ и стран дальнего зарубежья.</p>
-              <p>Профессионализм и опыт позволяет нам оперативно определять оптимальные маршруты для вашего груза, эффективно сочетая морские, железнодорожные и автомобильные составляющие перевозки.Одновременно с этим, наши многолетние партнерские отношения с ведущими представителями логистической отрасли и налаженные каналы связи с государственными структурами гарантируют безопасность вашего груза, минимизацию издержек и сокращение времени транспортировки.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="b-section" id="js-anchor-air">
-        <div class="b-section__single-img b-section__single-img--no-bg b-section__single-img--v2"><img src="./images/bg-4.png"></div>
-        <div class="b-section__single-img b-section__single-img--right-v2"><img src="./images/jpg/3.jpg"></div>
-        <div class="container">
-          <div class="b-section__skew b-section__skew--left_v1"></div>
-          <div class="b-section__title b-section__title--center">
-            <h2>Авиаперевозки</h2>
-            <div class="b-section__info b-section__info--first-gray b-section__info--lrg">
-              <p>Компания «Пролог» также предоставляет услуги по организации перевозок воздушным транспортом по всему миру. Выбрав наш сервис «door-to-door», вы освободите себя от необходимости контролировать или следить за ходом транспортировки: мы заберем доверенный нам груз от двери отправителя и обеспечим его быструю и безопасную доставку до двери конечного получателя.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="b-section" id="js-anchor-combined">
-        <div class="b-section__single-img b-section__single-img--no-bg b-section__single-img--v2"><img src="./images/bg-5.png"></div>
-        <div class="b-section__single-img b-section__single-img--right-v3"><img src="./images/jpg/4.jpg"></div>
-        <div class="container">
-          <div class="b-section__skew b-section__skew--left"></div>
-          <div class="b-section__title b-section__title--center">
-            <h2>Сборные грузы</h2>
-            <div class="b-section__info b-section__info--first-gray b-section__info--lrg">
-              <p>В случаях, когда объем перевозимого груза не требует привлечения крупнотоннажных транспортных средств, мы будем рады предложить вам услуги по организации отправок сборных грузов как внутри Российской Федерации, так и за ее пределами. Подобные решения позволят вам снизить затраты на транспортировку без ущерба для качества сервиса.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="b-section" id="js-anchor-car">
-        <div class="b-section__single-img b-section__single-img--no-bg b-section__single-img--v2"><img src="./images/bg-4.png"></div>
-        <div class="b-section__single-img b-section__single-img--right-v4"><img src="./images/jpg/5.jpg"></div>
-        <div class="container">
-          <div class="b-section__skew b-section__skew--left_v1"></div>
-          <div class="b-section__title b-section__title--center">
-            <h2>Автомобильные<br>перевозки</h2>
-            <div class="b-section__info b-section__info--first-gray b-section__info--lrg">
-              <p>Наш сервис «от двери до двери» также распространяется на внутренние и международные автомобильные перевозки на территории Российской Федерации, государств СНГ и стран Европейского союза. Широкая агентская сеть компании и прямые договорные отношения с лидерами среди автотранспортных предприятий обеспечат реализацию логистических решений самого высокого уровня.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="b-section" id="js-contact">
-        <div class="b-section__single-img b-section__single-img--no-bg b-section__single-img--v2 b-section__single-img--cont"><img src="./images/bg-5.png"></div>
-        <div id="map"></div>
-        <div class="b-section__skew b-section__skew--left b-section__skew--z"></div>
-        <div class="container--small">
-          <div class="b-section__title b-section__title--center b-section__title--z">
-            <h2>Контакты</h2>
-            <div class="b-section__info b-section__info--first-gray b-section__info--lrg">
-              <div class="b-section__address-item">
-                <p>127055, г. Москва,</p>
-                <p>Малая Почтовая улица, 12</p>
-                <p>ком.1, офис 30</p>
-                <p>Тел:<a href="tel:84952349942"> +7-495-234-9942</a></p>
-                <p>E-mail:<a href="mailto:Info@prolog-ffc.ru"> Info@prolog-ffc.ru</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="b-popup mfp-hide" id="popup">
-      <div class="b-popup__wrap">
-        <div class="b-popup__title">Запрос ставки</div>
-        <form class="b-form">
-          <div class="b-form__content">
-            <div class="b-form__item">
-              <input type="text">
-              <label>Маршрут</label>
-            </div>
-            <div class="b-form__item">
-              <input type="text">
-              <label>Наименование груза</label>
-            </div>
-            <div class="b-form__item">
-              <input type="text">
-              <label>Вес</label>
-            </div>
-            <div class="b-form__item">
-              <input type="text">
-              <label>Тип оборудования</label>
-            </div>
-            <div class="b-form__item">
-              <input type="text" required>
-              <label>Ваш E-mail и телефон *</label>
-            </div>
-            <div class="b-form__item">
-              <input type="text">
-              <label>Наименование компании</label>
-            </div>
-            <div class="b-form__item">
-              <textarea></textarea>
-              <label>Комментарии</label>
-            </div>
-          </div>
-          <div class="b-form__star">* - обязательные поля для заполнения</div>
-          <button type="submit">Запросить ставку</button>
-        </form>
-      </div>
-    </div>
+    </footer>
   </body>
-  <script async defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+  <script src="//yastatic.net/share2/share.js"></script>
+  <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
   <script src="./js/bundle.js"></script>
 </html>
