@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Главная страница</title>
+    <title>Страница раздела</title>
   </head>
   <body>
-    <div class="b-header">
+    <div class="b-header b-header--bg-black">
       <div class="container">
         <div class="b-header__wrap">
           <div class="b-header__content">
@@ -48,84 +48,23 @@
             <div class="b-header__aside-text">Путин подарил Трампу футбольный мяч.</div><a class="b-header__aside-link" href="">См.</a>
           </div>
         </div>
-        <div class="b-header__sub-menu">
-          <div class="sub-menu">
-            <div class="sub-menu__link"><a href="">Протесты в Армении</a></div>
-            <div class="sub-menu__link"><a href="">Битва за Telegram</a></div>
-            <div class="sub-menu__link"><a href="">Война в Сирии</a></div>
-          </div>
-        </div>
       </div>
     </div>
     <!--include blocks/_b-aside-->
-    <div class="page page--home">
-      <div class="b-main">
-        <!-- слайдре на весь экран-->
-        <div class="b-main-fullpage b-main-fullpage--0">
-          <div class="b-fullpage-slider js-fullpage-slider">
-            <div class="b-fullpage-slider__item"><a class="news__img" href=""><img src="./images/main/slider/main-full-slider.jpg" alt=""></a>
-              <div class="container">
-                <div class="news__content">
-                  <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
-                  <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                      <time>24.07.2018<span>15:30</span></time></a>
-                    <div class="news__comments comments">10</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="b-fullpage-slider__item"><a class="news__img" href=""><img src="./images/main/slider/main-full-slider.jpg" alt=""></a>
-              <div class="container">
-                <div class="news__content">
-                  <h3><a href="">Фото: Кремль в крови на промо последнего сезона «Карточного домика»</a></h3>
-                  <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                      <time>24.07.2018<span>15:30</span></time></a>
-                    <div class="news__comments comments">10</div>
-                  </div>
-                </div>
-              </div>
+    <div class="page">
+      <div class="b-category">
+        <div class="container">
+          <div class="b-breadcrumbs"><a class="b-breadcrumbs__link" href="">Главная</a><a class="b-breadcrumbs__link" href="">Экономика</a></div>
+          <div class="b-category__header">
+            <h1>Экономика</h1>
+            <div class="b-category__filter">
+              <div class="filter"><a class="filter__link filter__link--active" href="">Сегодня</a><a class="filter__link" href="">Популярное</a><a class="filter__link" href="">Обсуждаемое</a></div>
             </div>
           </div>
-          <div class="b-fullpage-slider__arrow b-arrow-slider">
-            <div class="b-arrow-slider__item b-arrow-slider__item--prev js-arrow-prev"></div>
-            <div class="b-arrow-slider__item b-arrow-slider__item--next js-arrow-next"></div>
-          </div>
-          <div class="aside aside--fullpage">
-            <div class="news news--aside-lg"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
-              <div class="news__content">
-                <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                    <time>24.07.2018<span>15:30</span></time></a>
-                  <div class="news__comments comments">10</div>
-                </div>
-              </div>
-            </div>
-            <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
-              <div class="news__content">
-                <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                <div class="news__info"><a href="">
-                    <time>24.07.2018<span>15:30</span></time></a>
-                  <div class="news__comments comments">10</div>
-                </div>
-              </div>
-            </div>
-            <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
-              <div class="news__content">
-                <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                <div class="news__info"><a href="">
-                    <time>24.07.2018<span>15:30</span></time></a>
-                  <div class="news__comments comments">10</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- нидняя часть после слайдера-->
-        <div class="b-main__news-feed">
-          <div class="container">
-            <div class="page__wrapper">
-              <div class="page__content">
-                <div class="page__news"></div>
+          <div class="page__wrapper">
+            <div class="page__content">
+              <div class="page__news">
+                <!-- начало 1ой тройки блоков-->
                 <div class="news"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/394/news" alt=""/></a>
                   <div class="news__content">
                     <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
@@ -163,6 +102,7 @@
                         <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
                   </div>
                 </div>
+                <!-- конец 1ой тройки блоков-->
                 <div class="b-main__news-grid">
                   <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
                     <div class="news__content">
@@ -239,6 +179,45 @@
                     </div>
                   </div>
                 </div>
+                <!-- начало 2ой тройки блоков-->
+                <div class="news"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/394/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
+                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                  </div>
+                </div>
+                <!-- два блока для декстопа(одинаковые)-->
+                <div class="news news--mobile-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/394/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
+                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                  </div>
+                </div>
+                <div class="news news--full-mobile news--mobile-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                  </div>
+                </div>
+                <!-- два блока для мобилы(одинаковые)-->
+                <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                    <div class="news__info"><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                  </div>
+                </div>
+                <div class="news news--aside news--desktop-hidden news--last"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                    <div class="news__info"><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                  </div>
+                </div>
+                <!-- конец 2ой тройки блоков-->
                 <div class="news-slider">
                   <div class="news-slider__wrap js-news-slider">
                     <div class="news-slider__item">
@@ -265,166 +244,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="b-main__section">
-                  <div class="section">
-                    <div class="section__top">
-                      <h2>Общество</h2>
-                      <div class="section__filter">
-                        <div class="filter"><a class="filter__link filter__link--active" href="">Сегодня</a><a class="filter__link" href="">Вчера</a><a class="filter__link" href="">На этой недели</a></div>
-                      </div>
-                      <div class="section__arrow section__arrow--mobile--hidden b-arrow-slider">
-                        <div class="b-arrow-slider__item b-arrow-slider__item--prev js-arrow-prev"></div><span></span>
-                        <div class="b-arrow-slider__item b-arrow-slider__item--next js-arrow-next"></div>
-                      </div>
-                      <div class="section__arrow section__arrow--mobile b-arrow-slider">
-                        <div class="b-arrow-slider__item b-arrow-slider__item--prev js-arrow-prev"></div><span></span>
-                        <div class="b-arrow-slider__item b-arrow-slider__item--next js-arrow-next"></div>
-                      </div>
-                    </div>
-                    <div class="section__slider js-section-slider section__slider--mobile-hidden">
-                      <div class="news news--full"><a class="news__img" href=""><img src="https://loremflickr.com/g/302/392/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
-                          <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                        </div>
-                      </div>
-                      <div class="news"><a class="news__img" href=""><img src="https://loremflickr.com/g/302/392/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
-                          <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                        </div>
-                      </div>
-                      <div class="news"><a class="news__img" href=""><img src="https://loremflickr.com/g/302/392/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
-                          <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                        </div>
-                      </div>
-                      <div class="news"><a class="news__img" href=""><img src="https://loremflickr.com/g/302/392/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
-                          <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- слайдер для мобильной версии-->
-                    <div class="section__slider js-section-slider-mobile section__slider--desktop-hidden">
-                      <div class="section__slider-item">
-                        <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                          <div class="news__content">
-                            <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                            <div class="news__info"><a href="">
-                                <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                          </div>
-                        </div>
-                        <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                          <div class="news__content">
-                            <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                            <div class="news__info"><a href="">
-                                <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                          </div>
-                        </div>
-                        <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                          <div class="news__content">
-                            <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                            <div class="news__info"><a href="">
-                                <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="section__slider-item">
-                        <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                          <div class="news__content">
-                            <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                            <div class="news__info"><a href="">
-                                <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                          </div>
-                        </div>
-                        <div class="news news--aside news--desktop-hidden"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                          <div class="news__content">
-                            <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                            <div class="news__info"><a href="">
-                                <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-main__section">
-                  <div class="section">
-                    <div class="section__top">
-                      <h2>Афиша</h2>
-                      <div class="section__filter">
-                        <div class="filter"><a class="filter__link filter__link--active" href="">Сегодня в кино</a><a class="filter__link" href="">Скоро</a></div>
-                      </div>
-                      <div class="section__arrow section__arrow--mini b-arrow-slider">
-                        <div class="b-arrow-slider__item b-arrow-slider__item--prev js-arrow-prev"></div><span></span>
-                        <div class="b-arrow-slider__item b-arrow-slider__item--next js-arrow-next"></div>
-                      </div>
-                    </div>
-                    <div class="section__slider section__slider--mini js-section-slider--mini">
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                      <div class="news news--mini"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
-                        <div class="news__content">
-                          <h3><a href="">Правила жизни Наталии Басовской</a></h3>
-                          <div class="news__info"><a href="">
-                              <time>24.07.2018<span>15:30</span></time></a></div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="news news--full"><a class="news__img" href=""><img src="https://loremflickr.com/g/302/392/news" alt=""/></a>
+                  <div class="news__content">
+                    <h3><a href="">«Кристофер Робин» Марка Форстера: гимн взрослым фобиям и детским… </a></h3>
+                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
                   </div>
                 </div>
                 <div class="b-main__two-news">
@@ -503,177 +327,19 @@
                   </div>
                 </div>
               </div>
-              <div class="page__aside aside js-fixed-sroll">
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside-full news--aside-full--custom"><a class="news__img" href="" style="background-color: #76bfff">
-                    <div class="news__img-text">
-                      <h4>600</h4><span>тысяч человек</span>
-                    </div></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside-full"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="news news--aside-full"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
-                  <div class="news__content">
-                    <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
-                    <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+              <div class="page__button">Показать еще</div>
+            </div>
+            <div class="page__aside aside aside--top js-fixed-sroll">
+              <div class="news news--aside-lg"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a>
+                    <div class="news__comments comments">10</div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- секции с слайдерами-->
-        <div class="b-main__section b-main__section--fullpage">
-          <div class="container">
-            <div class="section">
-              <div class="section__top">
-                <h2>Политика</h2>
-                <div class="section__filter">
-                  <div class="filter"><a class="filter__link filter__link--active" href="">Популярное</a><a class="filter__link" href="">Места</a><a class="filter__link" href="">Животные</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="b-main-fullpage b-main-fullpage--content b-main-fullpage--1 js-stop-aside-scroll">
-            <div class="b-fullpage-slider js-fullpage-slider">
-              <div class="b-fullpage-slider__item"><a class="news__img" href=""><img src="./images/main/slider/main-full-slider.jpg" alt=""></a>
-                <div class="container">
-                  <div class="news__content">
-                    <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
-                    <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-fullpage-slider__item"><a class="news__img" href=""><img src="./images/main/slider/main-full-slider.jpg" alt=""></a>
-                <div class="container">
-                  <div class="news__content">
-                    <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
-                    <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a>
-                      <div class="news__comments comments">10</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="b-fullpage-slider__arrow b-arrow-slider">
-              <div class="b-arrow-slider__item b-arrow-slider__item--prev js-arrow-prev"></div>
-              <div class="b-arrow-slider__item b-arrow-slider__item--next js-arrow-next"></div>
-            </div>
-            <div class="aside aside--fullpage">
-              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
                 <div class="news__content">
                   <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                   <div class="news__info"><a href="">
@@ -682,7 +348,7 @@
                   </div>
                 </div>
               </div>
-              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
                 <div class="news__content">
                   <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                   <div class="news__info"><a href="">
@@ -691,7 +357,7 @@
                   </div>
                 </div>
               </div>
-              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
                 <div class="news__content">
                   <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                   <div class="news__info"><a href="">
@@ -700,21 +366,82 @@
                   </div>
                 </div>
               </div>
-              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+              <div class="news news--aside-full news--aside-full--custom"><a class="news__img" href="" style="background-color: #76bfff">
+                  <div class="news__img-text">
+                    <h4>600</h4><span>тысяч человек</span>
+                  </div></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                </div>
+              </div>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
                 <div class="news__content">
                   <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                   <div class="news__info"><a href="">
                       <time>24.07.2018<span>15:30</span></time></a>
                     <div class="news__comments comments">10</div>
                   </div>
+                </div>
+              </div>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a>
+                    <div class="news__comments comments">10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a>
+                    <div class="news__comments comments">10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news news--aside-full"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                </div>
+              </div>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a>
+                    <div class="news__comments comments">10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/70/90/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a>
+                    <div class="news__comments comments">10</div>
+                  </div>
+                </div>
+              </div>
+              <div class="news news--aside-full"><a class="news__img" href=""><img src="https://loremflickr.com/g/300/392/news" alt=""/></a>
+                <div class="news__content">
+                  <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
+                  <div class="news__info"><a class="news__label label" href="">Новости</a><span></span><a href="">
+                      <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- блок с мини-новости-->
-        <div class="b-main__block-news-mini">
+        <div class="b-main__block-news-mini js-stop-aside-scroll">
           <div class="container">
+            <h2>Другие новости из мира</h2>
             <div class="b-main__block-news-mini-wrap">
               <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
                 <div class="news__content">
