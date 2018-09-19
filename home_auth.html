@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>Главная страница</title>
   </head>
-  <title>Главная страница</title>
   <body>
     <div class="b-wrapper">
       <div class="b-header">
@@ -39,7 +38,8 @@
                 <div class="b-header__forex">
                   <div class="b-header__forex-unit b-header__forex-unit--usd">63,46</div>
                   <div class="b-header__forex-unit b-header__forex-unit--eur">75,98</div>
-                </div><a class="b-header__enter hover-link js-popup" href="#popup-auth">Войти</a>
+                </div>
+                <div class="b-header__ico"><img src="https://loremflickr.com/g/60/60/people" alt=""></div>
               </div>
             </div>
             <div class="b-header__aside">
@@ -59,29 +59,8 @@
       <div class="b-menu">
         <div class="container">
           <div class="b-menu__wrap">
-            <div class="b-auth">
-              <div class="b-auth__wrap">
-                <div class="b-auth__title">Авторизация</div>
-                <form class="b-form">
-                  <div class="b-form__item">
-                    <input placeholder="Ваш E-mail" type="email">
-                  </div>
-                  <div class="b-form__item">
-                    <input placeholder="Пароль" type="password">
-                  </div>
-                  <div class="b-form__submit"><a href="">Забыли пароль?</a>
-                    <button>Отправить</button>
-                  </div>
-                </form>
-                <div class="b-auth__soc">
-                  <p>Войти через<br>соцсети:</p>
-                  <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-                </div>
-                <div class="b-auth__reg">Впервые здесь?<a href=""> Зарегистрируйтесь</a></div>
-              </div>
-            </div>
-            <div class="b-menu__list">
-              <div class="page__button page__button--sm">Войти</div>
+            <div class="b-menu__list"><a class="b-menu__ico" href=""><img src="https://loremflickr.com/g/60/60/people" alt="">
+                <p>Никита Махаев</p></a>
               <div class="b-menu__list-wrap">
                 <ul>
                   <li><a href="">Политика</a></li>
@@ -108,21 +87,21 @@
             </div>
             <div class="b-menu__footer">
               <div class="b-menu__news">
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/60/60/people" alt=""/></a>
                   <div class="news__content">
                     <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                     <div class="news__info"><a href="">
                         <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
                   </div>
                 </div><span></span>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/60/60/people" alt=""/></a>
                   <div class="news__content">
                     <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                     <div class="news__info"><a href="">
                         <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
                   </div>
                 </div><span></span>
-                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/135/180/news" alt=""/></a>
+                <div class="news news--aside"><a class="news__img" href=""><img src="https://loremflickr.com/g/60/60/people" alt=""/></a>
                   <div class="news__content">
                     <h3><a href="">Пол Маккартни вновь на обложки The Beatles «Abbey Road» - h3</a></h3>
                     <div class="news__info"><a href="">
@@ -146,6 +125,7 @@
           <div class="b-menu__bg"></div>
         </div>
       </div>
+      <!--include blocks/_b-aside-->
       <div class="page page--home">
         <div class="b-main">
           <!-- слайдре на весь экран-->
@@ -156,7 +136,9 @@
                   <div class="news__content">
                     <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
                     <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                        <time>24.07.2018<span>15:30</span></time></a>
+                      <div class="news__comments comments">10</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,7 +147,9 @@
                   <div class="news__content">
                     <h3><a href="">Фото: Кремль в крови на промо последнего сезона «Карточного домика»</a></h3>
                     <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                        <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                        <time>24.07.2018<span>15:30</span></time></a>
+                      <div class="news__comments comments">10</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -700,7 +684,9 @@
                     <div class="news__content">
                       <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
                       <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                          <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                          <time>24.07.2018<span>15:30</span></time></a>
+                        <div class="news__comments comments">10</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -709,7 +695,9 @@
                     <div class="news__content">
                       <h3><a href="">Лучшие фотографии 2018 года, сделанные на iPhone</a></h3>
                       <div class="news__info"><a class="news__label label" href="">Искуство</a><span></span><a href="">
-                          <time>24.07.2018<span>15:30</span></time></a><a class="news__comments comments" href="">10</a></div>
+                          <time>24.07.2018<span>15:30</span></time></a>
+                        <div class="news__comments comments">10</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -900,93 +888,6 @@
           </div>
         </div>
       </footer>
-      <div class="b-popup b-popup--auth mfp-hide" id="popup-auth">
-        <div class="b-popup__wrap">
-          <div class="b-popup__title">Авторизация</div>
-          <form class="b-popup__form b-form">
-            <div class="b-form__item">
-              <input type="email" placeholder="Ваш E-mail">
-            </div>
-            <div class="b-form__item">
-              <input type="passowrd" placeholder="Пароль">
-            </div>
-            <div class="b-form__submit"><a class="js-popup" href="#popup-recovery">Забыли пароль?</a>
-              <button>Отправить</button>
-            </div>
-            <div class="b-form__soc"><span>Войти через<br>соцсети:</span>
-              <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-            </div>
-            <div class="b-form__bottom">
-              <p>Впервые здесь?<a class="js-popup" href="#popup-reg">Зарегистрируйтесь</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="b-popup b-popup--reg mfp-hide" id="popup-reg">
-        <div class="b-popup__wrap">
-          <div class="b-popup__title">Регистрация</div>
-          <form class="b-popup__form b-form">
-            <div class="b-form__item">
-              <input type="text" placeholder="Ваше имя">
-            </div>
-            <div class="b-form__item">
-              <input type="text" placeholder="Ваша фамилия">
-            </div>
-            <div class="b-form__item">
-              <input type="email" placeholder="Ваш E-mail">
-            </div>
-            <div class="b-form__item">
-              <input type="text" placeholder="Город">
-            </div>
-            <div class="b-form__item">
-              <input type="password" placeholder="Пароль">
-            </div>
-            <div class="b-form__submit">
-              <button>Зарегистрироваться</button>
-            </div>
-            <div class="b-form__soc"><span>Войти через<br>соцсети:</span>
-              <div class="social"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-            </div>
-            <div class="b-form__bottom">
-              <p>Уже зарегистрировались?<a href="">Войти</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="b-popup b-popup--recovery mfp-hide" id="popup-recovery">
-        <div class="b-popup__wrap">
-          <div class="b-popup__title">Восстановление пароля</div>
-          <form class="b-popup__form b-form">
-            <div class="b-form__item">
-              <input type="email" placeholder="Ваш E-mail">
-            </div>
-            <div class="b-form__submit">
-              <button>Подтвердить</button>
-            </div>
-            <div class="b-form__bottom">
-              <p>Вспомнили пароль?<a class="js-popup" href="#popup-auth">Войти</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="b-popup b-popup--error mfp-hide" id="popup-error">
-        <div class="b-popup__wrap">
-          <div class="b-popup__title">Ошибка на сайте</div>
-          <div class="b-popup__error"></div>
-          <form class="b-popup__form b-form">
-            <div class="b-form__item">
-              <input type="email" placeholder="Введите E-mail">
-            </div>
-            <div class="b-form__item">
-              <textarea placeholder="Опишите ошибку"></textarea>
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LdQ8VsUAAAAAIJU0EhwKLReIK_JlBiCN-GR3HOR"></div>
-            <div class="b-form__submit">
-              <button type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
   </body>
   <!--script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")-->
