@@ -4,722 +4,383 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/1.css">
+    <link rel="stylesheet" href="./css/2.css">
+    <link rel="stylesheet" href="./css/3.css">
+    <link rel="stylesheet" href="./css/4.css">
+    <link rel="stylesheet" href="./css/5.css">
+    <link rel="stylesheet" href="./css/6.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <title>Главная страница</title>
   </head>
+  <title>Главная страница</title>
   <body>
-    <div class="b-header">
-      <div class="b-header__top">
-        <div class="container">
-          <div class="b-header__mobile-menu">
-            <div class="mobile-menu__close js-close-mobile-menu"></div>
-            <div class="mobile-menu__links"><a href="">О проекте</a><a href="">Реклама</a></div>
-            <div class="main-menu">
-              <div class="main-menu__link"><a href="">Афиша</a></div>
-              <div class="main-menu__link"><a href="">Культура</a></div>
-              <div class="main-menu__link"><a href="">Спорт</a></div>
-              <div class="main-menu__link"><a href="">Политика</a></div>
-              <div class="main-menu__link"><a href="">Образование</a></div>
-            </div>
-            <div class="mobile-menu__social">
-              <div class="social social--login"><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-            </div>
-          </div>
-          <div class="b-header__hamburgers js-mobile-menu"></div>
-          <div class="b-heade__mobile-content">
-            <div class="b-aside__weather js-weather">
-              <div class="icon"></div><span>+24</span>
-            </div>
-            <div class="b-aside__forex">
-              <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
-              <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
-            </div>
-          </div><a class="b-header__logo" href=""></a>
-          <div class="b-header__main-menu">
-            <div class="main-menu">
-              <div class="main-menu__link main-menu__link--active"><a href="">Афиша</a></div>
-              <div class="main-menu__link"><a href="">Культура</a></div>
-              <div class="main-menu__link"><a href="">Спорт</a></div>
-              <div class="main-menu__link"><a href="">Политика</a></div>
-              <div class="main-menu__link"><a href="">Образование</a></div>
-            </div>
-          </div><a class="b-header__web-cam" href="">Веб-камеры Бийск</a>
-          <div class="b-header__search js-search">
-            <div class="b-header__search-ico"></div>
-            <form class="b-form">
-              <p class="b-form__item">
-                <input placeholder="Поиск">
-              </p>
-            </form>
-          </div>
-          <div class="b-header__search-close js-search-close"></div>
-          <div class="b-header__calendar">
-            <input class="js-calendar" type="text">
-          </div>
-        </div>
-      </div>
-      <div class="b-header__bottom">
-        <div class="container">
-          <div class="b-header__mobile-sub-menu">
-            <div class="mobile-sub-menu">
-              <div class="mobile-sub-menu__item js-mobile-submenu">Главное</div>
-              <div class="mobile-sub-menu__dropdown"><a href="">Дорожный ремонт - 2018</a><a href="">Паводок - 2018</a><a href="">Комфортная среда. Бийск - 2018</a></div>
-            </div>
-            <div class="b-aside__forex">
-              <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
-              <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
-            </div>
-          </div>
-          <div class="b-header__main-menu-second">
-            <div class="main-menu">
-              <div class="main-menu__link main-menu__link--active-bold"><a href="">Главное</a></div>
-              <div class="main-menu__link"><a href="">Дорожный ремонт - 2018</a></div>
-              <div class="main-menu__link"><a href="">Паводок - 2018</a></div>
-              <div class="main-menu__link"><a href="">Комфортная среда. Бийск - 2018</a></div>
+    <header class="b-header">
+      <div class="b-header__wrap">
+        <div class="b-header__mobile">
+          <div class="container">
+            <div class="b-header__mobile-wrap">
+              <div class="b-header__btn-menu"><span></span><span></span></div><a class="b-header__logo-mobile" href="/"><img src="./images/header/logo_mobile.svg" alt=""></a>
+              <div class="b-header__mobile-search js-open-search-bar"></div><a class="b-header__basket" href="">2</a>
             </div>
           </div>
         </div>
+        <div class="b-header__top">
+          <div class="container">
+            <div class="b-header__top-wrap">
+              <div class="b-header__delivery-city">Ваш регион доставки: <a href="">г.Москва</a>
+              </div>
+              <div class="b-header__add-menu"><a href="">Дотсавка</a><a href="">Оплата</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="b-header__body">
+          <div class="container">
+            <div class="b-header__body-wrap"><a class="b-header__logo" href="/"><img src="./images/header/logo_desktop.svg" alt=""></a>
+              <div class="b-header__search">
+                <form>
+                  <input placeholder="Найти товар" type="text" autocomplete="off">
+                  <button type="submit"></button>
+                  <div class="b-header__close-search js-close-search-bar"></div>
+                </form>
+              </div>
+              <div class="b-header__right-side">
+                <div class="b-header__fake"><i class="b-header__arrow fa fa-angle-down"></i>
+                  <div class="b-header__address">
+                    <div class="b-header__address-item js-show-address">
+                      <p>г. Москва</p>
+                      <p>Малый Палашевский переулок, д. 6</p>
+                      <p><span>- Пушкинская</span><a href="https://yandex.ru/maps/-/CBeHU4uNlB" target="_blank">На карте</a></p>
+                    </div>
+                    <div class="b-header__address-item">
+                      <p>г. Москва</p>
+                      <p>ул Большая Очаковская., 47Ас.1</p>
+                      <p><span>- Озёрная</span><a href="https://yandex.ru/maps/-/CBeHUVcI0C" target="_blank">На карте</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-header__phone"><a href="tel:88007778329">8 (800) 777-83-29</a>
+                  <p>Бесплатный звонок</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-header__footer">
+          <div class="container">
+            <div class="b-header__footer-wrap">
+              <div class="b-header__btn-menu"><span></span><span></span></div>
+              <div class="b-header__menu">
+                <ul class="js-hover-main-menu">
+                  <li><a href="">Женщинам</a>
+                    <div class="b-header__dropdown">
+                      <div class="b-header__sub-menu">
+                        <ul>
+                          <li><a href=""><span>Новинки</span></a>
+                            <div class="b-header__sub-content">
+                              <div class="b-header__sub-content-wrap">
+                                <div class="b-header__full-list b-header__full-list--col-1">
+                                  <div class="b-header__list-col">
+                                    <div class="b-header__title-list">Новое</div>
+                                    <ul>
+                                      <li><a href="">Новинки</a></li>
+                                      <li><a href="">Верхняя одежда</a></li>
+                                      <li><a href="">Одежда</a></li>
+                                      <li><a href="">Oбувь</a></li>
+                                      <li><a href="">Аксессуары</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="b-header__vertical-list">
+                                  <div class="b-header__title-list">Популярные категории</div>
+                                  <ul>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Весенний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Зимний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Летний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Демисезонный гардероб</span></a></li>
+                                  </ul>
+                                </div>
+                                <div class="b-header__lg-card">
+                                  <div class="b-header__title-list">Новые обзоры</div>
+                                  <div class="b-header__lg-card-wrap"><a class="card-view" href=""><img src="./images/header/news-2.png" alt="">
+                                      <div class="card-view__name">Весенняя коллекция ELENI VIARE 2017-2018</div></a><a class="card-view" href=""><img src="./images/header/news-1.png" alt="">
+                                      <div class="card-view__name">Сексуальная и загадочная одежда MOZART 2017-2018</div></a></div>
+                                </div><a class="b-header__sub-link" href="">Смотреть все</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href=""><span>Верхняя одежда</span></a>
+                            <div class="b-header__sub-content">
+                              <div class="b-header__sub-content-wrap">
+                                <div class="b-header__full-list b-header__full-list--col-2">
+                                  <div class="b-header__list-col">
+                                    <ul>
+                                      <li><a href="">Платья<span class="i-dot"></span></a>
+                                        <div class="b-header__sub-dropdown">
+                                          <ul>
+                                            <li><a href="">NAUMI</a></li>
+                                            <li><a href="">GEOX</a></li>
+                                            <li><a href="">ODRI</a></li>
+                                            <li><a href="">Длинные</a></li>
+                                            <li><a href="">Модные</a></li>
+                                            <li><a href="">Модные</a></li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li><a href="">Сарафаны</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Брюки</a></li>
+                                      <li><a href="">Джинсы</a></li>
+                                      <li><a href="">Джоггеры</a></li>
+                                      <li><a href="">Легинсы</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="b-header__list-col">
+                                    <ul>
+                                      <li><a href="">Платья</a></li>
+                                      <li><a href="">Сарафаны</a></li>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="b-header__three-card"><a class="card-menu card-menu--white" href="">
+                                    <div class="card-menu__img"><img src="./images/header/1.png" alt=""></div>
+                                    <div class="card-menu__name">Будь в тренде всегда и везде</div></a><a class="card-menu card-menu--black" href="">
+                                    <div class="card-menu__img"><img src="./images/header/2.png" alt=""></div>
+                                    <div class="card-menu__name">Премиум модные аксессуары</div></a><a class="card-menu card-menu--white" href="">
+                                    <div class="card-menu__img"><img src="./images/header/3.png" alt=""></div>
+                                    <div class="card-menu__name">Яркая зима, для ярких событий</div></a></div>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href=""><span>Одежда</span></a>
+                            <div class="b-header__sub-content">
+                              <div class="b-header__sub-content-wrap">
+                                <div class="b-header__full-list b-header__full-list--col-3">
+                                  <div class="b-header__list-col">
+                                    <ul>
+                                      <li><a href="">Платья<span class="i-dot"></span></a>
+                                        <div class="b-header__sub-dropdown">
+                                          <ul>
+                                            <li><a href="">NAUMI</a></li>
+                                            <li><a href="">GEOX</a></li>
+                                            <li><a href="">ODRI</a></li>
+                                            <li><a href="">Длинные</a></li>
+                                            <li><a href="">Модные</a></li>
+                                            <li><a href="">Модные</a></li>
+                                          </ul>
+                                        </div>
+                                      </li>
+                                      <li><a href="">Сарафаны</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Брюки</a></li>
+                                      <li><a href="">Джинсы</a></li>
+                                      <li><a href="">Джоггеры</a></li>
+                                      <li><a href="">Легинсы</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Капри</a></li>
+                                      <li><a href="">Бриджи</a></li>
+                                      <li><a href="">Бермуды</a></li>
+                                      <li><a href="">Шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Колготки</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="b-header__list-col">
+                                    <ul>
+                                      <li><a href="">Платья</a></li>
+                                      <li><a href="">Сарафаны</a></li>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Брюки</a></li>
+                                      <li><a href="">Джинсы</a></li>
+                                      <li><a href="">Джоггеры</a></li>
+                                      <li><a href="">Легинсы</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Капри</a></li>
+                                      <li><a href="">Бриджи</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="b-header__list-col">
+                                    <ul>
+                                      <li><a href="">Фкиболки</a></li>
+                                      <li><a href="">Лонгсливы</a></li>
+                                      <li><a href="">Поло</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="">Юбки</a></li>
+                                      <li><a href="">Юбки-шорты</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="b-header__horizontal-list">
+                                  <div class="b-header__title-list">Сортировать по бренду</div>
+                                  <ul>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/horizont-menu1.png" alt=""></span><span class="card-mini__name">Naumi</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/horizont-menu2.png" alt=""></span><span>Odri</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/horizont-menu1.png" alt=""></span><span class="card-mini__name">Mozart</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/horizont-menu2.png" alt=""></span><span class="card-mini__name">Mira Wan</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/horizont-menu1.png" alt=""></span><span class="card-mini__name">Max Mara</span></a></li>
+                                  </ul>
+                                </div>
+                                <div class="b-header__vertical-list">
+                                  <div class="b-header__title-list">Сортировать по категории</div>
+                                  <ul>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Весенний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Зимний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Летний гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">Демисезонный гардероб</span></a></li>
+                                    <li><a class="card-mini" href=""><span class="card-mini__img"><img src="./images/header/vertical-img.png" alt=""></span><span class="card-mini__name">На праздник</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href=""><span>Обувь</span></a></li>
+                          <li><a href=""><span>Аксессуары</span></a></li>
+                          <li><a href=""><span>Бренды</span></a></li>
+                          <li class="sale-item"><a href=""><span>Распродажа</span><i class="i-percent"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="">Мужчинам</a></li>
+                  <li><a href="">Детям</a></li>
+                  <li><a href="">Гид по стилю</a></li>
+                  <li class="bf-item"><a href=""><span>Black Friday</span></a></li>
+                </ul>
+              </div>
+              <div class="b-header__options"><a class="b-header__login" href=""></a><a class="b-header__favorite" href=""></a><a class="b-header__basket" href="">2</a></div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="b-header__overlay"></div>
+    </header>
+    <div class="page-bf">
+      <!--.b-bf__main-->
+      <!--    .container-->
+      <!--        .b-bf__main__wrap-->
+      <!--            .circle-gradient.circle-gradient--top-->
+      <!--            .circle-gradient.circle-gradient--left-left-->
+      <!--            .circle-gradient.circle-gradient--center-left-->
+      <!--            .circle-gradient.circle-gradient--left-bottom-->
+      <!--            .circle-gradient.circle-gradient--top-right-->
+      <!---->
+      <!---->
+      <!--            .circle-disc.circle-disc--lg.js-paralax-lg -70%-->
+      <!--            .circle-disc.circle-disc--md.js-paralax-md -30%-->
+      <!--            .circle-disc.circle-disc--sm -40%-->
+      <!--            .circle-disc.circle-disc--lt.circle-disc--left -20%-->
+      <!--            .circle-disc.circle-disc--lt.circle-disc--right.js-paralax-right-top -20%-->
+      <!---->
+      <!--            .circle-disc.circle-disc--bit.circle-disc--top -40%-->
+      <!---->
+      <!--            .b-bf__left-girl-->
+      <!--                img(src='./images/left_w@2x.png')-->
+      <!--            .b-bf__right-girl-->
+      <!--                img(src='./images/right_m@2x.png')-->
+      <!--            .b-bf__center-->
+      <!--                h1 Black Friday 23/11-->
+      <!--                p скидка до 70%-->
+      <!--                .b-bf__btn Пятница13-->
+      <!--                span промокод-->
+      <!--                .b-bf__timer-->
+      <!--                    p До акции осталось:-->
+      <!--                    .countdown-->
+      <!--                        .timer-->
+      <!--                            .timer__item-->
+      <!--                                p#days 00-->
+      <!--                                span дней-->
+      <!--                            .timer__divider :-->
+      <!--                            .timer__item-->
+      <!--                                p#hours 00-->
+      <!--                                span часов-->
+      <!--                            .timer__divider :-->
+      <!--                            .timer__item-->
+      <!--                                p#minutes 00-->
+      <!--                                span минут-->
+      <!--                            .timer__divider :-->
+      <!--                            .timer__item-->
+      <!--                                p#seconds 00-->
+      <!--                                span секунд-->
+      <!---->
+      <!---->
+      <!--            .b-bf__down.js-down-page-->
+      <!--.b-bf__sales-->
+      <!--    .container-->
+      <!--        .b-bf__sales__wrap-->
+      <!--            .circle-gradient.circle-gradient--left-last-->
+      <!--            .circle-gradient.circle-gradient--right-last-->
+      <!---->
+      <!--            .circle-disc.circle-disc--bit.circle-disc--center -30%-->
+      <!--            .circle-disc.circle-disc--lt.circle-disc--bottom.js-paralax-right-top -30%-->
+      <!--            .circle-disc.circle-disc--sm.circle-disc--bottom-left.js-paralax-bottom-left -40%-->
+      <!--            h2 Как получить больше скидок:-->
+      <!--            .b-bf__sales-card-->
+      <!--                .sales-card.js-slider-brands-->
+      <!--                    .sales-card__item.sales-card__item--shop-->
+      <!--                        .sales-card__icon-->
+      <!--                        p Скидки до 70%-->
+      <!--                        span Акция Black Friday только 23/11-->
+      <!--                            br-->
+      <!--                            | скидка до 70%-->
+      <!--                    .sales-card__item.sales-card__item--compass-->
+      <!--                        .sales-card__icon-->
+      <!--                        p Fashion викторина-->
+      <!--                        span Нужно найти в описании товара-->
+      <!--                            br-->
+      <!--                            | черную метку в виде компаса-->
+      <!--                    .sales-card__item.sales-card__item--fortune-->
+      <!--                        .sales-card__icon-->
+      <!--                        p Колесо фортуны-->
+      <!--                        span Дополнительная скидка-->
+      <!--                            br-->
+      <!--                            | если выпадет приз-->
+      <!---->
+      <!--            a(href='').b-bf__shop Перейти к покупкам-->
+      <!--            .b-bf__brands-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/naum.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/odri.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/geox.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/scann.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/mozart.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/purpur.png')-->
+      <!--                a(href='').b-bf__brands-item-->
+      <!--                    img(src='./images/brand/roberta.png')-->
     </div>
-    <div class="scroll-up js-scrolltop"></div>
-    <div class="edit-text">
-      <div class="edit-text__tooltip">Нашли опечатку?<br>Выделите текст и нажмите Ctrl+Enter</div>
-    </div>
-    <div class="b-page">
-      <div class="container">
-        <div class="b-main">
-          <div class="b-main__mobile-tabs js-tab">
-            <button class="active">Главные новости</button>
-            <button>Новостная лента</button>
-          </div>
-          <div class="js-tab-content">
-            <div class="b-main__news-container active">
-              <div class="b-main__news">
-                <div class="b-main__news-wrap">
-                  <div class="news-slider">
-                    <div class="news-slider__count"><span class="js-slider-count">1</span><span> из</span><span> 3</span></div>
-                    <div class="news-slider__arrow b-arrow js-arrow-container">
-                      <div class="b-arrow__item b-arrow__item--prev js-arrow-prev"></div>
-                      <div class="b-arrow__item b-arrow__item--next js-arrow-next"></div>
-                    </div>
-                    <div class="news-slider__wrap js-news-slider">
-                      <div class="news news--col-3">
-                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_fullpage.jpg"/>
-                        <div class="news__wrap"><a class="news__label label label--white" href="">#Путеводитель</a><a href="">
-                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a>
-                          <div class="news__footer">
-                            <time>20:07, 25 мая</time>
-                            <div class="news__comments comments comments--white">10</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="news news--col-3">
-                        <div class="news__btn-play"></div>
-                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div>
-                        <div class="news__video">
-                          <iframe id="ytplayer" width="560" height="315" src="https://www.youtube.com/embed/h_CP3txSBvw?autohide=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div class="news__wrap">
-                          <div class="news__label-container"><a class="news__label label label--white" href="">#Путеводитель</a><a class="news__label-subcrib js-youtube" href="" data-link="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ?sub_confirmation=1">Подписаться на канал</a></div><a href="">
-                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a>
-                          <div class="news__footer">
-                            <time>20:07, 25 мая</time>
-                            <div class="news__comments comments comments--white">10</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="news news--col-3">
-                        <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><img src="./images/news/news_fullpage.jpg"/>
-                        <div class="news__wrap"><a class="news__label label label--white" href="">#Путеводитель</a><a href="">
-                            <h2>Что посмотреть туристу на «Бирюзовой Катуни»</h2></a><a class="news__footer" href="">
-                            <time>20:07, 25 мая</time>
-                            <div class="news__comments comments comments--white">10</div></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Праздник мокрых бантиков: одиннадцатиклассники Бийска попрощались со школой</h2></a><a class="news__label label label--pale-purple" href="">#Фотовзгляд</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Судьба «Прогресса»: как спасались и как погибали бийские стадионы</h2></a><a class="news__label label label--squash" href="">#Спорт</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">0</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Две школы в Бийске закрыты на карантин из-за роста числа заболевших ОРВИ</h2></a><a class="news__label label label--mid-green" href="">#Здоровье</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                  <div class="news news--col-2">
-                    <div class="news__info-icon news__info-icon--pic news__info-icon--top"></div><a class="news__full-img" href=""><img src="./images/news/news_2-col_2.jpg"/></a>
-                    <div class="news__wrap"><a class="news__label label label--white" href="2">#История</a><a href="1">
-                        <h2>Угроза оползня на склонах Нагорного парка Барнаула обострилась</h2></a><a class="news__footer" href="1">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--white">100</div></a></div>
-                  </div>
-                  <div class="news news--col-1 news--mobile-fullpage">
-                    <div class="news__info-icon news__info-icon--video news__info-icon--top"></div><a class="news__img" href=""><img src="./images/news/news_2_col_1.jpg"/></a>
-                    <div class="news__wrap"><a class="news__label label label--white" href="">#Афиша</a><a href="">
-                        <h2>Что посмотреть в кино и куда сходить 5 и 6 мая в Бийске</h2></a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--white">7</div></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-main__cards b-main__cards--view-leaders">
-                <div class="b-main__header">
-                  <h3>Лидеры просмотров</h3>
-                  <div class="b-main__arrow b-arrow b-arrow--white js-arrow-container">
-                    <div class="b-arrow__item b-arrow__item--prev js-arrow-prev"></div>
-                    <div class="b-arrow__item b-arrow__item--next js-arrow-next"></div>
-                  </div>
-                </div>
-                <div class="b-main__container js-slider-leaders">
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Владимир Путин принял отставку Карлина</h2></a><a class="news__label label label--black" href="">#Власть</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Двухэтажный жилой дом горит в Бийске в районе льнокомб…</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Сразу двух жителей Бийска искусали гадюки</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Владимир Путин принял отставку Карлина</h2></a><a class="news__label label label--black" href="">#Власть</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Двухэтажный жилой дом горит в Бийске в районе льнокомб…</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Сразу двух жителей Бийска искусали гадюки</h2></a><a class="news__label label label--tomato" href="">#Происшествия</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__views views">438</div></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-main__cards">
-                <div class="b-main__header">
-                  <h3>Афиша</h3><a class="b-main__more" href="">Все новости</a>
-                </div>
-                <div class="b-main__container">
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Праздник мокрых бантиков: одиннадцатиклассники Бийска попрощались со школой</h2></a><a class="news__label label label--black" href="">#Афиша</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Судьба «Прогресса»: как спасались и как погибали бийские стадионы</h2></a><a class="news__label label label--black" href="">#Афиша</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">0</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Две школы в Бийске закрыты на карантин из-за роста числа заболевших ОРВИ</h2></a><a class="news__label label label--black" href="">#Афиша</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-main__cards">
-                <div class="b-main__header">
-                  <h3>Культура</h3><a class="b-main__more" href="">Все новости</a>
-                </div>
-                <div class="b-main__container">
-                  <div class="news news--col-2 news--mobile-half"><a class="news__label label label--white label--top" href="">#Культура</a><a class="news__full-img" href=""><img src="./images/news/news_2-col_2.jpg"/></a>
-                    <div class="news__wrap"><a href="">
-                        <h2>Поп-звезда Пелагея выступит в Бийском районе на закрытии шукшинского фестиваля</h2></a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--white">100</div></a></div>
-                  </div>
-                  <div class="news news--col-1 news--mobile-half"><a class="news__label label label--white label--top" href="">#Культура</a><a class="news__img" href=""><img src="./images/news/news_2_col_1.jpg"/></a>
-                    <div class="news__wrap"><a href="">
-                        <h2>Бийский драмтеатр встречает весну премьерным водевилем «Ограбление в полночь»</h2></a><a class="news__footer" href="">
-                        <time>20:07, 12 сентября</time>
-                        <div class="news__comments comments comments--white">7</div></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-main__cards">
-                <div class="b-main__header">
-                  <h3>Спорт</h3><a class="b-main__more" href="">Все новости</a>
-                </div>
-                <div class="b-main__container">
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="./images/news/news_1_col_1.jpg"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--pic news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Серебро этапа Кубка мира завоевал бийчанин Сергей Каменский</h2></a><a class="news__label label label--squash" href="">#Спорт</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/7675-1-700x400.png"/>
-                      </div>
-                      <div class="news__info-icon news__info-icon--video news__info-icon--bottom"></div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Выпускников спортивных школ чествовали в ГДК</h2></a><a class="news__label label label--squash" href="">#Спорт</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">0</div></a></div>
-                  </div>
-                  <div class="news news--col-1"><a class="news__card" href="">
-                      <div class="news__img"><img src="http://biwork.ru/wp-content/uploads/2018/06/DSCF9216-1-700x400.jpg"/>
-                      </div></a>
-                    <div class="news__content"><a href="">
-                        <h2>Уроженец Бийска стал обладателем высшего хоккейного кубка России</h2></a><a class="news__label label label--squash" href="">#Спорт</a><a class="news__footer" href="">
-                        <time>20:07, 25 мая</time>
-                        <div class="news__comments comments comments--gray">10</div></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="b-main__cards">
-                <div class="b-main__header">
-                  <h3>Опросы</h3><a class="b-main__more" href="">Все новости</a>
-                </div>
-                <div class="b-main__poll">
-                  <div class="b-poll">
-                    <div class="b-poll__info js-tab-content-poll">
-                      <div class="b-poll__card active">
-                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
-                        <div class="b-poll__content b-poll__content--complete">
-                          <div class="b-poll__item">
-                            <h4>Да, практически всё сбылось</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 12%"></div><span>33</span>
-                            </div>
-                            <div class="b-poll__persent">12%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Частично мечты и планы сбылись</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 21%"></div><span>60</span>
-                            </div>
-                            <div class="b-poll__persent">21%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Нет, все пошло совсем по-другому</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 44%"></div><span>124</span>
-                            </div>
-                            <div class="b-poll__persent">44%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 6%"></div><span>17</span>
-                            </div>
-                            <div class="b-poll__persent">6%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Вообще не было никаких планов</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 17%"></div><span>48</span>
-                            </div>
-                            <div class="b-poll__persent">17%</div>
-                          </div>
-                        </div>
-                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
-                      </div>
-                      <div class="b-poll__card">
-                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
-                        <div class="b-poll__content b-poll__content--complete">
-                          <div class="b-poll__item">
-                            <h4>Да, практически всё сбылось</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 20%"></div><span>33</span>
-                            </div>
-                            <div class="b-poll__persent">20%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Частично мечты и планы сбылись</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 40%"></div><span>60</span>
-                            </div>
-                            <div class="b-poll__persent">40%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Нет, все пошло совсем по-другому</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 10%"></div><span>124</span>
-                            </div>
-                            <div class="b-poll__persent">10%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 50%"></div><span>17</span>
-                            </div>
-                            <div class="b-poll__persent">50%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Вообще не было никаких планов</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 17%"></div><span>48</span>
-                            </div>
-                            <div class="b-poll__persent">17%</div>
-                          </div>
-                        </div>
-                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
-                      </div>
-                      <div class="b-poll__card">
-                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
-                        <div class="b-poll__content b-poll__content--complete">
-                          <div class="b-poll__item">
-                            <h4>Да, практически всё сбылось</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 5%"></div><span>33</span>
-                            </div>
-                            <div class="b-poll__persent">5%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Частично мечты и планы сбылись</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 90%"></div><span>60</span>
-                            </div>
-                            <div class="b-poll__persent">90%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Нет, все пошло совсем по-другому</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 30%"></div><span>124</span>
-                            </div>
-                            <div class="b-poll__persent">30%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 6%"></div><span>17</span>
-                            </div>
-                            <div class="b-poll__persent">6%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Вообще не было никаких планов</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 17%"></div><span>48</span>
-                            </div>
-                            <div class="b-poll__persent">17%</div>
-                          </div>
-                        </div>
-                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
-                      </div>
-                      <div class="b-poll__card">
-                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
-                        <div class="b-poll__content b-poll__content--complete">
-                          <div class="b-poll__item">
-                            <h4>Да, практически всё сбылось</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 12%"></div><span>33</span>
-                            </div>
-                            <div class="b-poll__persent">12%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Частично мечты и планы сбылись</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 21%"></div><span>60</span>
-                            </div>
-                            <div class="b-poll__persent">21%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Нет, все пошло совсем по-другому</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 44%"></div><span>124</span>
-                            </div>
-                            <div class="b-poll__persent">44%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 6%"></div><span>17</span>
-                            </div>
-                            <div class="b-poll__persent">6%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Вообще не было никаких планов</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 17%"></div><span>48</span>
-                            </div>
-                            <div class="b-poll__persent">17%</div>
-                          </div>
-                        </div>
-                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
-                      </div>
-                      <div class="b-poll__card">
-                        <div class="b-poll__card-title">Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</div>
-                        <div class="b-poll__content b-poll__content--complete">
-                          <div class="b-poll__item">
-                            <h4>Да, практически всё сбылось</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 90%"></div><span>33</span>
-                            </div>
-                            <div class="b-poll__persent">90%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Частично мечты и планы сбылись</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 21%"></div><span>60</span>
-                            </div>
-                            <div class="b-poll__persent">21%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Нет, все пошло совсем по-другому</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 44%"></div><span>124</span>
-                            </div>
-                            <div class="b-poll__persent">44%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Работаю над этим, у меня ещё всё впереди</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 6%"></div><span>17</span>
-                            </div>
-                            <div class="b-poll__persent">6%</div>
-                          </div>
-                          <div class="b-poll__item">
-                            <h4>Вообще не было никаких планов</h4>
-                            <div class="b-poll__progress">
-                              <div class="progress-bar" style="width: 45%"></div><span>48</span>
-                            </div>
-                            <div class="b-poll__persent">45%</div>
-                          </div>
-                        </div>
-                        <div class="b-poll__total">Всего проголосовало:<b> 282</b> человека</div>
-                      </div>
-                    </div>
-                    <div class="b-poll__tabs">
-                      <div class="b-poll__tabs-wrap">
-                        <div class="b-poll__tabs-scroll js-tab-poll">
-                          <div class="b-poll__tabs-item active">
-                            <h4>Какие средства вы используете в сезон простуд чаще всего?</h4>
-                            <p>Всего проголосовало:<b> 382</b> человека</p>
-                          </div>
-                          <div class="b-poll__tabs-item">
-                            <h4>Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</h4>
-                            <p>Всего проголосовало:<b> 282</b> человека</p>
-                          </div>
-                          <div class="b-poll__tabs-item">
-                            <h4>Какие средства вы используете в сезон простуд чаще всего?</h4>
-                            <p>Всего проголосовало:<b>382</b> человека</p>
-                          </div>
-                          <div class="b-poll__tabs-item">
-                            <h4>Сбылись ли ваши планы на жизнь, которые вы делали по окончании школы?</h4>
-                            <p>Всего проголосовало:<b> 382</b> человека</p>
-                          </div>
-                          <div class="b-poll__tabs-item">
-                            <h4>Какие средства вы используете в сезон простуд чаще всего?</h4>
-                            <p>Всего проголосовало:<b> 382</b> человека</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="b-main__aside">
-              <aside class="b-aside">
-                <div class="b-aside__wrap">
-                  <div class="b-aside__header">
-                    <div class="b-aside__weather js-weather">
-                      <div class="icon"></div><span>+24</span>
-                    </div>
-                    <div class="b-aside__forex">
-                      <div class="b-aside__forex-unit b-aside__forex-unit--usd">63,46</div>
-                      <div class="b-aside__forex-unit b-aside__forex-unit--eur">75,98</div>
-                    </div>
-                  </div>
-                  <div class="b-aside__live-news">
-                    <div class="b-aside__live-news-wrapper">
-                      <div class="b-aside__live-news-scroll">
-                        <div class="live-news"><a class="live-news__item live-news__item--fixed js-news-fixed" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Афиша Бийска на выходные 26 и 27 мая</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Сколько зарабатывают и чем владеют бийские чиновники и депутаты</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Коллектор на проводе: как быть, если вас достают звонками о несуществующих задолженностях</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Бийские гребцы перенесли тренировочную базу с городского пляжа</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Сколько зарабатывают и чем владеют бийские чиновники и депутаты</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Что нового покажут барнаульцам в «Ночь музеев»?</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Жириновск или Рио-де-Жиринейро, разлад в семье Трампов и автоугонщики</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a><a class="live-news__item" href="">
-                            <div class="live-news__desc">
-                              <div class="live-news__title">Алтайский край вошел в число регионов с недостаточной безопасностью дорог</div>
-                              <div class="live-news__date">26 апреля 2018</div>
-                            </div>
-                            <div class="live-news__comments comments comments--black">10</div></a></div>
-                        <div class="b-aside__more">Показать еще</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="b-footer">
-      <div class="container">
-        <div class="b-footer__top">
-          <div class="b-footer__main-menu">
-            <div class="main-menu">
-              <div class="main-menu__link"><a href="">Афиша</a></div>
-              <div class="main-menu__link"><a href="">Культура</a></div>
-              <div class="main-menu__link"><a href="">Спорт</a></div>
-              <div class="main-menu__link"><a href="">Политика</a></div>
-              <div class="main-menu__link"><a href="">Образование</a></div>
-            </div>
-          </div>
-          <div class="b-footer__sub-menu">
-            <div class="sub-menu">
-              <div class="sub-menu__link"><a href="">О проекте</a></div>
-              <div class="sub-menu__link"><a href="">Редакция</a></div>
-              <div class="sub-menu__link"><a href="">Реклама</a></div>
-              <div class="sub-menu__link"><a href="">Подписка на газету</a></div>
-            </div>
-          </div>
-          <div class="b-footer__social">
-            <div class="social"><a class="social__item social__item--insta" href=""></a><a class="social__item social__item--vk" href=""></a><a class="social__item social__item--tw" href=""></a><a class="social__item social__item--fb" href=""></a><a class="social__item social__item--ok" href=""></a></div>
-          </div>
-        </div>
-        <div class="b-footer__middle">
-          <div class="b-footer__description">
-            <div class="b-footer__links"><a href="">Пользовательское соглашение</a><a href="">Политика конфиденциальности</a></div>
-            <p>Сайт газеты "Бийский рабочий". Свидетельство о регистрации СМИ ПИ № ТУ 22 0135 от 29.12.2009 г. При перепечатке и при другом использовании материалов ссылка на «Бийский рабочий» обязательна.</p>
-          </div>
-        </div>
-        <div class="b-footer__bottom">
-          <div class="b-footer__description">
-            <div class="b-footer__copy">© 2018, Бийский рабочий</div><a class="b-footer__subscription" href="">Подписаться на газету</a>
-            <div class="b-footer__icons"><a class="b-footer__rambler" href=""></a>
-              <div class="b-footer__adult">+16</div>
-            </div>
-          </div>
-        </div>
-        <div class="b-footer__last">
-          <div class="b-footer__partners">
-            <div class="partners-slider js-partners-slider"><a class="partners-slider__item" href=""><img src="./images/partners/km_pravda.png" width="135px"></a><a class="partners-slider__item" href=""><img src="./images/partners/arg_fac.png" width="135px"></a><a class="partners-slider__item" href=""><img src="./images/partners/our_news.png" width="100px"></a><a class="partners-slider__item" href=""><img src="./images/partners/authgr.png" width="145px"></a><a class="partners-slider__item" href=""><img src="./images/partners/buisk.png" width="126px"></a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
-  <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-  <script src="//yastatic.net/share2/share.js"></script>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <!--script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIj4H-aE1sWZ3_QyLEN1X4mXp6pN5aPk")-->
   <script src="./js/bundle.js"></script>
 </html>
