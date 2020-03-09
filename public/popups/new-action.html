@@ -1,0 +1,160 @@
+
+<div class="popup mfp-hide" id="popup-new-action">
+  <div class="popup__header">
+    <h3>Новая операция</h3>
+    <div class="popup__header-close js-close-popup"></div>
+  </div>
+  <div class="popup__body js-custom-scroll-y">
+    <div class="popup__body-wrap">
+      <div class="field">
+        <div class="field__title">
+          <h3>Тип операции</h3>
+          <div class="field__title-buttons">
+          </div>
+        </div>
+        <div class="field__box">
+          <div class="field__box-select">
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__title">
+          <h3>Сотрудник</h3>
+          <div class="field__title-buttons">
+          </div>
+        </div>
+        <div class="field__box">
+          <input type="text" placeholder=""/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__title">
+          <h3>Объект</h3>
+          <div class="field__title-buttons">
+          </div>
+        </div>
+        <div class="field__box">
+          <input type="text"/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__row">
+          <div class="custom-datepicker">
+            <h3>Дата начала</h3>
+            <div class="custom-datepicker__wrap">
+              <div class="custom-datepicker__wrap-box">
+                <div class="custom-datepicker__box">
+                  <div class="custom-datepicker__icon-calendar"></div>
+                  <input class="form-control" name="datesTime"/>
+                  <div class="custom-datepicker__close"></div>
+                </div>
+              </div>
+              <div class="custom-datepicker__links custom-datepicker__links--two"><a href="">Текущая дата</a><a href="">Дата регистрации</a></div>
+            </div>
+          </div>
+          <div class="custom-datepicker">
+            <h3>Дата окончания</h3>
+            <div class="custom-datepicker__wrap">
+              <div class="custom-datepicker__wrap-box">
+                <div class="custom-datepicker__box">
+                  <div class="custom-datepicker__icon-calendar"></div>
+                  <input class="form-control" name="datesTime"/>
+                  <div class="custom-datepicker__close"></div>
+                </div>
+              </div>
+              <div class="custom-datepicker__links"><a href="">Текущая дата</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__title">
+          <h3>Комментарий</h3>
+          <div class="field__title-buttons">
+          </div>
+        </div>
+        <div class="field__box">
+          <input type="text"/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field__title">
+          <h3>Затраты</h3>
+          <div class="field__title-buttons">
+            <div class="button-icon button-icon--green-plus js-show-tooltip" data-type="add"></div>
+            <div class="button-icon button-icon--equal js-show-tooltip" data-type="add"></div>
+            <div class="button-icon button-icon--delete js-show-tooltip" data-type="remove"></div>
+            <div class="button-icon button-icon--refresh-gradient"></div>
+          </div>
+        </div>
+        <div class="field__box">
+          <input type="text"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup__footer">
+    <div class="popup__footer-control">
+      <div class="button button--max button--control button--turquoise">Сохранить</div>
+    </div>
+  </div>
+  <div class="b-tooltip">
+    <div class="b-tooltip__close js-close-tooltip"></div>
+    <div class="b-tooltip__template-add">
+      <div class="b-tooltip__header">
+        <h3>Затраты</h3>
+      </div>
+      <div class="b-tooltip__body">
+        <div class="field">
+          <div class="field__title">
+            <h3>Тип</h3>
+            <div class="field__title-buttons">
+              <div class="button-icon button-icon--green-plus"></div>
+              <div class="button-icon button-icon--equal"></div>
+            </div>
+          </div>
+          <div class="field__box">
+            <div class="field__box-select">
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field__title">
+            <h3>Сумма затрат</h3>
+            <div class="field__title-buttons">
+            </div>
+          </div>
+          <div class="field__box">
+            <input type="text"/>
+          </div>
+        </div>
+      </div>
+      <div class="b-tooltip__footer">
+        <div class="button button--min button--blue">Сохранить</div>
+      </div>
+    </div>
+    <div class="b-tooltip__template-remove">
+      <div class="b-tooltip__wrap">
+        <h3>Вы действительно хотите удалить?</h3>
+        <div class="b-tooltip__control">
+          <div class="button button--blue">Удалить</div>
+          <div class="button button--light-blue js-close-tooltip">Отмена</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

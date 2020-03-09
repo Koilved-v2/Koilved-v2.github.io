@@ -1,0 +1,669 @@
+@mixin svg-common {
+	background: url("../images/sprite/sprite-04beb146.svg") no-repeat;
+}
+
+@mixin svg-icon-add-inner-app {
+	@include svg-common;
+	background-position: 13.095238095238095% 56.32911392405063%;
+	width: 22px;
+	height: 23px;
+}
+
+@mixin svg-icon-add-new-zip {
+	@include svg-common;
+	background-position: 28.88888888888889% 97.6608187134503%;
+	width: 10px;
+	height: 10px;
+}
+
+@mixin svg-icon-add-out-app {
+	@include svg-common;
+	background-position: 54.166666666666664% 29.11392405063291%;
+	width: 22px;
+	height: 23px;
+}
+
+@mixin svg-icon-add-step-state {
+	@include svg-common;
+	background-position: 48.31460674157304% 81.59509202453988%;
+	width: 12px;
+	height: 18px;
+}
+
+@mixin svg-icon-arrow-down-mini {
+	@include svg-common;
+	background-position: 97.75280898876404% 92%;
+	width: 12px;
+	height: 6px;
+}
+
+@mixin svg-icon-arrow-select {
+	@include svg-common;
+	background-position: 51.12359550561798% 46.24277456647399%;
+	width: 12px;
+	height: 8px;
+}
+
+@mixin svg-icon-automatic-dialing {
+	@include svg-common;
+	background-position: 39.263803680981596% 0;
+	width: 27px;
+	height: 25px;
+}
+
+@mixin svg-icon-automatic-dialing-active {
+	@include svg-common;
+	background-position: 99.42857142857143% 63.69047619047619%;
+	width: 15px;
+	height: 13px;
+}
+
+@mixin svg-icon-bin-blue {
+	@include svg-common;
+	background-position: 24.571428571428573% 91.51515151515152%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-calendar {
+	@include svg-common;
+	background-position: 0 100%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin svg-icon-call-cancel {
+	@include svg-common;
+	background-position: 40.229885057471265% 81.59509202453988%;
+	width: 16px;
+	height: 18px;
+}
+
+@mixin svg-icon-chat {
+	@include svg-common;
+	background-position: 38.46153846153846% 55.9748427672956%;
+	width: 21px;
+	height: 22px;
+}
+
+@mixin svg-icon-chat-mess {
+	@include svg-common;
+	background-position: 26.035502958579883% 55.9748427672956%;
+	width: 21px;
+	height: 22px;
+}
+
+@mixin svg-icon-checkbox-ok {
+	@include svg-common;
+	background-position: 42.52873563218391% 91.51515151515152%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-clear {
+	@include svg-common;
+	background-position: 0 0;
+	width: 32px;
+	height: 32px;
+}
+
+@mixin svg-icon-close-item-filter {
+	@include svg-common;
+	background-position: 70.55555555555556% 58.47953216374269%;
+	width: 10px;
+	height: 10px;
+}
+
+@mixin svg-icon-close-mini {
+	@include svg-common;
+	background-position: 34.44444444444444% 97.6608187134503%;
+	width: 10px;
+	height: 10px;
+}
+
+@mixin svg-icon-close-popup {
+	@include svg-common;
+	background-position: 99.42857142857143% 37.95180722891566%;
+	width: 15px;
+	height: 15px;
+}
+
+@mixin svg-icon-contracts {
+	@include svg-common;
+	background-position: 54.81927710843374% 0;
+	width: 24px;
+	height: 23px;
+}
+
+@mixin svg-icon-delete {
+	@include svg-common;
+	background-position: 45.30386740331492% 97.09302325581395%;
+	width: 9px;
+	height: 9px;
+}
+
+@mixin svg-icon-delete-app {
+	@include svg-common;
+	background-position: 0 41.02564102564103%;
+	width: 24px;
+	height: 25px;
+}
+
+@mixin svg-icon-delete-btn {
+	@include svg-common;
+	background-position: 0 21.476510067114095%;
+	width: 32px;
+	height: 32px;
+}
+
+@mixin svg-icon-delete-zip {
+	@include svg-common;
+	background-position: 0 91.51515151515152%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-edit-app {
+	@include svg-common;
+	background-position: 0 56.32911392405063%;
+	width: 22px;
+	height: 23px;
+}
+
+@mixin svg-icon-edit-text {
+	@include svg-common;
+	background-position: 35.67251461988304% 68.71165644171779%;
+	width: 19px;
+	height: 18px;
+}
+
+@mixin svg-icon-edit-zip {
+	@include svg-common;
+	background-position: 99.42857142857143% 72.28915662650603%;
+	width: 15px;
+	height: 15px;
+}
+
+@mixin svg-icon-email-close {
+	@include svg-common;
+	background-position: 37.42690058479532% 28.484848484848484%;
+	width: 19px;
+	height: 16px;
+}
+
+@mixin svg-icon-email-open {
+	@include svg-common;
+	background-position: 80.11695906432749% 67.48466257668711%;
+	width: 19px;
+	height: 18px;
+}
+
+@mixin svg-icon-equal {
+	@include svg-common;
+	background-position: 57.22222222222222% 46.24277456647399%;
+	width: 10px;
+	height: 8px;
+}
+
+@mixin svg-icon-export {
+	@include svg-common;
+	background-position: 79.1907514450867% 34.161490683229815%;
+	width: 17px;
+	height: 20px;
+}
+
+@mixin svg-icon-export-csv {
+	@include svg-common;
+	background-position: 90.7514450867052% 31.097560975609756%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-export-excel {
+	@include svg-common;
+	background-position: 56.64739884393064% 81.09756097560975%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-export-html {
+	@include svg-common;
+	background-position: 89.71428571428571% 70.3030303030303%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-export-json {
+	@include svg-common;
+	background-position: 90.7514450867052% 20.73170731707317%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-export-pdf {
+	@include svg-common;
+	background-position: 8.571428571428571% 91.51515151515152%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-export-text {
+	@include svg-common;
+	background-position: 90.7514450867052% 10.365853658536585%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-files {
+	@include svg-common;
+	background-position: 28.91566265060241% 40.50632911392405%;
+	width: 24px;
+	height: 23px;
+}
+
+@mixin svg-icon-files-doc {
+	@include svg-common;
+	background-position: 46.24277456647399% 68.71165644171779%;
+	width: 17px;
+	height: 18px;
+}
+
+@mixin svg-icon-files-in-appLog {
+	@include svg-common;
+	background-position: 90.7514450867052% 0;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-filter {
+	@include svg-common;
+	background-position: 68.45238095238095% 13.043478260869565%;
+	width: 22px;
+	height: 20px;
+}
+
+@mixin svg-icon-green-plus {
+	@include svg-common;
+	background-position: 40% 97.6608187134503%;
+	width: 10px;
+	height: 10px;
+}
+
+@mixin svg-icon-green-plus-lg {
+	@include svg-common;
+	background-position: 66.47398843930635% 81.09756097560975%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-guide-zip {
+	@include svg-common;
+	background-position: 71.91011235955057% 90.41916167664671%;
+	width: 12px;
+	height: 14px;
+}
+
+@mixin svg-icon-heart-bg {
+	@include svg-common;
+	background-position: 68.04733727810651% 25%;
+	width: 21px;
+	height: 17px;
+}
+
+@mixin svg-icon-heart-cancel-bg {
+	@include svg-common;
+	background-position: 68.45238095238095% 0;
+	width: 22px;
+	height: 21px;
+}
+
+@mixin svg-icon-heart-ok-bg {
+	@include svg-common;
+	background-position: 51.19047619047619% 55.27950310559006%;
+	width: 22px;
+	height: 20px;
+}
+
+@mixin svg-icon-heart-plus {
+	@include svg-common;
+	background-position: 80.58823529411765% 23.636363636363637%;
+	width: 20px;
+	height: 16px;
+}
+
+@mixin svg-icon-history-all-app {
+	@include svg-common;
+	background-position: 14.457831325301205% 40.50632911392405%;
+	width: 24px;
+	height: 23px;
+}
+
+@mixin svg-icon-history-call {
+	@include svg-common;
+	background-position: 67.6470588235294% 36.25%;
+	width: 20px;
+	height: 21px;
+}
+
+@mixin svg-icon-history-change {
+	@include svg-common;
+	background-position: 79.1907514450867% 11.801242236024844%;
+	width: 17px;
+	height: 20px;
+}
+
+@mixin svg-icon-history-step-state {
+	@include svg-common;
+	background-position: 54.166666666666664% 40.588235294117645%;
+	width: 22px;
+	height: 11px;
+}
+
+@mixin svg-icon-id-obj {
+	@include svg-common;
+	background-position: 54.81927710843374% 14.556962025316455%;
+	width: 24px;
+	height: 23px;
+}
+
+@mixin svg-icon-ke {
+	@include svg-common;
+	background-position: 19.631901840490798% 20.77922077922078%;
+	width: 27px;
+	height: 27px;
+}
+
+@mixin svg-icon-mess-files {
+	@include svg-common;
+	background-position: 20.809248554913296% 81.59509202453988%;
+	width: 17px;
+	height: 18px;
+}
+
+@mixin svg-icon-mess-flag {
+	@include svg-common;
+	background-position: 15.64245810055866% 99.4047619047619%;
+	width: 11px;
+	height: 13px;
+}
+
+@mixin svg-icon-mess-plus-blue {
+	@include svg-common;
+	background-position: 98.86363636363636% 88.0952380952381%;
+	width: 14px;
+	height: 13px;
+}
+
+@mixin svg-icon-mess-plus-green {
+	@include svg-common;
+	background-position: 98.86363636363636% 80.35714285714286%;
+	width: 14px;
+	height: 13px;
+}
+
+@mixin svg-icon-mess-plus-red {
+	@include svg-common;
+	background-position: 22.033898305084747% 99.4047619047619%;
+	width: 13px;
+	height: 13px;
+}
+
+@mixin svg-icon-mess-ring {
+	@include svg-common;
+	background-position: 99.42857142857143% 46.706586826347305%;
+	width: 15px;
+	height: 14px;
+}
+
+@mixin svg-icon-mess-submit {
+	@include svg-common;
+	background-position: 38.78787878787879% 15.723270440251572%;
+	width: 25px;
+	height: 22px;
+}
+
+@mixin svg-icon-messenger {
+	@include svg-common;
+	background-position: 80.11695906432749% 45.45454545454545%;
+	width: 19px;
+	height: 16px;
+}
+
+@mixin svg-icon-move {
+	@include svg-common;
+	background-position: 76.30057803468208% 81.09756097560975%;
+	width: 17px;
+	height: 17px;
+}
+
+@mixin svg-icon-moves-ke {
+	@include svg-common;
+	background-position: 7.954545454545454% 100%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin svg-icon-new-app {
+	@include svg-common;
+	background-position: 42.10526315789474% 39.50617283950617%;
+	width: 19px;
+	height: 19px;
+}
+
+@mixin svg-icon-open-files {
+	@include svg-common;
+	background-position: 98.86363636363636% 28.91566265060241%;
+	width: 14px;
+	height: 15px;
+}
+
+@mixin svg-icon-phone-call {
+	@include svg-common;
+	background-position: 66.47398843930635% 49.375%;
+	width: 17px;
+	height: 21px;
+}
+
+@mixin svg-icon-phone-client {
+	@include svg-common;
+	background-position: 100% 9.696969696969697%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-phone-client-white {
+	@include svg-common;
+	background-position: 100% 19.393939393939394%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-print-app {
+	@include svg-common;
+	background-position: 79.65116279069767% 56.17283950617284%;
+	width: 18px;
+	height: 19px;
+}
+
+@mixin svg-icon-printer {
+	@include svg-common;
+	background-position: 0 81.59509202453988%;
+	width: 18px;
+	height: 18px;
+}
+
+@mixin svg-icon-refresh-gradient {
+	@include svg-common;
+	background-position: 87.5% 90.41916167664671%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin svg-icon-repeat-app {
+	@include svg-common;
+	background-position: 80.58823529411765% 0;
+	width: 20px;
+	height: 19px;
+}
+
+@mixin svg-icon-reset-column {
+	@include svg-common;
+	background-position: 12.42603550295858% 68.71165644171779%;
+	width: 21px;
+	height: 18px;
+}
+
+@mixin svg-icon-save {
+	@include svg-common;
+	background-position: 20.253164556962027% 0;
+	width: 32px;
+	height: 32px;
+}
+
+@mixin svg-icon-setting-filter {
+	@include svg-common;
+	background-position: 0 70%;
+	width: 21px;
+	height: 21px;
+}
+
+@mixin svg-icon-state-phone {
+	@include svg-common;
+	background-position: 30.63583815028902% 81.59509202453988%;
+	width: 17px;
+	height: 18px;
+}
+
+@mixin svg-icon-summ {
+	@include svg-common;
+	background-position: 65.55555555555556% 90.41916167664671%;
+	width: 10px;
+	height: 14px;
+}
+
+@mixin svg-icon-table-arrow-down-red {
+	@include svg-common;
+	background-position: 90.22988505747126% 60.60606060606061%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-arrow-up {
+	@include svg-common;
+	background-position: 90.22988505747126% 41.21212121212121%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-arrow-up-blue {
+	@include svg-common;
+	background-position: 100% 0;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-arrow-up-green {
+	@include svg-common;
+	background-position: 33.333333333333336% 91.51515151515152%;
+	width: 16px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-att-red {
+	@include svg-common;
+	background-position: 89.71428571428571% 80%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-att-yellow {
+	@include svg-common;
+	background-position: 89.71428571428571% 50.90909090909091%;
+	width: 15px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-dots {
+	@include svg-common;
+	background-position: 70.96774193548387% 46.74556213017752%;
+	width: 4px;
+	height: 12px;
+}
+
+@mixin svg-icon-table-heart {
+	@include svg-common;
+	background-position: 66.47398843930635% 67.46987951807229%;
+	width: 17px;
+	height: 15px;
+}
+
+@mixin svg-icon-table-info {
+	@include svg-common;
+	background-position: 50.561797752808985% 91.51515151515152%;
+	width: 12px;
+	height: 16px;
+}
+
+@mixin svg-icon-table-ok-green {
+	@include svg-common;
+	background-position: 79.54545454545455% 90.41916167664671%;
+	width: 14px;
+	height: 14px;
+}
+
+@mixin svg-icon-table-play {
+	@include svg-common;
+	background-position: 45.604395604395606% 27.167630057803468%;
+	width: 8px;
+	height: 8px;
+}
+
+@mixin svg-icon-table-speaker {
+	@include svg-common;
+	background-position: 64.6067415730337% 58.47953216374269%;
+	width: 12px;
+	height: 10px;
+}
+
+@mixin svg-icon-table-stop {
+	@include svg-common;
+	background-position: 98.86363636363636% 55.42168674698795%;
+	width: 14px;
+	height: 15px;
+}
+
+@mixin svg-icon-table-time {
+	@include svg-common;
+	background-position: 16.949152542372882% 91.51515151515152%;
+	width: 13px;
+	height: 16px;
+}
+
+@mixin svg-icon-tree {
+	@include svg-common;
+	background-position: 24.56140350877193% 68.71165644171779%;
+	width: 19px;
+	height: 18px;
+}
+
+@mixin svg-icon-update-arrows {
+	@include svg-common;
+	background-position: 58.62068965517241% 90.96385542168674%;
+	width: 16px;
+	height: 15px;
+}
+
+@mixin svg-icon-upload-files {
+	@include svg-common;
+	background-position: 56.395348837209305% 67.87878787878788%;
+	width: 18px;
+	height: 16px;
+}
+
+@mixin svg-icon-works {
+	@include svg-common;
+	background-position: 10.465116279069768% 81.59509202453988%;
+	width: 18px;
+	height: 18px;
+}
+
