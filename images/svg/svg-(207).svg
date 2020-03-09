@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 91</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-91" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-11" transform="translate(10.000000, 10.000000)" stroke="#414040" stroke-width="0.740740741">
+            <path d="M0.00806134691,0 L2.97233902,2.98721326" id="Path-2"></path>
+            <polyline id="Path-3" points="2.19324653 0 0.00806134691 0 0.00806134691 2.23460858"></polyline>
+            <path d="M3.02657987,0 L5.99085754,2.98721326" id="Path-2" transform="translate(4.509259, 1.500000) scale(-1, 1) translate(-4.509259, -1.500000) "></path>
+            <polyline id="Path-3" transform="translate(4.899346, 1.117304) scale(-1, 1) translate(-4.899346, -1.117304) " points="5.99193865 0 3.80675347 0 3.80675347 2.23460858"></polyline>
+            <path d="M0.00806134691,3 L2.97233902,5.98721326" id="Path-2" transform="translate(1.490741, 4.500000) scale(1, -1) translate(-1.490741, -4.500000) "></path>
+            <polyline id="Path-3" transform="translate(1.100654, 4.882696) scale(1, -1) translate(-1.100654, -4.882696) " points="2.19324653 3.76539142 0.00806134691 3.76539142 0.00806134691 6"></polyline>
+            <path d="M3.02657987,3 L5.99085754,5.98721326" id="Path-2" transform="translate(4.509259, 4.500000) scale(-1, -1) translate(-4.509259, -4.500000) "></path>
+            <polyline id="Path-3" transform="translate(4.899346, 4.882696) scale(-1, -1) translate(-4.899346, -4.882696) " points="5.99193865 3.76539142 3.80675347 3.76539142 3.80675347 6"></polyline>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+body {
+  font-family: $OpenSans;
+  background-color: $white;
+  min-width: 1190px;
+  color: $greyish-brown;
+}
+
+.b-tree {
+  position: relative;
+  height: 298px;
+
+  .mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    bottom: -1px;
+  }
+
+  .custom-table {
+    padding-bottom: 10px;
+
+    thead tr th:first-child {
+      padding-left: 18px !important;
+    }
+
+    tbody tr td:first-child {
+      padding-left: 18px !important;
+    }
+  }
+}
+
+.b-tree__wrap {
+  height: 298px;
+}

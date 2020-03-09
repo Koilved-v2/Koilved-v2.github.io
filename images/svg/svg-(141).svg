@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-38.7%" y="-41.4%" width="177.4%" height="182.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.250682911 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Artboard-Copy-25" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="new" filter="url(#filter-1)" transform="translate(5.000000, 6.000000)">
+            <rect id="Rectangle" fill="#227BE8" x="0" y="0" width="31" height="29" rx="2"></rect>
+            <g id="Group-24" transform="translate(6.437500, 6.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-6" x="8" y="2.84217094e-13" width="2.125" height="17" rx="1.0625"></rect>
+                <path d="M9.0625,0 C9.64930255,-1.07793879e-16 10.125,0.475697453 10.125,1.0625 L10.125,15.9375 C10.125,16.5243025 9.64930255,17 9.0625,17 C8.47569745,17 8,16.5243025 8,15.9375 L8,1.0625 C8,0.475697453 8.47569745,1.07793879e-16 9.0625,0 Z" id="Rectangle-6" transform="translate(9.062500, 8.500000) rotate(-270.000000) translate(-9.062500, -8.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

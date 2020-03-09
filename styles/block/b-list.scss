@@ -1,0 +1,12 @@
+.b-list {
+  ul {
+    li {
+      padding: 5px 18px 7px;
+      cursor: default;
+
+      &:hover {
+        background-color: $ice-blue;
+      }
+    }
+  }
+}

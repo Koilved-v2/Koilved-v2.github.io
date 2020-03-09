@@ -1,0 +1,104 @@
+.b-tooltip {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 360px;
+  height: 236px;
+  border-radius: 3px;
+  box-shadow: 3px 4px 36px 0 rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  z-index: 100;
+}
+
+.b-tooltip--show {
+  display: block;
+}
+
+.b-tooltip--remove {
+  .b-tooltip__template-remove {
+    display: block;
+  }
+}
+
+.b-tooltip--add {
+  .b-tooltip__template-add {
+    display: block;
+  }
+}
+
+.b-tooltip--confirm {
+  .b-tooltip__template-confirm {
+    display: block;
+  }
+}
+
+
+.b-tooltip__header {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  height: 44px;
+  background-color: $pale-grey;
+
+  h3 {
+
+  }
+}
+
+.b-tooltip__body {
+  padding: 12px 18px;
+
+  .field {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.b-tooltip__footer {
+  padding: 0 18px;
+  display: flex;justify-content: flex-start;
+}
+
+.b-tooltip__close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  @include svg-icon-close-popup;
+  cursor: pointer;
+}
+
+.b-tooltip__wrap {
+  padding-top: 58px;
+
+  h3 {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 54px;
+  }
+}
+
+.b-tooltip__control {
+  display: flex;
+  justify-content: center;
+  .button {
+    width: 146px;
+    margin: 0 7px;
+  }
+}
+
+.b-tooltip__template-add {
+  display: none;
+}
+
+.b-tooltip__template-remove {
+  display: none;
+}
+
+.b-tooltip__template-confirm {
+  display: none;
+}

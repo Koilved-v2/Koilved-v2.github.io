@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 28</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-28" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="double" transform="translate(5.000000, 6.000000)" stroke-width="0.9">
+            <path d="M5.33356101,11.7692308 L5.33356101,11.7692308 L1.74358974,11.7692308 C0.780631718,11.7692308 0,10.9585748 0,9.95857988 L0,1.81065089 C0,0.810656015 0.780631718,0 1.74358974,0 L1.74358974,0 L8.71794872,0 C9.68090674,0 10.4615385,0.810656015 10.4615385,1.81065089 L10.4615385,4.64325659 L10.4615385,4.64325659" id="Path" stroke="#3578D5" stroke-linecap="round"></path>
+            <path d="M2.61538462,3.26923077 L7.84615385,3.26923077" id="Line-4" stroke="#3578D5" stroke-linecap="round"></path>
+            <path d="M2.61538462,5.88461538 L6.53846154,5.88461538" id="Line-4-Copy-2" stroke="#3578D5" stroke-linecap="round"></path>
+            <rect id="Rectangle" stroke="#3578D5" fill="#F5F5F5" x="4.53846154" y="2.23076923" width="10.4615385" height="11.7692308" rx="2.61538462"></rect>
+            <path d="M7.61538462,5.26923077 L12.8461538,5.26923077" id="Line-4" stroke="#3578D5" stroke-linecap="round"></path>
+            <path d="M8.15384615,9.5 L13.3846154,9.5" id="Line-4" stroke="#C93C69" stroke-linecap="round" transform="translate(10.769231, 9.500000) rotate(45.000000) translate(-10.769231, -9.500000) "></path>
+            <path d="M8.15384615,9.5 L13.3846154,9.5" id="Line-4" stroke="#C93C69" stroke-linecap="round" transform="translate(10.769231, 9.500000) scale(-1, 1) rotate(45.000000) translate(-10.769231, -9.500000) "></path>
+        </g>
+    </g>
+</svg>

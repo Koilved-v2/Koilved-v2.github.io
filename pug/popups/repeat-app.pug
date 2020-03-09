@@ -1,0 +1,25 @@
+include ../mixins/_all-mixins
+
+#popup-repeat-app.popup.mfp-hide
+    .popup__header
+        h3 Оригинальная заявка
+        .popup__header-searchbox
+            .searchbox
+                input(type='text' placeholder='Номер')
+                button(type='submit') Ок
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.js-custom-scroll-y
+            .popup__body-wrap
+                .b-list
+                    ul
+                        +html-repeat-app
+                        +html-repeat-app
+                        +html-repeat-app
+                        +html-repeat-app
+                        +html-repeat-app
+
+
+
+

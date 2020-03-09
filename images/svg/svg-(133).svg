@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-17" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="docs" transform="translate(2.000000, 2.000000)">
+            <rect id="Rectangle" fill="#3578D5" x="0" y="0" width="22" height="21" rx="2"></rect>
+            <g id="Group-16" transform="translate(4.000000, 4.000000)">
+                <path d="M6.11790821,13 L6.11790821,13 L2,13 C0.8954305,13 0,12.1045695 0,11 L0,2 C0,0.8954305 0.8954305,0 2,0 L2,0 L10,0 C11.1045695,0 12,0.8954305 12,2 L12,5.12882591 L12,5.12882591" id="Path" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M3,3 L9,3" id="Line-4" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M3,5 L9,5" id="Line-4" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M3,7 L8,7" id="Line-4-Copy-2" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <g id="pencil-edit-button" transform="translate(8.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M5.30062469,2 L7,3.69909115 L2.69841182,8 L1,6.30090885 L5.30062469,2 Z M8.8118497,1.10872262 L7.97491097,0.249147175 C7.65146304,-0.0830490585 7.12625045,-0.0830490585 6.80170361,0.249147175 L6,1.0725345 L7.87670616,3 L8.8118497,2.03956359 C9.06271677,1.7818934 9.06271677,1.3663749 8.8118497,1.10872262 Z M0.00443547385,8.78220936 C-0.0245716333,8.91083941 0.0932938132,9.02609847 0.223855425,8.99481679 L2,8.57049235 L0.406994269,7 L0.00443547385,8.78220936 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

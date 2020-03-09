@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 19</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="picture" transform="translate(2.000000, 2.000000)">
+            <rect id="Rectangle-Copy-25" fill="#3578D5" x="0" y="0" width="22" height="21" rx="2"></rect>
+            <g id="Group-18" transform="translate(3.000000, 5.787500)" fill="#FFFFFF">
+                <path d="M3.42595625,-4.4408921e-16 C4.25307869,-4.4408921e-16 4.92595625,0.673297843 4.92595625,1.5 C4.92595625,2.32670216 4.25307869,3 3.42595625,3 C2.59883381,3 1.92595625,2.32712244 1.92595625,1.50042029 C1.92595625,0.673718128 2.59883381,-4.4408921e-16 3.42595625,-4.4408921e-16 Z" id="Path" stroke="#FFFFFF" stroke-width="0.2" fill-rule="nonzero"></path>
+                <polygon id="Triangle" points="5.5 5.2125 11 10.2125 0 10.2125"></polygon>
+                <polygon id="Triangle" points="10.5 2.2125 16 10.2125 5 10.2125"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

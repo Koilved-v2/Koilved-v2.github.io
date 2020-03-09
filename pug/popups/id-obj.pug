@@ -1,0 +1,34 @@
+include ../mixins/_all-mixins
+
+#popup-id-obj.popup.mfp-hide
+    .popup__header.popup__header--light
+        h3 Идентификаторы объекта
+
+        .popup__header-close.js-close-popup
+    .popup__body.js-custom-scroll-y
+        .popup__body-wrap
+            .b-id-obj
+                .b-id-obj__form
+                    .b-id-obj__input
+                        .b-id-obj__input-title
+                            .b-id-obj__icon.b-id-obj__icon--ammyy
+                            p Ammyy Admin ID
+                        input(type='text')
+                    .b-id-obj__input
+                        .b-id-obj__input-title
+                            .b-id-obj__icon.b-id-obj__icon--anyDesk
+                            p AnyDesk ID
+                        input(type='text')
+                    .b-id-obj__input
+                        .b-id-obj__input-title
+                            .b-id-obj__icon.b-id-obj__icon--teamViewer
+                            p TeamViewer ID
+                        input(type='text')
+                    .b-id-obj__input
+                        .b-id-obj__input-title
+                            .b-id-obj__icon.b-id-obj__icon--ultraVNC
+                            p UltraVNC ID
+                        input(type='text')
+                .b-id-obj__control
+                    .button.button--blue.button--control.button--middle Сохранить
+

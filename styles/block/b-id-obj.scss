@@ -1,0 +1,86 @@
+.b-id-obj {
+  padding: 19px;
+}
+
+.b-id-obj--sidebar {
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.b-id-obj__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.b-id-obj__input {
+  width: 50%;
+
+  margin-bottom: 16px;
+  input {
+    width: 116px;
+    height: 27px;
+    border-radius: 2px;
+    border: solid 1px $light-grey-blue;
+    font-size: 11px;
+    color: $greyish-brown;
+    line-height: 27px;
+    padding: 0 9px;
+  }
+}
+
+.b-id-obj__input-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  p {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+}
+
+.b-id-obj__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-size: contain;
+
+}
+
+.b-id-obj__icon--ammyy {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-id-obj/icon-ammyy@2x.png");
+}
+
+.b-id-obj__icon--anyDesk {
+  background-image: url("../images/icon-id-obj/icon-anyDesk@2x.png");
+}
+
+.b-id-obj__icon--teamViewer {
+  background-image: url("../images/icon-id-obj/icon-teamViewer@2x.png");
+}
+
+.b-id-obj__icon--ultraVNC {
+  background-image: url("../images/icon-id-obj/icon-UlraVNC@2x.png");
+}
+
+.b-id-obj__control {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.b-id-obj__add {
+  position: relative;
+  font-size: 11px;
+  line-height: 13px;
+  padding-left: 25px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    @include svg-icon-green-plus-lg;
+  }
+}

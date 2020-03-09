@@ -1,0 +1,49 @@
+include ../mixins/_all-mixins
+
+#popup-moves-ke.popup.mfp-hide
+    .popup__header
+        h3 Перемещение КЕ - POS терминалы, моноблоки/POS-терминал Валидатор NEW812R мобильный -64646 (45435)
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-y
+            .popup__body-wrap
+                .custom-table.custom-table--scroll
+                    table
+                        thead
+                            tr
+                                th №
+                                th ID
+                                th Дата/время
+                                th Тип
+                                th Перемещено из
+                                th Перемещено в
+                                th Оператор
+                                th Причина
+                                th
+                                    .button-icon.button-icon--bin
+
+                        tbody
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+                            +html-move-ke
+
+    .b-tooltip
+        .b-tooltip__close.js-close-tooltip
+        .b-tooltip__template-remove
+            .b-tooltip__wrap
+                h3 Вы действительно хотите удалить?
+                .b-tooltip__control
+                    .button.button--blue Удалить
+                    .button.button--light-blue.js-close-tooltip Отмена
+
+
+

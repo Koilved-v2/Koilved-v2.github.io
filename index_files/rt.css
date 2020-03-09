@@ -1,0 +1,490 @@
+/*
+Gonnyh Ivan
+sinelnikof88@gmail.com
+Developing  by Yii
+Each line should be prefixed with 
+*/
+/* 
+    Created on : 01.10.2019, 12:14:34
+    Author     : Gonnyh.I
+*/
+.sortable li, .sortable {
+    border: 0px;
+
+}
+
+.container2 {
+    position: relative;
+    border: 1px solid #0000000f;
+}
+
+.content2 {
+    /* margin-left нужен, так как слева от содержимого будет стрелка */
+    margin-left: 4px;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+.toggler2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100%;
+    width: 4px;
+    cursor: pointer;
+    border-right: #AAA 1px #0000000f;
+}
+
+
+/*table thead tr{
+    background-color: #F5F5F5
+}*/
+
+.content-wrapper table > tbody > tr:nth-of-type(odd) {
+    background-color: #F5F8FB;
+}
+
+*::-webkit-scrollbar-track {
+    /*    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;*/
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+    /*width: 6px;*/
+    width: 7px;
+    height: 7px;
+    background-color: rgba(53, 120, 213, 0.5);
+}
+
+*::-webkit-scrollbar:hover {
+    /*width: 6px;*/
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: rgba(53, 120, 213, 0.5);
+    border: 4px solid rgba(53, 120, 213, 0.5);
+}
+
+.filterSpoiler {
+    padding: 2px;
+}
+
+.filterSpoiler a {
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.filterSpoiler a:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f105";
+    font-size: 19px;
+    font-weight: 700;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.filterSpoiler a[aria-expanded="true"]:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 20px;
+    content: "\f107";
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+}
+
+.collapse.in {
+    display: block;
+    /*height: 200px;*/
+    /*overflow-y: scroll;*/
+}
+
+#sidebar2 {
+    width: 500px;
+    /*right: 516px;*/
+    z-index: 1012;
+}
+
+#newFilter {
+    width: 360px;
+    top: 20px;
+    right: 416px;
+    z-index: 1013;
+}
+
+#newFilter .sb-head {
+    background-color: #e9f0fb;
+}
+
+#newFilter .sb-content {
+    height: 110px
+}
+
+#newFilter .form-group {
+    margin-bottom: 5px;
+}
+
+#ajaxSidebar {
+    width: 500px;
+    z-index: 1015;
+}
+
+#ajaxObjectSidebar {
+    width: 500px;
+    z-index: 1015;
+    right: 518px;
+}
+
+
+
+#sidebar1 {
+    width: 500px;
+}
+
+.rtSp {
+    display: inline-block;
+    position: absolute;
+    right: 9px;
+    width: 200px;
+    top: 40px;
+    background: #fff;
+    z-index: 1011;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.rtSp.hide {
+    right: 2000;
+}
+
+.sb-head {
+    min-height: 40px;
+    /*//height: 77px;*/
+    background-color: #f5f5f5;
+}
+
+.sb-content {
+    height: calc(100vh - 335px);
+    overflow-y: scroll;
+    /*min-height: 300px;*/
+}
+
+.sb-footer {
+    display: flex;
+    height: 50px;
+    /*//height: 77px;*/
+    background-color: #f5f5f5;
+}
+
+.sb-head a {
+    float: right;
+    margin-top: -2px;
+}
+
+.floatThead-wrapper {
+    height: calc(100vh - 210px)
+}
+
+.floatThead-wrapper {
+
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+    background-color: #227BE8;
+}
+
+.btn-primary {
+    background-color: #227BE8;
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+.form-control, .form-group {
+    border-radius: 2px;
+}
+
+.rtHide {
+    right: -2000px !important;
+}
+
+#tableFilter {
+    display: none;
+}
+
+.rtSp #tableFilter {
+    display: block;
+}
+
+.exp button {
+    border: 0;
+    background: initial;
+    margin: 0;
+    padding: 0;
+
+}
+
+.specScroll {
+    overflow: scroll;
+    margin: 10px;
+    height: calc(100vh - 215px);
+    /*calc(100vh - 290px);*/
+    display: inline-block;
+    width: 100%;
+    /*width: calc(100% + 14px);*/
+
+}
+
+
+.sortable li {
+    padding: 0px;
+    border: 1px solid #ddd;
+    list-style: none outside none;
+    margin: 4px;
+    padding-left: 8px;
+    cursor: normal;
+    padding: 0px;
+    border: 0;
+    padding-left: 0;
+}
+
+.sort_item label, .sort_item span {
+
+    margin: 0px;
+    /*height: 22px;*/
+    vertical-align: text-bottom;
+}
+
+.sort_item b {
+
+
+    background: red;
+    margin: 10px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sort_item span {
+    margin: 0px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+/*.checkboxStyler label input[type=checkbox] {
+    display: none; <--скрываем дефолтный чекбокс
+}*/
+.checkboxStyler label span { /* <-- стилизируем новый */
+
+}
+
+[type=checkbox]:checked + span:before { /* <-- ставим иконку, когда чекбокс включен  */
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 15px;
+    color: #3678D5;
+}
+
+[type=checkbox]:disabled:checked + span:before { /* <-- ставим иконку, когда чекбокс включен  */
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 1px;
+    color: red;
+}
+
+.checkboxStyler {
+}
+
+.checkboxStylerCheked {
+    height: 14px !important;
+    width: 14px !important;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+#mainRequestWindow th {
+    text-align: center
+}
+
+#sharedFormWrapper {
+    padding: 5px
+}
+
+.menuContentWrap {
+    position: relative;
+}
+
+.menuContent {
+    position: absolute;
+    min-width: 300px;
+    display: none;
+    z-index: 100;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 3px 4px 36px 0 rgba(0, 0, 0, 0.5);
+    max-height: 182px;
+    overflow: auto;
+    padding: 5px 0;
+}
+
+.menuContent[data-sideType='rightSide'] {
+    right: 0;
+}
+
+.menuContent[data-sideType='leftSide'] {
+    left: 0;
+}
+
+.submenuItem {
+    padding: 6px 10px;
+}
+
+.submenuItem:hover {
+    background: #F0F8FB;
+}
+
+.submenuItem a {
+    color: #414040;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.quickmess {
+    border: burlywood 1px solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: gray;
+    width: 90%;
+}
+
+.leftmess {
+    border: #bdbdbd 1px solid;
+    background-color: #F4F8FD;
+    float: left
+}
+
+.rightmess {
+    border: #d8d8d8 1px solid;
+    background-color: #F5F5F5;
+    float: right
+}
+
+.content-wrapper table.norow tr:nth-of-type(odd) {
+    background: initial;
+}
+
+.content-wrapper table.norow tr td {
+    border-top: initial;
+}
+
+
+.content-wrapper thead a {
+    color: #414040;
+    text-decoration: underline;
+}
+
+.content-wrapper a.desc:after {
+    content: "";
+    background-image: url('/newimage/up.png');
+}
+
+.content-wrapper a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+    float: right;
+    content: "";
+    background-image: url(/newimage/down.png);
+    width: 8px;
+    height: 11px;
+}
+
+td .addAtachment {
+    /*display: none;*/
+}
+
+td:hover .addAtachment {
+    display: block;
+}
+
+.modal-header {
+    background: #f5f5f5
+}
+
+.modal-header .close {
+    background: url(../images/sprite/sprite-76fff35d.svg) no-repeat;
+    background-position: 87.78625954198473% 46.92307692307692%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    max-height: calc(100vh - 120px);
+    overflow: scroll;
+}
+
+#filterBar .sortable li:focus, #filterBar .sortable li:hover {
+    background-color: #fff;
+    border-color: #778fb8;
+}
+
+#filterBar .sortable li {
+    padding: 2px 3px 2px 8px;
+    border-radius: 2px;
+    border: 1px #93b5e4 solid;
+}
+
+#filterBar .move {
+    margin: 7px 0;
+}
+
+#filterBar .text-filter p {
+    margin: 10px 0;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.055);
+}
+
+@media (min-width: 992px) {
+    .modal-cm {
+        width: 50%;
+    }
+}
+
+.popup__header > h3 {
+    margin-right: 20px;
+}
+
+.modal-cm {
+    /*margin-top: 100px;*/
+}

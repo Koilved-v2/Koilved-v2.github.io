@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 105</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="7" cy="7" r="7"></circle>
+    </defs>
+    <g id="Artboard-Copy-105" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-7" transform="translate(6.000000, 6.000000)">
+            <g id="upload">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#3578D5" xlink:href="#path-1"></use>
+                <path d="M9.83157895,6.33333333 C10.0175439,6.14736842 10.0175439,5.84912281 9.83157895,5.66315789 L7.32280702,3.15438596 C7.23508772,3.06666667 7.1122807,3.01403509 6.98947368,3.01403509 C6.86666667,3.01403509 6.74385965,3.06315789 6.65614035,3.15438596 L4.14736842,5.66315789 C3.96140351,5.84912281 3.96140351,6.14736842 4.14736842,6.33333333 C4.23859649,6.4245614 4.36140351,6.47368421 4.48070175,6.47368421 C4.6,6.47368421 4.72280702,6.42807018 4.81403509,6.33333333 L6.51578947,4.63157895 L6.51578947,10.4526316 C6.51578947,10.7157895 6.72631579,10.9263158 6.98947368,10.9263158 C7.25263158,10.9263158 7.46315789,10.7157895 7.46315789,10.4526316 L7.46315789,4.63157895 L9.16491228,6.33333333 C9.34736842,6.51929825 9.64561404,6.51929825 9.83157895,6.33333333 Z" id="Path" stroke="#FFFFFF" stroke-width="0.6" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

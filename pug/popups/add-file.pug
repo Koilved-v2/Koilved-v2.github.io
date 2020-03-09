@@ -1,0 +1,19 @@
+include ../mixins/_all-mixins
+
+#popup-add-file.popup.mfp-hide
+    .popup__header
+        h3 Добавление файла
+        .popup__header-close.js-close-popup
+    .popup__body.js-custom-scroll-y
+        .popup__body-wrap
+            .field
+                .field__title
+                    h3 Файл
+                .field__box
+                    input(id='file-popup' type='file')
+                    label(for='file-popup') Выберите файл
+                    span Файл не выбран
+            +field-select('Тип файла')
+            +field-input('Комментарий')
+            .popup__control
+                .button.button--min.button--blue Загрузить

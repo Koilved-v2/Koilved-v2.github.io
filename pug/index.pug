@@ -1,0 +1,17 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset="UTF-8")
+        title Гайдлайн проекта
+    body
+        // Сверстанные страницы
+        -let links = []
+
+        -links.push({'url': 'home', 'name': 'Главная'});
+
+
+        h2 Список свёрстанных страниц
+        ol
+            each link in links
+                li
+                    a(href!=link.url+'.html')=link.name

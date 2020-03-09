@@ -1,0 +1,12 @@
+include ../mixins/_all-mixins
+
+#popup-add-zip.popup.mfp-hide
+    .popup__header
+        h3 Позиция ЗиП
+        .popup__header-close.js-close-popup
+    .popup__body.js-custom-scroll-y
+        .popup__body-wrap
+            +field-input('Кол-во')
+            +field-textarea('Комментарий')
+            .popup__control
+                .button.button--max.button--xmin.button--blue Ок

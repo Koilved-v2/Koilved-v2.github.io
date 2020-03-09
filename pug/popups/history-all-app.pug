@@ -1,0 +1,92 @@
+include ../mixins/_all-mixins
+
+#popup-history-all-app.popup.mfp-hide
+    .popup__header.popup__header--light
+        h3 История объекта
+
+        .popup__header-calendar
+            p 1170 заявок
+            .custom-datepicker.custom-datepicker--mini
+                .custom-datepicker__wrap
+                    .custom-datepicker__box
+                        .custom-datepicker__icon-calendar
+                        input(name="dates").form-control
+                        .custom-datepicker__close
+            p.divider —
+            .custom-datepicker.custom-datepicker--mini
+                .custom-datepicker__wrap
+                    .custom-datepicker__box
+                        .custom-datepicker__icon-calendar
+                        input(name="dates").form-control
+                        .custom-datepicker__close
+
+        .popup__header-dropdown
+            .custom-dropdown
+                .custom-dropdown__name
+                    p Сервис
+                .custom-dropdown__list
+                    ul
+                        li Не определен
+                        li Внешний клиент
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+
+            .custom-dropdown
+                .custom-dropdown__name
+                    p Тип заявки
+                .custom-dropdown__list
+                    ul
+                        li Не определен
+                        li Внешний клиент
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+                        li Запрос на обслуживание
+
+        .popup__header-button
+            .button.button--blue Ок
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-xy
+            .popup__body-wrap
+                .custom-table.custom-table--light
+                    table
+                        thead
+                            tr
+                                th #
+                                th №
+                                th Тип
+                                th Сервис
+                                th Текст заявки
+                                th Заключение специалиста
+                                th Дата/время
+                                    br
+                                    | операции
+                                th Тип
+                                th КЕ работы
+                        tbody
+                            +html-history-all-app
+                            +html-history-all-app
+                            +html-history-all-app
+                            +html-history-all-app
+                            +html-history-all-app
+                            +html-history-all-app
+                            +html-history-all-app
+

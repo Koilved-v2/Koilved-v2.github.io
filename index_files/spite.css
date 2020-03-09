@@ -1,0 +1,21 @@
+.st-btn{
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px;
+
+}
+.st{
+    display: inline-block;
+    background-image: url(sprite.png);
+}
+.st-upload {
+    background-position: -548px -141px;
+    width: 30px;
+    height: 30px;
+}
+.st-trash {
+    background-position: -163px -42px;
+    width: 34px;
+    height: 31px;
+}

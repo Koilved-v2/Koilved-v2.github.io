@@ -1,0 +1,34 @@
+.b-player {
+  display: flex;
+  align-items: center;
+
+  .button-icon--speaker {
+    margin-bottom: -1px;
+  }
+}
+
+.b-player__time {
+  font-size: 11px;
+  line-height: 14px;
+  color: $greyish-brown;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.b-player__progress {
+  position: relative;
+  width: 48px;
+  height: 3px;
+  background-color: $cool-blue20;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+
+.b-player__progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  border-radius: 3px;
+  background-color: $cool-blue;
+}

@@ -1,0 +1,571 @@
+.button-icon {
+  display: block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.button-dropdown {
+  .btn {
+    display: flex;
+    align-items: center;
+
+    .caret {
+      margin-left: 2px;
+    }
+  }
+}
+
+.button-icon--hcenter{
+  margin: 0 auto;
+}
+
+.button-icon--float-right {
+  float: right;
+}
+
+.button-icon--lg {
+  width: 30px;
+  height: 30px;
+}
+
+.button-icon--update {
+  &:after {
+    @include svg-icon-update-arrows;
+  }
+}
+
+// 1
+.button-icon--add-inner-app {
+  &:after {
+    @include svg-icon-add-inner-app;
+  }
+}
+
+.button-icon--add-out-app {
+  &:after {
+    @include svg-icon-add-out-app;
+  }
+}
+
+.button-icon--edit-app {
+  &:after {
+    @include svg-icon-edit-app;
+  }
+}
+
+.button-icon--delete-app {
+  &:after {
+    @include svg-icon-delete-app;
+  }
+}
+
+// 1
+
+// 2
+.button-icon--print-app {
+  &:after {
+    @include svg-icon-print-app;
+  }
+}
+
+.button-icon--history-step-state {
+  &:after {
+    @include svg-icon-history-step-state;
+  }
+}
+
+.button-icon--history-change {
+  &:after {
+    @include svg-icon-history-change;
+  }
+}
+
+.button-icon--new-app {
+  &:after {
+    @include svg-icon-new-app;
+  }
+}
+
+.button-icon--repeat-app {
+  &:after {
+    @include svg-icon-repeat-app;
+  }
+}
+
+.button-icon--add-step-state {
+  &:after {
+    @include svg-icon-add-step-state;
+  }
+}
+
+// 2
+
+// 3
+
+.button-icon--ke {
+  &:after {
+    @include svg-icon-ke;
+  }
+}
+
+.button-icon--contracts {
+  &:after {
+    @include svg-icon-contracts;
+  }
+}
+
+.button-icon--history-all-app {
+  &:after {
+    @include svg-icon-history-all-app;
+  }
+}
+
+.button-icon--files {
+  &:after {
+    @include svg-icon-files;
+  }
+}
+
+.button-icon--id-obj {
+  &:after {
+    @include svg-icon-id-obj;
+  }
+}
+
+.button-icon--automatic-dialing {
+  &:after {
+    @include svg-icon-automatic-dialing;
+  }
+}
+
+.button-icon--automatic-dialing-active {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    @include svg-icon-automatic-dialing-active;
+  }
+}
+
+// 3
+
+// 4
+.button-icon--phone-client {
+  &:after {
+    @include svg-icon-phone-client;
+  }
+}
+
+.button-icon--phone-call {
+  &:after {
+    @include svg-icon-phone-call;
+  }
+}
+
+.button-icon--history-call {
+  &:after {
+    @include svg-icon-history-call;
+  }
+}
+
+// 4
+
+// 5
+.button-icon--messenger {
+  &:after {
+    @include svg-icon-messenger;
+  }
+}
+
+.button-icon--works {
+  &:after {
+    @include svg-icon-works;
+  }
+}
+
+.button-icon--tree {
+  &:after {
+    @include svg-icon-tree;
+  }
+}
+
+.button-icon--files-doc {
+  &:after {
+    @include svg-icon-files-doc;
+  }
+}
+
+// 5
+
+// 6
+.button-icon--moves-ke {
+  &:after {
+    @include svg-icon-moves-ke;
+  }
+}
+
+.button-icon--guide-zip {
+  &:after {
+    @include svg-icon-guide-zip;
+  }
+}
+
+.button-icon--add-new-zip {
+  &:after {
+    @include svg-icon-add-new-zip;
+  }
+}
+
+.button-icon--edit-zip {
+  &:after {
+    @include svg-icon-edit-zip;
+  }
+}
+
+.button-icon--delete-zip {
+  &:after {
+    @include svg-icon-delete-zip;
+  }
+}
+
+// 6
+
+// 7 popup
+.button-icon--green-plus {
+  &:after {
+    @include svg-icon-green-plus;
+  }
+}
+
+.button-icon--equal {
+  &:after {
+    @include svg-icon-equal;
+  }
+}
+
+.button-icon--delete {
+  &:after {
+    @include svg-icon-delete;
+  }
+}
+
+.button-icon--refresh-gradient {
+  &:after {
+    @include svg-icon-refresh-gradient;
+  }
+}
+
+// 7 popup
+
+.button-icon--bin {
+  &:after {
+    @include svg-icon-bin-blue;
+  }
+}
+
+.button-icon--open-files {
+  &:after {
+    @include svg-icon-open-files;
+  }
+}
+
+.button-icon--summ {
+  &:after {
+    @include svg-icon-summ;
+  }
+}
+
+.button-icon--heart-plus {
+  &:after {
+    @include svg-icon-heart-plus;
+  }
+}
+
+.button-icon--table-arrow-up-blue {
+  &:after {
+    @include svg-icon-table-arrow-up-blue;
+  }
+}
+
+.button-icon--table-info {
+  &:after {
+    @include svg-icon-table-info;
+  }
+}
+
+.button-icon--table-heart {
+  &:after {
+    @include svg-icon-table-heart;
+  }
+}
+
+.button-icon--table-ok-green {
+  &:after {
+    @include svg-icon-table-ok-green
+  }
+}
+
+.button-icon--table-arrow-down-red {
+  &:after {
+    @include svg-icon-table-arrow-down-red;
+  }
+}
+
+.button-icon--table-stop {
+  &:after {
+    @include svg-icon-table-stop;
+  }
+}
+
+.button-icon--table-arrow-up-green {
+  &:after {
+    @include svg-icon-table-arrow-up-green;
+  }
+}
+
+.button-icon--table-att-yellow {
+  &:after {
+    @include svg-icon-table-att-yellow;
+  }
+}
+
+.button-icon--table-att-red {
+  &:after {
+    @include svg-icon-table-att-red;
+  }
+}
+
+.button-icon--table-time {
+  &:after {
+    @include svg-icon-table-time;
+  }
+}
+
+.button-icon--play {
+  &:after {
+    @include svg-icon-table-play;
+  }
+}
+
+.button-icon--speaker {
+  &:after {
+    @include svg-icon-table-speaker;
+  }
+}
+
+.button-icon--dots {
+  &:after {
+    @include svg-icon-table-dots;
+  }
+}
+
+.button-icon--mess-plus-red {
+  &:after {
+    @include svg-icon-mess-plus-red;
+  }
+}
+
+.button-icon--mess-plus-blue {
+  &:after {
+    @include svg-icon-mess-plus-blue;
+  }
+}
+
+.button-icon--mess-flag {
+  &:after {
+    @include svg-icon-mess-flag;
+  }
+}
+
+.button-icon--mess-ring {
+  &:after {
+    @include svg-icon-mess-ring;
+  }
+}
+
+.button-icon--mess-plus-green {
+  &:after {
+    @include svg-icon-mess-plus-green;
+  }
+}
+
+.button-icon--mess-time {
+  &:after {
+    @include svg-icon-moves-ke;
+  }
+}
+
+.button-icon--state-phone {
+  &:after {
+    @include svg-icon-state-phone;
+  }
+}
+
+//
+// app-log
+//
+
+// table
+
+.button-icon--files-app-log {
+  &:after {
+    @include svg-icon-files-in-appLog;
+  }
+}
+
+.button-icon--edit-text {
+  &:after {
+    @include svg-icon-edit-text;
+  }
+}
+
+.button-icon--printer {
+  &:after {
+    @include svg-icon-printer;
+  }
+}
+
+.button-icon--upload-files {
+  &:after {
+    @include svg-icon-upload-files;
+  }
+}
+
+.button-icon--email-close {
+  &:after {
+    @include svg-icon-email-close;
+  }
+}
+
+.button-icon--email-open {
+  &:after {
+    @include svg-icon-email-open;
+  }
+}
+
+.button-icon--heart-lg {
+  &:after {
+    @include svg-icon-heart-bg;
+  }
+}
+
+.button-icon--heart-ok-lg {
+  &:after {
+    @include svg-icon-heart-ok-bg;
+  }
+}
+
+.button-icon--heart-cancel-lg {
+  &:after {
+    @include svg-icon-heart-cancel-bg;
+  }
+}
+
+.button-icon--call-cancel {
+  &:after {
+    @include svg-icon-call-cancel;
+  }
+}
+
+.button-icon--chat {
+  &:after {
+    @include svg-icon-chat;
+  }
+}
+
+// control
+
+.button-icon--filter {
+  &:after {
+    @include svg-icon-filter;
+  }
+}
+
+.button-icon--setting-filter {
+  &:after {
+    @include svg-icon-setting-filter;
+  }
+}
+
+.button-icon--export {
+  &:after {
+    @include svg-icon-export;
+  }
+}
+
+.button-icon--save {
+  &:after {
+    @include svg-icon-save;
+  }
+}
+
+.button-icon--clear {
+  &:after {
+    @include svg-icon-clear;
+  }
+}
+
+.button-icon--delete-btn {
+  &:after {
+    @include svg-icon-delete-btn;
+  }
+}
+
+.button-icon--move {
+  &:after {
+    @include svg-icon-move;
+  }
+}
+
+
+// export
+
+.button-icon--export-html {
+  &:after {
+    @include svg-icon-export-html;
+  }
+}
+
+.button-icon--export-csv {
+  &:after {
+    @include svg-icon-export-csv;
+  }
+}
+
+.button-icon--export-excel {
+  &:after {
+    @include svg-icon-export-excel;
+  }
+}
+
+.button-icon--export-json {
+  &:after {
+    @include svg-icon-export-json;
+  }
+}
+
+.button-icon--export-pdf {
+  &:after {
+    @include svg-icon-export-pdf;
+  }
+}
+
+.button-icon--export-text {
+  &:after {
+    @include svg-icon-export-text;
+  }
+}
+
+
+

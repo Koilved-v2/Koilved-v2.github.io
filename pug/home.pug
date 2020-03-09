@@ -1,0 +1,821 @@
+extends _layout
+
+block title
+    title Главная страница
+block content
+    .applications
+        .applications__sidebar
+        .applications__content
+            .applications__container
+                .applications__header
+                    .applications___header-title Заявка №6398398
+                    .applications__header-links
+                        a(href='').applications__header-link Главная
+                        a(href='').applications__header-link Список заявок
+                        a(href='').applications__header-link.applications__header-link--active Заявка №6398398
+
+
+                .row.row-no-gutters
+                    .col-lg-12
+                        .applications__request
+                            .applications__request-top
+                                .applications__request-title Запрос клиента (ЗК), №6398398
+                                .button-icon.button-icon--update
+                                .applications__request-labels
+                                    .applications__request-labels-wrap.js-set-labels
+                                        .label-item.label-item--blue Исполнение
+                                        .label-item.label-item--red Передано / 12455
+
+                                    .applications__request-label-list.js-get-labels
+                                        .label-item__list.js-custom-scroll-y
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--blue Мастер назначен / 12959
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--light-yellow Ожидание / 12941
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--red Передано / 12455
+                                            .label-item__list-item
+                                                .label-item.label-item--light-orange Оформление
+                                                .label-item.label-item--light-green Выполнена / 11825
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--turquoise Передано в Отдел продаж / 14695
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--yellow Требуется диспетчеризация / 12452
+                                            .label-item__list-item
+                                                .label-item.label-item--light-orange Оформление
+                                                .label-item.label-item--light-green Выполнена / 11825
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--turquoise Передано в Отдел продаж / 14695
+                                            .label-item__list-item
+                                                .label-item.label-item--blue Исполнение
+                                                .label-item.label-item--yellow Требуется диспетчеризация / 12452
+
+                                .applications__request-control.applications__request-control--last
+                                    .button-icon.button-icon--add-inner-app
+                                    .button-icon.button-icon--add-out-app
+                                    .button-icon.button-icon--edit-app
+                                    .button-icon.button-icon--delete-app.js-show-tooltip(data-type='remove')
+
+                            .applications__request-bottom
+                                .label-item.label-item--green Запрос на обслуживание
+                                h3 Внешняя
+                                h3 Категория
+                                p Оперативная
+                                .applications__request-control
+                                    a(href='#popup-print-app').button-icon.button-icon--print-app.js-show-popup
+                                    a(href='#popup-history-step-state').button-icon.button-icon--history-step-state.js-show-popup
+                                    a(href='#popup-history-change').button-icon.button-icon--history-change.js-show-popup
+                                    .button-icon.button-icon--new-app
+                                    a(href='#popup-repeat-app').button-icon.button-icon--repeat-app.js-show-popup
+                                    .button-icon.button-icon--add-step-state.js-show-label-list
+                                .applications__request-label-list
+                                    .label-item__list.js-custom-scroll-y
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--blue Мастер назначен / 12959
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--light-yellow Ожидание / 12941
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--red Передано / 12455
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--light-orange Оформление
+                                            .label-item.label-item--light-green Выполнена / 11825
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--turquoise Передано в Отдел продаж / 14695
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--yellow Требуется диспетчеризация / 12452
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--light-orange Оформление
+                                            .label-item.label-item--light-green Выполнена / 11825
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--turquoise Передано в Отдел продаж / 14695
+                                        a(href='#popup-fast-app-process').label-item__list-item.js-show-popup
+                                            .label-item.label-item--blue Исполнение
+                                            .label-item.label-item--yellow Требуется диспетчеризация / 12452
+
+
+
+                .row
+                    .col-md-9.col-lg-9
+                        .applications__description
+                            .applications__description-col
+                                .box-text.box-text--lg.box-text--short-text
+                                    h3 Объект
+                                    p
+                                        a(href='') Блинная сковородовна
+                                        = ' '
+                                        | (ТЦ Норд-Вест) 656011, Алтайский край, Барнаул г, Ленина пр-кт, дом №155
+                                .box-control
+                                    a(href='#popup-ke').button-icon.button-icon--ke.js-show-popup
+                                    a(href='#popup-contracts').button-icon.button-icon--contracts.js-show-popup
+                                    a(href='#popup-history-all-app').button-icon.button-icon--history-all-app.js-show-popup
+                                    a(href='#popup-files').button-icon.button-icon--files.js-show-popup
+                                    a(href='#popup-id-obj').button-icon.button-icon--id-obj.js-show-popup
+                                    .button-icon.button-icon--automatic-dialing.js-automatic-dialing
+                                .box-link
+                                    a(href='#popup-sla').js-show-popup SLA
+                                    a(href='#popup-cost-subscriber-services').js-show-popup Расход абон.услуг
+                                    a(href='#popup-attr-transitions').js-show-popup Атрибуты переходов
+
+                            .applications__description-col
+                                .box-multi-container
+                                    .box-text.box-text--lg
+                                        h3 Сервис
+                                        p Кассы
+                                    .box-text.box-text--lg
+                                        h3 Контакт
+                                        p.box-text__icon
+                                            i.button-icon.button-icon--phone-client
+                                            | ЗУО Лилия (89604564536)
+
+                                .box-text.box-text--lg
+                                    h3 Текст заявки
+                                    .box-text__scroll.js-custom-scroll-y
+                                        p Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. Таким образом реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                                        p Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. Таким образом реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+
+                            .applications__description-control
+                                a(href='#popup-test-call').button-icon.button-icon--phone-call.js-show-popup
+                                a(href='#popup-history-call').button-icon.button-icon--history-call.js-show-popup
+
+
+                        .applications__body
+                            .applications__body-aside.js-custom-scroll-y
+                                .applications__body-desc
+                                    .box-text
+                                        h3 Входящий номер
+                                        p 37к4397
+                                    .box-text
+                                        h3 Заключение
+                                        p Сломался, надо чинить
+                                    .box-text
+                                        h3 Причина
+                                        p Не удается сделать диагностику
+                                    .box-text
+                                        h3 Причина просрочки
+                                        p Не успели купить деталь
+                                    .box-text
+                                        h3 Комментарий к просрочке
+                                        p Гарантированно через 3 дня будет готово
+                                    .box-text
+                                        h3 Входящий номер
+                                        p 37к4397
+                                    .box-text
+                                        h3 Заключение
+                                        p Сломался, надо чинить
+                                    .box-text
+                                        h3 Причина
+                                        p Не удается сделать диагностику
+                                    .box-text
+                                        h3 Причина просрочки
+                                        p Не успели купить деталь
+                                    .box-text
+                                        h3 Комментарий к просрочке
+                                        p Гарантированно через 3 дня будет готово
+
+
+                                .custom-checkbox
+                                    input(id='1' type='checkbox')
+                                    label(for='1') Ошибка
+
+                                .custom-checkbox
+                                    input(id='2' type='checkbox')
+                                    label(for='2') Проср. для клиента
+
+                            .applications__body-tabs
+                                .tabs
+                                    .tabs__control
+                                        .tabs__control-list.js-tab
+                                            .tabs__control-item.tabs__control-item--active
+                                                .button-icon.button-icon--messenger
+                                            .tabs__control-item
+                                                .button-icon.button-icon--works
+                                            .tabs__control-item
+                                                .button-icon.button-icon--tree
+                                            .tabs__control-item
+                                                .button-icon.button-icon--files-doc
+                                        .tabs__control-desc
+                                            .tabs__sub-control.tabs__sub-control--active
+                                                p 12 элменетов
+                                            .tabs__sub-control
+                                                p 24 элменетов
+                                                a(href='#popup-new-action').button.button--middle.button--blue.js-show-popup Добавить операцию
+                                            .tabs__sub-control
+                                                p 20 элменетов
+                                            .tabs__sub-control
+                                                p 11 элменетов
+
+
+                                    .tabs__body.js-tab-content
+                                        .tabs__body-item.tabs__body-item--active
+                                            .b-messages
+                                                .b-messages__header
+                                                    h3 Заявка 61532631
+                                                    a(href='') Все сообщения
+                                                    .b-messages__header-control
+                                                        .button-icon.button-icon--mess-plus-red
+                                                        .button-icon.button-icon--mess-plus-blue
+                                                        .button-icon.button-icon--mess-flag
+                                                        .button-icon.button-icon--mess-ring.js-show-tooltip(data-type='confirm')
+                                                        .button-icon.button-icon--mess-plus-green
+                                                        .button-icon.button-icon--mess-time
+                                                .b-messages__body.js-custom-scroll-y
+                                                    .b-messages__item
+                                                        .b-messages__item-wrap
+                                                            ul
+                                                                li
+                                                                    p Изменено свойство:
+                                                                    p
+                                                                        b «Требуемое время начала работ»
+                                                                li
+                                                                    p Новое значение:
+                                                                    p
+                                                                        b.timebox
+                                                                            span 12.09.2019
+                                                                            span 14:00
+                                                                li
+                                                                    p Предыдущее значение:
+                                                                    p
+                                                                        b.timebox
+                                                                            span 12.09.2019
+                                                                            span 14:00
+                                                                li
+                                                                    p Комментарий:
+                                                                    p
+                                                                        b Тестирование
+
+                                                        .b-messages__item-signature Переверзева Вероника
+                                                            .timebox
+                                                                span 06.10.19
+                                                                span 15:05
+
+                                                    .b-messages__item
+                                                        .b-messages__item-wrap
+                                                            .b-messages__item-more
+                                                                .b-messages__item-more-icon.js-show-mess-control
+                                                                .b-messages__item-more-list
+                                                                    .b-messages__item-more-text Удалить
+                                                                    .b-messages__item-more-text Редактировать
+
+                                                            p Заявка принята в обработку. Уже завтра нужно подъехать на объект и посмотреть все.
+                                                        .b-messages__item-signature shilov.a@gk.ru
+                                                            .timebox
+                                                                span 06.10.19
+                                                                span 15:05
+
+                                                    .b-messages__item
+                                                        .b-messages__item-wrap
+                                                            ul
+                                                                li
+                                                                    p Изменено свойство:
+                                                                    p
+                                                                        b «Требуемое время начала работ»
+                                                                li
+                                                                    p Новое значение:
+                                                                    p
+                                                                        b.timebox
+                                                                            span 12.09.2019
+                                                                            span 14:00
+                                                                li
+                                                                    p Предыдущее значение:
+                                                                    p
+                                                                        b.timebox
+                                                                            span 12.09.2019
+                                                                            span 14:00
+                                                                li
+                                                                    p Комментарий:
+                                                                    p
+                                                                        b Тестирование
+
+                                                        .b-messages__item-signature Переверзева Вероника
+                                                            .timebox
+                                                                span 06.10.19
+                                                                span 15:05
+
+                                                    .b-messages__item
+                                                        .b-messages__item-wrap
+                                                            .b-messages__item-more
+                                                                .b-messages__item-more-icon.js-show-mess-control
+                                                                .b-messages__item-more-list
+                                                                    .b-messages__item-more-text Удалить
+                                                                    .b-messages__item-more-text Редактировать
+                                                            p Заявка принята в обработку. Уже завтра нужно подъехать на объект и посмотреть все.
+                                                        .b-messages__item-signature shilov.a@gk.ru
+                                                            .timebox
+                                                                span 06.10.19
+                                                                span 15:05
+
+                                                .b-messages__footer
+                                                    textarea(placeholder='').js-textarea-mess
+                                                    .b-messages__files
+                                                        input(id='files' type='file')
+                                                        label(for='files')
+                                                    button(type='submit')
+
+                                        .tabs__body-item
+                                            .b-actions
+                                                .b-actions__header
+                                                    h3 1296660
+                                                    h3 389-ЦТО/18
+                                                    h3 №889665 - Щедрый вечер-13 (Усть-Кокса)
+                                                    .button-icon.button-icon--state-phone
+                                                    a(href='#popup-new-action').button-icon.button-icon--edit-zip.js-show-popup
+                                                    .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                                    a(href='#popup-new-work').button-icon.button-icon--mess-plus-green.js-show-popup
+                                                .b-actions__body.js-custom-scroll-y
+                                                    .b-actions__item
+                                                        .b-actions__item-row
+                                                            .b-actions__item-control
+                                                                a(href='#popup-new-work').button-icon.button-icon--edit-zip.js-show-popup
+                                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                                            .b-actions__item-text
+                                                                .b-actions__item-data
+                                                                    .timebox
+                                                                        span 28.03.2019
+                                                                        span 18:00
+
+                                                                    p &nbsp;-&nbsp;
+                                                                    .timebox
+                                                                            span 28.03.2019
+                                                                            span 18:00
+
+                                                                .b-actions__item-name Бадулин Б.В.
+                                                                .b-actions__item-time
+                                                                    p 01:56
+                                                                    p 01:56
+                                                        .b-actions__item-list
+                                                            ul
+                                                                li Выполнение работ удаленным доступом / ПО: Настройка ПО
+                                                                li POS - Система с ФР (7463766462646) [АТОЛ Fprint-22ПТК (746373532)] // [Щедрый вечер-13 (Усть-Кокса)]
+                                                                li Вторая касса зависла, не можем перезагрузить. Перезапустил ПО, установил пакеты обновления. Касса работает исправно.
+
+
+
+                                                    .b-actions__item
+                                                        .b-actions__item-row
+                                                            .b-actions__item-control
+                                                                a(href='#popup-new-work').button-icon.button-icon--edit-zip.js-show-popup
+                                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                                            .b-actions__item-text
+                                                                .b-actions__item-data
+                                                                    .timebox
+                                                                        span 28.03.2019
+                                                                        span 18:00
+
+                                                                    p &nbsp;-&nbsp;
+                                                                    .timebox
+                                                                        span 28.03.2019
+                                                                        span 18:00
+
+                                                                .b-actions__item-name Бадулин Б.В.
+                                                                .b-actions__item-time
+                                                                    p 01:56
+                                                                    p 01:56
+                                                        .b-actions__item-list
+                                                            ul
+                                                                li Выполнение работ удаленным доступом / ПО: Настройка ПО
+                                                                li POS - Система с ФР (7463766462646) [АТОЛ Fprint-22ПТК (746373532)] // [Щедрый вечер-13 (Усть-Кокса)]
+                                                                li Вторая касса зависла, не можем перезагрузить. Перезапустил ПО, установил пакеты обновления. Касса работает исправно.
+
+
+
+                                                    .b-actions__item
+                                                        .b-actions__item-row
+                                                            .b-actions__item-control
+                                                                a(href='#popup-new-work').button-icon.button-icon--edit-zip.js-show-popup
+                                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                                            .b-actions__item-text
+                                                                .b-actions__item-data
+                                                                    .timebox
+                                                                        span 28.03.2019
+                                                                        span 18:00
+
+                                                                    p &nbsp;-&nbsp;
+                                                                    .timebox
+                                                                        span 28.03.2019
+                                                                        span 18:00
+
+                                                                .b-actions__item-name Бадулин Б.В.
+                                                                .b-actions__item-time
+                                                                    p 01:56
+                                                                    p 01:56
+                                                        .b-actions__item-list
+                                                            ul
+                                                                li Выполнение работ удаленным доступом / ПО: Настройка ПО
+                                                                li POS - Система с ФР (7463766462646) [АТОЛ Fprint-22ПТК (746373532)] // [Щедрый вечер-13 (Усть-Кокса)]
+                                                                li Вторая касса зависла, не можем перезагрузить. Перезапустил ПО, установил пакеты обновления. Касса работает исправно.
+
+
+
+
+                                        .tabs__body-item
+                                            .b-tree
+                                                .b-tree__wrap.popup__body-wrap.js-custom-scroll-xy
+                                                    .custom-table.custom-table--two-row.custom-table--tree.custom-table--collapsed
+                                                        table
+                                                            thead
+                                                                tr
+                                                                    th № заявки
+                                                                        br
+                                                                        | Информация
+                                                                    th Этап
+                                                                        br
+                                                                        | Состояние
+                                                                    th Дата
+                                                                        br
+                                                                        | пост.
+                                                                    th(style='min-width: 348px;') Текст / заявленная неисправность
+                                                                    th(style='min-width: 190px;') Объект
+                                                                    th Сервис
+                                                                    th Ответственный
+                                                                    th КЕ
+
+                                                            tbody.js-line
+                                                                tr(data-start-main-line='1' data-nested='0')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row.custom-table__row--main
+                                                                                b №13243524
+                                                                            .custom-table__row Запрос клиента
+                                                                                +progress1
+                                                                                .custom-table__start-main-line
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--fresh-green Закрыта
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td Не работает сканер.
+
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+
+                                                                    td Кассы
+
+                                                                    td Славиняк Д.В.
+                                                                    td
+
+                                                                tr(data-start-secondary-line='2' data-nested='1')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №54622183
+                                                                            .custom-table__row Решение инцидента
+                                                                                +progress2
+                                                                                .custom-table__start-secondary-line
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--fresh-green Закрыта
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td Кассы
+                                                                    td Славиняк Д.В.
+                                                                    td Печатный текст
+
+                                                                tr(data-nested='2')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №54372838
+                                                                            .custom-table__row Ремонт
+                                                                                +progress3
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--pinkish-grey Получение документов
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--faded-pink В работе
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td
+                                                                    td Славиняк Д.В.
+                                                                    td Печатный текст
+
+                                                                tr(data-nested='3')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №13243524
+                                                                            .custom-table__row Запрос клиента
+                                                                                +progress4
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--fresh-green Закрыта
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td Не работает сканер.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td
+                                                                    td Славиняк Д.В.
+                                                                    td
+
+                                                                tr(data-end-secondary-line='5' data-nested='1').custom-table__active
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №76483629
+                                                                            .custom-table__row Восстановление из временного решения
+                                                                                +progress3
+                                                                                .custom-table__end-secondary-line
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--peach Оформление
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td Кассы
+                                                                    td
+                                                                    td Печатный текст
+
+                                                                tr(data-nested='2')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №65747382
+                                                                            .custom-table__row Наряд на работу
+                                                                                +progress4
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--light-blue Исполнение
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td Кассы
+                                                                    td
+                                                                    td Печатный текст
+                                                                tr(data-end-main-line='7' data-nested='1')
+                                                                    td
+                                                                        .custom-table__wrap
+                                                                            .custom-table__row
+                                                                                b №13243524
+                                                                            .custom-table__row Запрос клиента
+                                                                                +progress2
+                                                                                .custom-table__end-main-line
+                                                                    td
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--fresh-green Закрыта
+                                                                        .custom-table__row
+                                                                            .label-item.label-item--lightgreen Выполнена
+                                                                    td
+                                                                        .custom-table__row
+                                                                            b 09.09.2019
+                                                                        .custom-table__row 16:33
+                                                                    td Не работает сканер.
+                                                                    td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                                                    td Кассы
+                                                                    td Славиняк Д.В.
+                                                                    td
+                                        .tabs__body-item
+                                            .custom-table
+                                                table
+                                                    thead
+                                                        tr
+                                                            th(style='width: 23px;') №
+                                                            th(style='width: 140px;') Тип
+                                                            th(style='width: 64px;') Дата
+                                                            th Оператор
+                                                            th Комментраий
+                                                                a(href='#popup-add-file').button-icon.button-icon--float-right.button-icon--mess-plus-green.js-show-popup
+                                                    tbody
+                                                        tr
+                                                            td 1
+                                                            td
+                                                                a(href='') Акт выполненных работ
+                                                            td 01.10.2019
+                                                            td Перфенова М.В.
+                                                            td -
+                                                        tr
+                                                            td 1
+                                                            td Акт выполненных работ
+                                                            td 01.10.2019
+                                                            td Перфенова М.В.
+                                                            td -
+                                                        tr
+                                                            td 1
+                                                            td Акт выполненных работ
+                                                            td 01.10.2019
+                                                            td Перфенова М.В.
+                                                            td -
+
+
+
+
+
+                        .applications__fields
+                            .applications__fields-col
+                                +field-input('КЕ', '', 'moves-ke')
+
+                                .field
+                                    .field__title
+                                        h3 ЗиП в заказ
+                                        .field__title-buttons
+                                            a(href='#popup-add-zip').button-icon.button-icon--add-new-zip.js-show-popup
+                                            a(href='#popup-guide-zip').button-icon.button-icon--guide-zip.js-show-popup
+                                    .field__box
+                                        input(type='text' placeholder='Выберите новый ЗиП')
+                                    .field__list
+                                        .field__list-row
+                                            .field__list-item 1
+                                            .field__list-item Блок питания FJ-SW0902000E 9V 2A
+                                            .field__list-item 2
+                                            .field__list-item
+                                                a(href='#popup-add-zip').button-icon.button-icon--edit-zip.js-show-popup
+                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                        .field__list-row
+                                            .field__list-item 2
+                                            .field__list-item Печатающий механизм SIL LTP01-245-12 с датчиком открытия крышки
+                                            .field__list-item 2
+                                            .field__list-item
+                                                a(href='#popup-add-zip').button-icon.button-icon--edit-zip.js-show-popup
+                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+                                        .field__list-row
+                                            .field__list-item 3
+                                            .field__list-item Блок питания FJ-SW0902000E 9V 2A
+                                            .field__list-item 2
+                                            .field__list-item
+                                                a(href='#popup-add-zip').button-icon.button-icon--edit-zip.js-show-popup
+                                                .button-icon.button-icon--delete-zip.js-show-tooltip(data-type='remove')
+
+
+
+
+                            .applications__fields-col
+                                .field.field--empty
+
+                                +field-input('ЗиП в реализацию', 'Выберите новый ЗиП', 'guide-zip')
+                                +field-input('Внешние ссылки', 'Добавьте ссылку')
+
+
+
+                    .col-md-3.col-lg-3
+                        .applications__aside
+                            .box-container.box-container--grey
+                                .box-text
+                                    h3 Дата поступления
+                                    p 20.09.2019
+                                        = ' '
+                                        span 10:10
+                                .box-text
+                                    h3 Требуемое начало выполнения
+                                    p 20.09.2019
+                                        = ' '
+                                        span 10:10
+                                .box-text
+                                    h3 Плановое начало выполнения
+                                    p 20.09.2019
+                                        = ' '
+                                        span 10:10
+                            .box-multi-container
+                                .box-container.box-container--blue
+                                    .box-text
+                                        h3 Срок выполнения
+                                        p 20.09.2019
+                                            = ' '
+                                            span 10:10
+                                    .box-text
+                                        h3 Дата выполнения
+                                        p 20.09.2019
+                                            = ' '
+                                            span 10:10
+                                .box-container
+                                    .box-text
+                                        h3 Дата закрытия
+                                        p 20.09.2019
+                                            = ' '
+                                            span 10:10
+                                    .box-text
+                                        h3 Время решения
+                                        p 20.09.2019
+                                            = ' '
+                                            span 10:10
+
+                            .box-container.box-container--grey
+                                .box-text
+                                    h3 Длительность плановая, ч.
+                                    p 20.09.2019
+                                        = ' '
+                                        span 10:10
+                            .box-container
+                                .box-text
+                                    h3 Автор заявки
+                                    p Поддубная Наталья Александровна
+                                .box-text
+                                    h3 Ответственный
+                                    p Волокитин Артем Викторович
+                                .box-text
+                                    h3 Организация исполнитель
+                                    p ИП Старшов Константин Сергеевич
+                                .box-text
+                                    h3 Юр. лицо
+                                    p ИП Прусаков Иван Иванович
+
+
+
+
+
+                .b-tooltip
+                    .b-tooltip__close.js-close-tooltip
+                    .b-tooltip__template-remove
+                        .b-tooltip__wrap
+                            h3 Вы действительно хотите удалить?
+                            .b-tooltip__control
+                                .button.button--blue Удалить
+                                .button.button--light-blue.js-close-tooltip Отмена
+                    .b-tooltip__template-confirm
+                        .b-tooltip__wrap
+                            h3 Подтвердить действие?
+                            .b-tooltip__control
+                                .button.button--blue Да
+                                .button.button--light-blue.js-close-tooltip Нет
+
+    // block popups
+    include popups/print
+    include popups/history-step-state
+    include popups/history-change
+    include popups/repeat-app
+    include popups/fast-app-process
+
+    include popups/ke
+    include popups/contract
+    include popups/history-all-app
+    include popups/files
+    include popups/id-obj
+
+    include popups/sla
+    include popups/cost-subscriber-services
+    include popups/attr-transitions
+
+    include popups/test-call
+    include popups/history-call
+
+    include popups/moves-ke
+
+    include popups/guide-zip
+    include popups/add-zip
+
+
+    include popups/add-file
+
+    include popups/new-action
+    include popups/new-work
+
+    include popups/tree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

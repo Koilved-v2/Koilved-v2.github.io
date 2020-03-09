@@ -1,0 +1,59 @@
+<link href="/assets/1ff4eb8d/css/bootstrap.css" rel="stylesheet">
+<div id="universal-modal" class="fade modal" role="dialog" tabindex="-1" 0="">
+<div class="modal-dialog modal-md">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<b>Добавление файла</b>
+</div>
+<div class="modal-body">
+<form id="Fileform" action="/sub-menu/files-add?requestId=1497720&amp;_pjax=%23pjaxModalUniversal" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_csrf-frontend" value="l74GkEqb-wsx802he7Zm2_nCUpKqW0Jm-Byo6HNHE-_D22X9Af3JYluCFdhK3jKSg7Mi-ecpBTW1LJmRCjRe2w==">
+<div class="form-group field-attachment-file">
+<label class="control-label" for="attachment-file">File</label>
+<input type="hidden" name="Attachment[file]" value=""><input type="file" id="attachment-file" name="Attachment[file]">
+
+<div class="help-block"></div>
+</div><div class="form-group field-attachment-attachment_type_id">
+<label class="control-label" for="attachment-attachment_type_id">Attachment Type ID</label>
+<select id="attachment-attachment_type_id" class="form-control" name="Attachment[ATTACHMENT_TYPE_ID]">
+<option value="21">Скан:Акт выполненных работ</option>
+<option value="153">Скан:Акт приемки-передачи</option>
+<option value="141">Скан:Акт ремонта</option>
+<option value="61">Скан:Заявка на ремонт</option>
+<option value="181">Скан:Нарушение условий эксплуатации</option>
+<option value="41">Скан:Наряд на работу</option>
+<option value="62">Скан:Отчет о ремонте</option>
+<option value="81">Скан:Тех. заключение</option>
+<option value="122">Фото:Причина заявки</option>
+<option value="121">Фото:Результат ТО-3</option>
+<option value="152">Фото:Скан для М-Видео (Фото)</option>
+<option value="201">Документ:Счет на оплату 1С</option>
+<option value="154">Другое:Произвольный файл</option>
+<option value="202">Другое:Регистрационная карточка ККТ</option>
+</select>
+
+<div class="help-block"></div>
+</div>
+<div class="form-group field-attachment-att_comment">
+<label class="control-label" for="attachment-att_comment">Att Comment</label>
+<input type="text" id="attachment-att_comment" class="form-control" name="Attachment[ATT_COMMENT]">
+
+<div class="help-block"></div>
+</div>
+
+<div class="form-group">
+    <button type="submit" class="btn btn-primary">Загрузить</button></div>
+
+</form>
+</div>
+
+</div>
+</div>
+</div><script src="/assets/e41ffa0f/jquery.js"></script>
+<script src="/assets/4b1dff42/yii.js"></script>
+<script src="/assets/4b1dff42/yii.validation.js"></script>
+<script src="/assets/4b1dff42/yii.activeForm.js"></script>
+<script src="/assets/1ff4eb8d/js/bootstrap.js"></script>
+<script>jQuery('#Fileform').yiiActiveForm([{"id":"attachment-attachment_type_id","name":"ATTACHMENT_TYPE_ID","container":".field-attachment-attachment_type_id","input":"#attachment-attachment_type_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Значение «Attachment Type ID» должно быть числом.","skipOnEmpty":1});}},{"id":"attachment-att_comment","name":"ATT_COMMENT","container":".field-attachment-att_comment","input":"#attachment-att_comment","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Att Comment» должно быть строкой.","skipOnEmpty":1});}}], []);
+jQuery('#universal-modal').modal({"show":true});</script>

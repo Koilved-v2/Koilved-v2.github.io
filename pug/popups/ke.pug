@@ -1,0 +1,42 @@
+include ../mixins/_all-mixins
+
+#popup-ke.popup.mfp-hide
+    .popup__header.popup__header--light
+        h3 Конфигурационная единица (КЕ)
+        .popup__header-links
+            a(href='') Перейти к отчету "История КЕ"
+            a(href='') Перейти в справочник
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-xy
+            .popup__body-wrap
+                .custom-table.custom-table--light.custom-table--collapsed
+                    table.js-table-collapsed
+                        thead
+                            tr
+                                th Наименование
+                                th ID
+                                th Сер.номер
+                                th Договор
+                                th СК
+                                th Зона
+                                th Прошивка
+                                th Прошивка2
+                                th Прошивка3 - Прошивка4
+                                th Прошивка4
+                                th Прошивка5
+                                th Прошивка6
+                        tbody
+                            +html-ke
+                            +html-ke
+                            +html-ke
+                            +html-ke
+                            +html-ke
+                            +html-ke
+
+
+
+
+
+

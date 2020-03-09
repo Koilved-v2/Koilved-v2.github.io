@@ -1,0 +1,446 @@
+include ../mixins/_all-mixins
+
+#popup-contracts.popup.mfp-hide
+    .popup__header.popup__header--light
+        h3 Договоры
+
+        .popup__header-checkboxs
+            .custom-checkbox
+                input(id='11' type='checkbox')
+                label(for='11') Показывать недействующие
+
+            .custom-checkbox
+                input(id='22' type='checkbox')
+                label(for='22') Все сервисы
+
+            .custom-checkbox
+                input(id='33' type='checkbox')
+                label(for='33') Все регистрации
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-xy
+            .popup__body-wrap
+                .custom-table.custom-table--light.custom-table--collapsed
+                    table.js-table-collapsed
+                        thead
+                            tr
+                                th Наименование / КЕ / Услуга
+                                th Тип / Пакет услуг
+                                th Сервис / Тип КЕ
+                                th Юр. лицо / Отдел
+                        tbody
+                            tr(data-node-id="1")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+
+                            tr(data-node-id="1.1" data-node-pid="1")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="1.1.1" data-node-pid="1.1")
+                                td Аренда ПО ПРОСТОР / ЭВОТОР (780139 - Новая КЕ (Аренда ПО ПРОСТОР / ЭВОТОР))
+                                td Услуги Простор / Эвотор / Sigma_Типовые
+                                td Аренда ПО ПРОСТОР / ЭВОТОР
+                                td
+
+                            tr(data-node-id="1.1.1.1" data-node-pid="1.1.1")
+                                td
+                                    a(href='') Обслуживание Простор / Эвотор (у.д./выезд / офис)
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="1.2.1" data-node-pid="1.1")
+                                td ПО ПРОСТОР / ЭВОТОР (780139 - Новая КЕ (Аренда ПО ПРОСТОР / ЭВОТОР))
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="1.2.1.1" data-node-pid="1.2.1")
+                                td
+                                    a(href='') Обслуживание Простор / Эвотор (у.д./выезд / офис)
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="2")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+
+                            tr(data-node-id="2.1" data-node-pid="2")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="3")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+
+                            tr(data-node-id="3.1" data-node-pid="3")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="4")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+
+                            tr(data-node-id="4.1" data-node-pid="4")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="5")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="5.1" data-node-pid="5")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="6")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="6.1" data-node-pid="6")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="7")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="7.1" data-node-pid="7")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="7")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="7.1" data-node-pid="7")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="7")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="7.1" data-node-pid="7")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="7")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="7.1" data-node-pid="7")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="7")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="7.1" data-node-pid="7")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="8")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="8.1" data-node-pid="8")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="9")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="9.1" data-node-pid="9")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+                            tr(data-node-id="10")
+                                td б/н
+                                td Обслуживание Простор / Эвотор
+                                td Простор / Эвотор / Sigma
+                                td ИП Кобылина Екатери
+
+                            tr(data-node-id="10.1" data-node-pid="10")
+                                td 27.06.2019 - по н.в.
+                                td
+                                td
+                                td
+
+
+
+
+
+
+
+
+
+    .popup__sub-body
+        .custom-table-description
+            .custom-table-description__list
+                h3 Описание цветовой схемы:
+                ul
+                    li(style='color: #5c66ff;') - Услуга, входящая в пакет …
+                    li(style='color: #c16cff;') - Услуга, по которой заданы ограничения …
+                    li(style='color: #c93c69;') - Услуга, по которой заданы ограничения
+            .custom-table-description__list
+                h3 Примеры остатка услуг, входящих в абонентское обслуживание:
+                ul
+                    li - 0 (20) ч. - общий остаток 0 часов при лимите …
+
+
+
+

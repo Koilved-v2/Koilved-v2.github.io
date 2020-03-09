@@ -1,0 +1,856 @@
+mixin field-input(title, placeholder, ...icons)
+    .field
+        .field__title
+            h3= title
+            -if(icons)
+                .field__title-buttons
+                    each icon in icons
+                        a(href=`#popup-${icon}`).button-icon(class=`button-icon--${icon}`).js-show-popup
+
+        .field__box
+            input(type='text' placeholder=placeholder)
+
+mixin field-input-cost(title, placeholder)
+    .field
+        .field__title
+            h3= title
+            .field__title-buttons
+                .button-icon.button-icon--green-plus.js-show-tooltip(data-type='add')
+                .button-icon.button-icon--equal.js-show-tooltip(data-type='add')
+                .button-icon.button-icon--delete.js-show-tooltip(data-type='remove')
+
+        .field__box
+            input(type='text' placeholder=placeholder)
+
+mixin field-input-cost-refresh(title, placeholder)
+    .field
+        .field__title
+            h3= title
+            .field__title-buttons
+                .button-icon.button-icon--green-plus.js-show-tooltip(data-type='add')
+                .button-icon.button-icon--equal.js-show-tooltip(data-type='add')
+                .button-icon.button-icon--delete.js-show-tooltip(data-type='remove')
+                .button-icon.button-icon--refresh-gradient
+
+        .field__box
+            input(type='text' placeholder=placeholder)
+
+mixin field-input-collapsed(title)
+    .field
+        .field__title
+            h3= title
+
+        .field__box
+            .field__box-table
+                .custom-table.custom-table--collapsed.custom-table--single
+                    table.js-table-collapsed
+                        tbody
+                            tr(data-node-id="1")
+                                td Договоры IT - SD - #АТОЛ от 01.11.2018
+
+                            tr(data-node-id="1.1" data-node-pid="1")
+                                td POS - Система с ФР
+
+                            tr(data-node-id="1.1.1" data-node-pid="1.1")
+                                td POS - Система с ФР
+                            tr(data-node-id="1.1.2" data-node-pid="1.1")
+                                td POS - Система с ФР
+
+
+
+mixin field-select(title, placeholder, ...icons)
+    .field
+        .field__title
+            h3= title
+            -if (icons)
+                .field__title-buttons
+                    each icon in icons
+                        .button-icon(class=`button-icon--${icon}`)
+        .field__box
+            .field__box-select
+                select
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+
+
+mixin field-textarea(title, placeholder)
+    .field
+        .field__title
+            h3= title
+        .field__box
+            textarea(placeholder=placeholder)
+
+mixin field-radio(title, placeholder1, placeholder2)
+    .field
+        .field__title
+            h3= title
+        .field__box
+            .field__box-wrap
+                input(type='radio' id='id1-1' name='id1' checked)
+                label(type='radio' for='id1-1')= placeholder1
+            .field__box-wrap
+                input(type='radio' id='id1-2' name='id1')
+                label(type='radio' for='id1-2')= placeholder2
+
+mixin b-player
+    .b-player
+        .button-icon.button-icon--play
+        .b-player__time 0:00 / 1:10
+        .b-player__progress
+            .b-player__progress-line(style='width: 79%;')
+        .button-icon.button-icon--speaker
+        .button-icon.button-icon--dots
+
+mixin progress1
+    .custom-table__progress
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+
+mixin progress2
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+
+mixin progress3
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+
+mixin progress4
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+
+mixin progress5
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+        .custom-table__progress-item
+
+mixin progress6
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+        .custom-table__progress-item
+
+mixin progress7
+    .custom-table__progress
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item
+        .custom-table__progress-item.custom-table__progress-item--active
+
+
+
+mixin html-history-change
+    tr
+        td 1
+        td 09.09.2019
+        td 1-я линия поддержки ОТО (Отдел технического обслуживания г.Барнаул)
+        td Кассы
+        td Губина Н.В.
+        td -
+
+    tr
+        td 1
+        td 09.09.2019
+        td 1-я линия поддержки ОТО (Отдел технического обслуживания г.Барнаул)
+        td Кассы
+        td Губина Н.В.
+        td -
+
+    tr
+        td 1
+        td 09.09.2019
+        td 1-я линия поддержки ОТО (Отдел технического обслуживания г.Барнаул)
+        td Кассы
+        td Губина Н.В.
+        td -
+
+    tr
+        td 1
+        td 09.09.2019
+        td 1-я линия поддержки ОТО (Отдел технического обслуживания г.Барнаул)
+        td Кассы
+        td Губина Н.В.
+        td -
+
+
+mixin html-repeat-app
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу.
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу.
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу / Обслуживание / Консультация по скидкам.
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу.
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу.
+    li №1423436 от Чаплин-Чарли: Консультация по ркиперу.
+
+mixin html-ke
+    tr(data-node-id="1")
+        td Касса&nbsp;01&nbsp;{1&nbsp;КЕ}
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="1.1" data-node-pid="1")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="1.1.1" data-node-pid="1.1")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="2")
+        td Касса 02 {2 КЕ}
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="2.1" data-node-pid="2")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+    tr(data-node-id="2.1" data-node-pid="2")
+        td IT-инфраструктура
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="3")
+        td Касса&nbsp;01&nbsp;{1&nbsp;КЕ}
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="3.1" data-node-pid="3")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="3.1.1" data-node-pid="3.1")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="4")
+        td Касса&nbsp;01&nbsp;{1&nbsp;КЕ}
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="4.1" data-node-pid="4")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="4.1.1" data-node-pid="4.1")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="5")
+        td Касса&nbsp;01&nbsp;{1&nbsp;КЕ}
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="5.1" data-node-pid="5")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+    tr(data-node-id="5.1.1" data-node-pid="5.1")
+        td POS - Система с ФР
+        td 253647
+        td 734762376781
+        td
+            .label-item.label-item--green 006-ЦТО/18
+        td г.Барнаул
+        td 1
+        td
+        td
+        td
+        td
+        td
+        td sdfdsfdsf sdfsdfsdf
+
+mixin html-history-all-app
+    tr
+        td
+            .label-item.label-item--green 1
+        td
+            .label-item.label-item--green 6453267
+        td
+            .label-item.label-item--green ЗК
+        td
+            .label-item.label-item--green Кассы
+        td
+            .label-item.label-item--green.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+            .label-item.label-item--green.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+        td
+        td
+
+
+    tr
+        td
+            .label-item.label-item--pale-mauve 1
+        td
+            .label-item.label-item--pale-mauve 6453267
+        td
+            .label-item.label-item--pale-mauve ЗК
+        td
+            .label-item.label-item--pale-mauve Кассы
+        td
+            .label-item.label-item--pale-mauve.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+            .label-item.label-item--pale-mauve.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+        td
+        td
+
+    tr
+        td
+            .label-item.label-item--green 1
+        td
+            .label-item.label-item--green 6453267
+        td
+            .label-item.label-item--green ЗК
+        td
+            .label-item.label-item--green Кассы
+        td
+            .label-item.label-item--green.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+            .label-item.label-item--green.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+        td
+        td
+
+
+    tr
+        td
+            .label-item.label-item--pale-mauve 1
+        td
+            .label-item.label-item--pale-mauve 6453267
+        td
+            .label-item.label-item--pale-mauve ЗК
+        td
+            .label-item.label-item--pale-mauve Кассы
+        td
+            .label-item.label-item--pale-mauve.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+            .label-item.label-item--pale-mauve.label-item--wrap https:jira.hclass.ru/browse/ALTSUPPORT-54178.
+                br
+                | Не включается компьютер управляющего
+        td
+        td
+        td
+
+
+mixin html-files
+    tr
+        td
+            .custom-table__row
+                .label-item.label-item--green 6453267
+            .custom-table__row
+                a(href='files/book.pdf' target='_blank').button-icon.button-icon--open-files
+        td
+            .custom-table__row ЗК
+            .custom-table__row
+                b Акт
+        td
+            .custom-table__row
+                .label-item.label-item--green Закрыта
+            .custom-table__row
+                .label-item.label-item--green Выполнена
+
+        td
+            .custom-table__row 16.08.2019
+                span 15:20
+            .custom-table__row
+                b 20.08.2019
+                span
+                    b 15:53
+
+        td
+            .custom-table__row Сетевой Отдел
+            .custom-table__row
+        td
+            .custom-table__row
+            .custom-table__row ХолдиРодино.pdf
+
+        td
+            .custom-table__row Рязанцев А.В.
+            .custom-table__row Рязанцев А.В.
+
+    tr
+        td
+            .custom-table__row
+                .label-item.label-item--light-orange 6453267
+            .custom-table__row
+                a(href='files/book.pdf' target='_blank').button-icon.button-icon--open-files
+        td
+            .custom-table__row ЗК
+            .custom-table__row
+                b Акт
+        td
+            .custom-table__row
+                .label-item.label-item--green Закрыта
+            .custom-table__row
+                .label-item.label-item--green Выполнена
+
+        td
+            .custom-table__row 16.08.2019
+                span 15:20
+            .custom-table__row
+                b 20.08.2019
+                span
+                    b 15:53
+
+        td
+            .custom-table__row Сетевой Отдел
+            .custom-table__row
+        td
+            .custom-table__row
+            .custom-table__row ХолдиРодино.pdf
+
+        td
+            .custom-table__row Рязанцев А.В.
+            .custom-table__row Рязанцев А.В.
+
+    tr
+        td
+            .custom-table__row
+                .label-item.label-item--green 6453267
+            .custom-table__row
+                a(href='files/book.pdf' target='_blank').button-icon.button-icon--open-files
+        td
+            .custom-table__row ЗК
+            .custom-table__row
+                b Акт
+        td
+            .custom-table__row
+                .label-item.label-item--green Закрыта
+            .custom-table__row
+                .label-item.label-item--green Выполнена
+
+        td
+            .custom-table__row 16.08.2019
+                span 15:20
+            .custom-table__row
+                b 20.08.2019
+                span
+                    b 15:53
+
+        td
+            .custom-table__row Сетевой Отдел
+            .custom-table__row
+        td
+            .custom-table__row
+            .custom-table__row ХолдиРодино.pdf
+
+        td
+            .custom-table__row Рязанцев А.В.
+            .custom-table__row Рязанцев А.В.
+
+mixin html-sla
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+
+    tr
+        td тест-20140903
+        td Услуги ТО: Кассы - Стандартный с ПФ
+        td Зона 1 (0км)
+        td 8
+
+mixin html-css
+    tr
+        td Выполнение работ в сверхурочное время
+        td 0:00
+        td 0:00
+
+    tr
+        td Консультация по телефону
+        td 0:00
+        td 0:00
+
+    tr
+        td ТО: Выезд на удаленный объект (более 20 км от зоны присутствия)
+        td 0
+        td 0
+
+
+mixin html-attr
+    tr
+        td Заключение исполнителя
+        td -
+
+    tr
+        td Заявленная неисправность (для клиента)
+        td -
+
+    tr
+        td Текст заявки
+        td Сломался автоотрез, погнулся в двух местах
+
+    tr
+        td Наличие гарантии по заявке
+        td Нет гарантии
+
+    tr
+        td Наличие гарантии по заявке (для клиента)
+        td Гарантия
+
+    tr
+        td Дата выполнения
+        td 12.09.2019 09:36
+
+    tr
+        td Результат выполнения заявки
+        td Успешно
+
+    tr
+        td Комментарий
+        td Успели во время
+
+mixin html-history-call
+    tr
+        td 1
+        td
+            .button-icon.button-icon--table-heart
+        td 12.08.2019
+            span 11:18:18
+        td Макаль А.Н.
+        td 89836574656
+        td
+            .button-icon.button-icon--table-ok-green
+        td 12.08.2019
+            span 11:18:18
+        td 10
+        td 00:01:00
+        td
+            +b-player
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td
+            .button-icon.button-icon--table-arrow-down-red
+        td 12.08.2019
+            span 11:18:18
+        td Макаль А.Н.
+        td 89836574656
+        td
+            .button-icon.button-icon--table-stop
+        td 12.08.2019
+            span 11:18:18
+        td 10
+        td 00:01:00
+        td
+            +b-player
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td
+            .button-icon.button-icon--table-arrow-up-green
+        td 12.08.2019
+            span 11:18:18
+        td Макаль А.Н.
+        td 89836574656
+        td
+            .button-icon.button-icon--table-att-yellow
+        td 12.08.2019
+            span 11:18:18
+        td 10
+        td 00:01:00
+        td
+            +b-player
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td
+            .button-icon.button-icon--table-arrow-up-green
+        td 12.08.2019
+            span 11:18:18
+        td Макаль А.Н.
+        td 89836574656
+        td
+            .button-icon.button-icon--table-att-red
+        td 12.08.2019
+            span 11:18:18
+        td 10
+        td 00:01:00
+        td
+            +b-player
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td
+            .button-icon.button-icon--table-arrow-up-green
+        td 12.08.2019
+            span 11:18:18
+        td Макаль А.Н.
+        td 89836574656
+        td
+            .button-icon.button-icon--table-time
+        td 12.08.2019
+            span 11:18:18
+        td 10
+        td 00:01:00
+        td
+            +b-player
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+
+mixin html-move-ke
+    tr
+        td 1
+        td 7465
+        td 05.08.2019
+            span 15:56:54
+        td Комплект
+        td -
+        td -
+        td Славиняк Е.Е.
+        td
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td 7465
+        td 05.08.2019
+            span 15:56:54
+        td Комплект
+        td -
+        td -
+        td Славиняк Е.Е.
+        td
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')
+
+    tr
+        td 1
+        td 7465
+        td 05.08.2019
+            span 15:56:54
+        td Комплект
+        td -
+        td -
+        td Славиняк Е.Е.
+        td
+        td
+            .button-icon.button-icon--bin.js-show-tooltip(data-type='remove')

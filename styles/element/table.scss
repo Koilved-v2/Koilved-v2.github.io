@@ -1,0 +1,472 @@
+.custom-table {
+  //border: solid 1px rgba(127, 127, 127, 0.3);
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    // !!!!!!!!!!
+    // !!!!!!!!!!
+    // !!!!!!!!!! установить для таблиц только для 1го проекта
+    // !!!!!!!!!!
+    // !!!!!!!!!!
+    //.button-icon {
+    //  width: 15px;
+    //  height: 15px;
+    //}
+
+    .simple-tree-table {
+      &-icon {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        line-height: 7px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid $cool-blue;
+        background-color: $white;
+        color: $cool-blue;
+        margin: 0 4px 0 0;
+      }
+      &-opened {
+
+        .simple-tree-table-icon:after {
+          content: '-';
+          font-size: 14px;
+          line-height: 6px;
+        }
+      }
+      &-closed &-icon:after {
+        content: '+';
+      }
+    }
+
+    .simple-tree-table-empty {
+      .simple-tree-table-icon {
+        opacity: 0;
+        margin-right: -10px;
+      }
+    }
+  }
+
+  thead {
+    tr {
+      th {
+        padding: 4px;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 15px;
+        background-color: $pale-grey-two;
+        border-right: 1px solid $white;
+        color: $greyish-brown;
+        white-space: nowrap;
+
+        &:last-child {
+          border-color: $pale-grey-two;
+        }
+
+        &:first-child {
+          padding-left: 18px;
+        }
+
+        .button-icon {
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  tbody {
+    background-color: $white;
+
+    tr {
+      font-size: 11px;
+      line-height: 15px;
+
+      td {
+        padding: 4px;
+        border-right: 1px solid $white;
+
+        &:first-child {
+          padding-left: 18px;
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+
+      }
+
+      &:nth-child(even) {
+        //background-color: $pale-grey80;
+        //background-color: rgba(245, 245, 245, 0.8);
+        background-color: rgba(242, 246, 250, 0.8);
+      }
+    }
+  }
+}
+
+.custom-table__row {
+  min-height: 18px;
+
+  &:first-child {
+    margin-bottom: 4px;
+  }
+}
+
+.custom-table__row--main {
+  color: $dark-pink;
+}
+
+.custom-table--light {
+  thead {
+    tr {
+      th {
+        background-color: $white-two;
+      }
+    }
+  }
+}
+
+.custom-table__wrap {
+  display: flex;
+  flex-direction: column;
+  .simple-tree-table-icon {
+    display: none!important;
+  }
+}
+
+.custom-table__control {
+  margin-top: 6px;
+  display: flex;
+}
+
+.custom-table__control--center {
+  justify-content: center;
+}
+
+.custom-table-description {
+  margin-top: 26px;
+  padding-left: 15px;
+}
+
+.custom-table-description__list {
+  margin-bottom: 11px;
+  h3 {
+    font-weight: normal;
+    margin-bottom: 4px;
+  }
+  ul {
+    margin-bottom: 0;
+    li {
+      padding: 0;
+      line-height: 16px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.custom-table--collapsed {
+  tbody tr td:first-child {
+    display: flex;
+    align-items: flex-start;
+
+    span {
+      margin-top: 3px;
+      flex-shrink: 0;
+
+    }
+  }
+
+  a {
+    .simple-tree-table-icon {
+      display: none;
+    }
+    text-decoration: none;
+  }
+}
+
+.custom-table--two-row {
+  tbody tr td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.custom-table--tree {
+  table {
+    .simple-tree-table-icon {
+      width: 1px;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  .custom-table__row {
+    .simple-tree-table-icon {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        vertical-align: top;
+      }
+
+      &[data-nested='1'] {
+        .custom-table__wrap {
+          margin-left: 12px;
+        }
+
+        .custom-table__progress {
+          margin-left: 1px;
+        }
+      }
+
+      &[data-nested='2'] {
+        .custom-table__wrap {
+          margin-left: 24px;
+        }
+
+        .custom-table__progress {
+          margin-left: -11px;
+        }
+      }
+
+      &[data-nested='3'] {
+        .custom-table__wrap {
+          margin-left: 36px;
+        }
+
+        .custom-table__progress {
+          margin-left: -24px;
+        }
+      }
+    }
+  }
+}
+
+.custom-table--scroll {
+  thead {
+    tr {
+      th {
+        &:last-child {
+          padding-right: 14px;
+        }
+      }
+    }
+  }
+}
+
+.custom-table--fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.custom-table--single {
+  tbody tr td:first-child {
+    padding-left: 9px;
+  }
+}
+
+.custom-table__progress {
+  margin-top: 4px;
+  margin-left: 13px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.custom-table__progress-item {
+  position: relative;
+  width: 9px;
+  height: 1px;
+  background-color: $cool-blue50;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.custom-table__progress-item--active {
+  background-color: transparent;
+  &:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 9px;
+    height: 9px;
+    background-color: $white;
+    border: solid 2px $cool-blue;
+    border-radius: 50%;
+  }
+}
+
+.custom-table__start-main-line {
+  position: absolute;
+  top: 6.5px;
+  left: -7.5px;
+  width: 6px;
+  height: 7.5px;
+  border-top: 1px solid $cool-blue;
+  border-left: 1px solid $cool-blue;
+}
+
+.custom-table__end-main-line {
+  position: absolute;
+  top: 6.5px;
+  left: -19px;
+  width: 18px;
+  border-top: 1px solid $cool-blue;
+}
+
+.custom-table__start-secondary-line {
+  position: absolute;
+  top: 6.5px;
+  left: -7.5px;
+  width: 6px;
+  height: 7.5px;
+  border-top: 1px solid $cool-blue;
+  border-left: 1px solid $cool-blue;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 18px;
+    border-top: 1px solid $cool-blue;
+  }
+}
+
+.custom-table__end-secondary-line {
+  position: absolute;
+  top: 6.5px;
+  left: -7.5px;
+  width: 6px;
+  height: 7.5px;
+  border-top: 1px solid $cool-blue;
+}
+
+.custom-table__active {
+  color: $cool-blue;
+
+  td {
+    &:first-child {
+      .custom-table__wrap {
+        .custom-table__row {
+          b {
+            color: $greyish-brown;
+          }
+        }
+      }
+    }
+  }
+}
+
+.custom-table__divider {
+  width: 100%;
+  height: 2px;
+  background-color: #dfdfe4;
+  margin: 6px 0;
+}
+
+.custom-table__divider + .custom-table__row {
+  margin-bottom: 4px;
+}
+
+.custom-table--app-log {
+  .JCLRgrip {
+    margin-left: -3px;
+  }
+
+  .custom-table__row {
+    overflow: hidden;
+  }
+
+  table {
+    width: auto;
+
+    // !!!!
+    // !!!!
+    // !!!!
+    // !!!!
+    // !!!!
+    // !!!!
+    .button-icon {
+      width: 22px;
+      height: 22px;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      & > a {
+        text-decoration: none;
+        color: $greyish-brown;
+      }
+    }
+  }
+
+  .hcenter {
+    text-align: center;
+  }
+
+  thead {
+    tr {
+      th {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        padding: 16px 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border-color: #f5f5f5;
+      }
+    }
+  }
+  tbody {
+    tr {
+      vertical-align: top;
+
+      &:first-child {
+        border-top: 1px solid $white;
+      }
+
+      &:nth-child(odd) {
+        background-color: rgba(242, 246, 250, 0.8);
+      }
+      &:nth-child(even) {
+        background-color: transparent;
+      }
+
+      td {
+        overflow: hidden;
+        padding: 6px 12px!important;
+        border-color: #f5f5f5;
+
+        &:first-child {
+          padding-left: 12px!important;
+        }
+
+        &.is-visible {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}

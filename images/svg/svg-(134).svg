@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 18</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-18" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="history" transform="translate(2.000000, 2.000000)">
+            <rect id="Rectangle-Copy-25" fill="#3578D5" x="0" y="0" width="22" height="21" rx="2"></rect>
+            <g id="Group-17" transform="translate(4.000000, 4.000000)" stroke="#FFFFFF">
+                <circle id="Oval" cx="10.75" cy="10.75" r="3.75"></circle>
+                <path d="M10.5,9.5 L10.5,11.5" id="Line-6" stroke-linecap="round"></path>
+                <path d="M11.5,10.5 L11.5,12.5" id="Line-6" stroke-linecap="round" transform="translate(11.500000, 11.500000) rotate(-90.000000) translate(-11.500000, -11.500000) "></path>
+                <path d="M6.11790821,13 L6.11790821,13 L2,13 C0.8954305,13 0,12.1045695 0,11 L0,2 C0,0.8954305 0.8954305,0 2,0 L2,0 L10,0 C11.1045695,0 12,0.8954305 12,2 L12,5.12882591 L12,5.12882591" id="Path-Copy" stroke-linecap="round"></path>
+                <path d="M0,6.5 L6,6.5" id="Line-4" stroke-linecap="round"></path>
+                <path d="M0,8.5 L6,8.5" id="Line-4" stroke-linecap="round"></path>
+                <path d="M0,10.5 L5,10.5" id="Line-4-Copy-2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

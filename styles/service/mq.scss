@@ -1,0 +1,141 @@
+$media-queries: true;
+
+
+$bp-1920: 1920px;
+$bp-1440: 1440px;
+$bp-1366: 1366px;
+$bp-1280: 1280px;
+$bp-1240: 1240px;
+$bp-ipad-1024: 1024px;
+$bp-ipad-768: 768px;
+$bp-720: 720px;
+$bp-640: 640px;
+$bp-540: 540px;
+$bp-480: 480px;
+$bp-414: 414px;
+$bp-375: 375px;
+$bp-360: 360px;
+$bp-320: 320px;
+
+$bp-min-767: 767px;
+$bp-min-992: 992px;
+
+@mixin bp($point) {
+  @if ($media-queries) {
+    // start desktop
+    @if $point == $bp-1920 {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-1920}) {
+        @content;
+      }
+    }
+    @if $point == $bp-1440 {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-1440}) {
+        @content;
+      }
+    }
+    @if $point == $bp-1366 {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-1366}) {
+        @content;
+      }
+    }
+    @if $point == $bp-1280 {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-1280}) {
+        @content;
+      }
+    }
+    @if $point == $bp-1240 {
+      @media // Desktops and Laptops
+      only screen and (max-width: #{$bp-1240}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-ipad-1024 {
+      @media // iPad-Mini (portrait and landscape)
+      only screen and (max-width: #{$bp-ipad-1024}){
+        @content;
+      }
+    }
+
+    @if $point == $bp-ipad-768 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-ipad-768}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-720 {
+      @media
+      only screen and (max-width: #{$bp-720}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-640 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-640}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-540 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-540}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-480 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-480}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-414 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-414}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-375 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-375}) {
+        @content;
+      }
+    }
+    @if $point == $bp-360 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-360}) {
+        @content;
+      }
+    }
+    @if $point == $bp-320 {
+      @media // iPad (portrait and landscape)
+      only screen and (max-width: #{$bp-320}) {
+        @content;
+      }
+    }
+
+    // min
+
+    @if $point == $bp-min-767 {
+      @media
+      only screen and (min-width: #{$bp-min-767}) {
+        @content;
+      }
+    }
+
+    @if $point == $bp-min-992 {
+      @media
+      only screen and (min-width: #{$bp-min-992}) {
+        @content;
+      }
+    }
+  }
+}

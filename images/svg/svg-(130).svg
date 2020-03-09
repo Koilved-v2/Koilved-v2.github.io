@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 14</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-14" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Group" transform="translate(5.000000, 8.000000)" stroke="#3578D5">
+            <g id="up">
+                <path d="M3,8.81818182 L3,2.36363682" id="Line-3" stroke-width="1.33333333"></path>
+                <path d="M3,0.363636364 L0.5,4.5" id="Line-11" stroke-width="1.33"></path>
+                <path d="M3,0.363636364 L5.5,4.5" id="Line-12" stroke-width="1.33"></path>
+            </g>
+            <g id="down" transform="translate(12.000000, 4.500000) scale(1, -1) translate(-12.000000, -4.500000) translate(9.000000, 0.000000)">
+                <path d="M3,8.81818182 L3,2.36363682" id="Line-3" stroke-width="1.33333333"></path>
+                <path d="M3,0.363636364 L0.5,4.5" id="Line-11" stroke-width="1.33"></path>
+                <path d="M3,0.363636364 L5.5,4.5" id="Line-12" stroke-width="1.33"></path>
+            </g>
+        </g>
+    </g>
+</svg>

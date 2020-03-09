@@ -1,0 +1,131 @@
+include ../mixins/_all-mixins
+
+#popup-fast-app-process.popup.mfp-hide
+    .popup__header
+        h3 Быстрая обработка заявки №21534471 в
+        .popup__labels
+            .label-item.label-item--light-orange Оформление
+            span :
+            .label-item.label-item--light-green Выполнена
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-wrap
+            .popup__body-row
+                .popup__body-col.js-custom-scroll-y
+                    h3.blue Атрибуты заявки
+                    +field-textarea('Текст заявки')
+                    +field-select('Новая критичность')
+                    +field-select('Новый сервис')
+
+
+                .popup__body-col.js-custom-scroll-y
+                    h3.blue Новая операция
+                    +field-textarea('Заключение исполнителя')
+                    .box-text
+                        h3 Объект
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                        p АТОЛ (127015, г.Москва, Новодмитровская Б. ул, дом №14, строение 4, оф.22)
+                    +field-select('Тип операции')
+                    +field-select('Ответственный')
+                    .custom-datepicker
+                        h3 Дата начала
+                        .custom-datepicker__wrap
+                            .custom-datepicker__wrap-box
+                                .custom-datepicker__box
+                                    .custom-datepicker__icon-calendar
+                                    input(name='datesTimeUp').form-control
+                                    .custom-datepicker__close
+                            .custom-datepicker__links
+                                a(href='') Текущая дата
+                                a(href='') Дата регистрации
+
+                    .custom-datepicker
+                        h3 Дата окончания
+                        .custom-datepicker__wrap
+                            .custom-datepicker__wrap-box
+                                .custom-datepicker__box
+                                    .custom-datepicker__icon-calendar
+                                    input(name='datesTimeUp').form-control
+                                    .custom-datepicker__close
+                            .custom-datepicker__links
+                                a(href='') Текущая дата
+
+
+                    +field-input-cost('Затраты')
+
+                .popup__body-col.js-custom-scroll-y
+                    h3.blue Новая работа
+                    +field-select('Сервис')
+                    +field-input-collapsed('KE')
+                    +field-input('Поиск по SN')
+                    +field-select('Услуга')
+                    +field-select('Тип работы')
+                    .field.field--multi
+                        .field__title
+                            h3 Длительность
+                        .field__box.field__box--three-custom-width
+                            .field.field--min.field--turquoise
+                                .field__title
+                                    h3 Факт
+                                .field__box
+                                    input(type='text' placeholder='00:00')
+                            .field.field--min.field--blue
+                                .field__title
+                                    h3 Для клиента
+                                .field__box
+                                    input(type='text' placeholder='00:00')
+                            .field.field--min.field--blue
+                                .field__title
+                                    h3 Тип оплаты
+                                .field__box
+                                    .field__box-select
+                                        select
+                                            option По договору
+                                            option По договору
+                                            option По договору
+                                            option По договору
+
+                    +field-textarea('Текст работы')
+                    +field-input-cost('Затраты')
+                    +field-input('Комментарий')
+                    +field-input('Комментарий')
+                    +field-input('Комментарий')
+
+
+    .popup__footer
+        .popup__footer-control
+            .button.button--max.button--control.button--turquoise Сохранить работу и выйти
+            .button.button--max.button--control.button--cool-blue Сохранить и выполнить переход
+            .button.button--min.button--control.button--dark-pink Обновить
+
+    .b-tooltip
+        .b-tooltip__close.js-close-tooltip
+        .b-tooltip__template-add
+            .b-tooltip__header
+                h3 Затраты
+            .b-tooltip__body
+                +field-select('Тип', '', 'green-plus', 'equal')
+                +field-input('Сумма затрат')
+            .b-tooltip__footer
+                .button.button--min.button--blue Сохранить
+        .b-tooltip__template-remove
+            .b-tooltip__wrap
+                h3 Вы действительно хотите удалить?
+                .b-tooltip__control
+                    .button.button--blue Удалить
+                    .button.button--light-blue.js-close-tooltip Отмена
+
+
+

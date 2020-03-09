@@ -1,0 +1,58 @@
+include ../mixins/_all-mixins
+
+#popup-new-action.popup.mfp-hide
+    .popup__header
+        h3 Новая операция
+        .popup__header-close.js-close-popup
+    .popup__body.js-custom-scroll-y
+        .popup__body-wrap
+            +field-select('Тип операции')
+            +field-input('Сотрудник', '')
+            +field-input('Объект')
+            .field
+                .field__row
+                    .custom-datepicker
+                        h3 Дата начала
+                        .custom-datepicker__wrap
+                            .custom-datepicker__wrap-box
+                                .custom-datepicker__box
+                                    .custom-datepicker__icon-calendar
+                                    input(name="datesTime").form-control
+                                    .custom-datepicker__close
+                            .custom-datepicker__links.custom-datepicker__links--two
+                                a(href='') Текущая дата
+                                a(href='') Дата регистрации
+
+                    .custom-datepicker
+                        h3 Дата окончания
+                        .custom-datepicker__wrap
+                            .custom-datepicker__wrap-box
+                                .custom-datepicker__box
+                                    .custom-datepicker__icon-calendar
+                                    input(name="datesTime").form-control
+                                    .custom-datepicker__close
+                            .custom-datepicker__links
+                                a(href='') Текущая дата
+            +field-input('Комментарий')
+            +field-input-cost-refresh('Затраты')
+
+    .popup__footer
+        .popup__footer-control
+            .button.button--max.button--control.button--turquoise Сохранить
+
+    .b-tooltip
+        .b-tooltip__close.js-close-tooltip
+        .b-tooltip__template-add
+            .b-tooltip__header
+                h3 Затраты
+            .b-tooltip__body
+                +field-select('Тип', '', 'green-plus', 'equal')
+                +field-input('Сумма затрат')
+            .b-tooltip__footer
+                .button.button--min.button--blue Сохранить
+        .b-tooltip__template-remove
+            .b-tooltip__wrap
+                h3 Вы действительно хотите удалить?
+                .b-tooltip__control
+                    .button.button--blue Удалить
+                    .button.button--light-blue.js-close-tooltip Отмена

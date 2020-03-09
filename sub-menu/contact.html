@@ -1,0 +1,23 @@
+<div class="padding-20">
+    <form id="contact-form" action="/sub-menu/contact?requestId=1497720" method="post">
+<input type="hidden" name="_csrf-frontend" value="eohJHr0stbt0rnPudGW0fphpb29YBGX5bm9hZbcsLrcu7Spz9kqH0h7fK5dFDeA34hgfBBV2IqojX1Aczl9jgw==">
+    <div class="form-group field-request-contact required">
+<label class="control-label" for="request-contact">Контактное лицо</label>
+<input type="text" id="request-contact" class="form-control" name="Request[CONTACT]" value="Шишлаков А.М." aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-request-req_phone">
+<label class="control-label" for="request-req_phone">Контактный телефон</label>
+<input type="text" id="request-req_phone" class="form-control" name="Request[REQ_PHONE]" value="038">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group text-right">
+        <button type="submit" class="btn btn-success">Сохранить</button>    </div>
+
+    </form></div><script src="/assets/e41ffa0f/jquery.js"></script>
+<script src="/assets/4b1dff42/yii.js"></script>
+<script src="/assets/4b1dff42/yii.validation.js"></script>
+<script src="/assets/4b1dff42/yii.activeForm.js"></script>
+<script>jQuery('#contact-form').yiiActiveForm([{"id":"request-contact","name":"CONTACT","container":".field-request-contact","input":"#request-contact","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Контактное лицо» должно быть строкой.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Необходимо заполнить «Контактное лицо»."});}},{"id":"request-req_phone","name":"REQ_PHONE","container":".field-request-req_phone","input":"#request-req_phone","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Контактный телефон» должно быть строкой.","skipOnEmpty":1});}}], []);</script>

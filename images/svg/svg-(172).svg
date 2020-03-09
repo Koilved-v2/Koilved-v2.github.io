@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Artboard Copy 56</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy-56" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calendar" transform="translate(7.000000, 7.000000)" fill="#3578D5" fill-rule="nonzero">
+            <path d="M10.59375,0.9375 L10.03125,0.9375 L10.03125,0 L9.09375,0 L9.09375,0.9375 L2.90625,0.9375 L2.90625,0 L1.96875,0 L1.96875,0.9375 L1.40625,0.9375 C0.63084375,0.9375 0,1.56834375 0,2.34375 L0,10.59375 C0,11.3691562 0.63084375,12 1.40625,12 L10.59375,12 C11.3691562,12 12,11.3691562 12,10.59375 L12,2.34375 C12,1.56834375 11.3691562,0.9375 10.59375,0.9375 Z M11.0625,10.59375 C11.0625,10.8522188 10.8522188,11.0625 10.59375,11.0625 L1.40625,11.0625 C1.14778125,11.0625 0.9375,10.8522188 0.9375,10.59375 L0.9375,4.40625 L11.0625,4.40625 L11.0625,10.59375 Z M11.0625,3.46875 L0.9375,3.46875 L0.9375,2.34375 C0.9375,2.08528125 1.14778125,1.875 1.40625,1.875 L1.96875,1.875 L1.96875,2.8125 L2.90625,2.8125 L2.90625,1.875 L9.09375,1.875 L9.09375,2.8125 L10.03125,2.8125 L10.03125,1.875 L10.59375,1.875 C10.8522188,1.875 11.0625,2.08528125 11.0625,2.34375 L11.0625,3.46875 Z" id="Shape"></path>
+            <rect id="Rectangle" x="1.78125" y="5.390625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="3.65625" y="5.390625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="5.53125" y="5.390625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="7.40625" y="5.390625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="9.28125" y="5.390625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="1.78125" y="7.265625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="3.65625" y="7.265625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="5.53125" y="7.265625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="7.40625" y="7.265625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="1.78125" y="9.140625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="3.65625" y="9.140625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="5.53125" y="9.140625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="7.40625" y="9.140625" width="1" height="1"></rect>
+            <rect id="Rectangle" x="9.28125" y="7.265625" width="1" height="1"></rect>
+        </g>
+    </g>
+</svg>

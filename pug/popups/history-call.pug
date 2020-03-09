@@ -1,0 +1,52 @@
+include ../mixins/_all-mixins
+
+#popup-history-call.popup.mfp-hide
+    .popup__header
+        h3 История вызовов - заявка №14253664
+        .popup__header-button-icon
+            .button-icon.button-icon--heart-plus
+            .button-icon.button-icon--update
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-y
+            .popup__body-wrap
+                .custom-table.custom-table--scroll
+                    table
+                        thead
+                            tr
+                                th №
+                                th
+                                    .button-icon.button-icon--table-arrow-up-blue
+                                th Дата
+                                th Оператор
+                                th Тел.
+                                th
+                                    .button-icon.button-icon--table-info
+                                th План / факт
+                                th Оценка
+                                th Длит-ть
+                                th Запись
+                                th
+                                    .button-icon.button-icon--bin
+                        tbody
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+                            +html-history-call
+
+    .b-tooltip
+        .b-tooltip__close.js-close-tooltip
+        .b-tooltip__template-remove
+            .b-tooltip__wrap
+                h3 Вы действительно хотите удалить?
+                .b-tooltip__control
+                    .button.button--blue Удалить
+                    .button.button--light-blue.js-close-tooltip Отмена
+
+
+

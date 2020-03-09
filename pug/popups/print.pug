@@ -1,0 +1,25 @@
+include ../mixins/_all-mixins
+
+#popup-print-app.popup.mfp-hide
+    .popup__header
+        h3 Печатная форма - заявка №8475643
+        .popup__header-close.js-close-popup
+    .popup__body
+        .popup__body-scroll.js-custom-scroll-y
+            .popup__body-wrap
+                +field-input('Шаблон', 'Акт передачи оборудования.doc')
+                +field-input-collapsed('KE')
+                +field-input('Номер заявки')
+                +field-input('Объект заявки')
+                +field-input('Организация заявки')
+                +field-input('Тип КЕ заявки')
+                +field-input('Серийный номер КЕ')
+                +field-input('Дата заявки')
+                +field-textarea('Текст заявки')
+                +field-input('Ответственный по заявке')
+                +field-input('Должность ответственного по заявке')
+                +field-input('Заказчик заявки')
+                +field-input('Должность заказчика заявки')
+    .popup__footer
+        .popup__footer-control
+            .button.button--max.button--control.button--turquoise Сохранить

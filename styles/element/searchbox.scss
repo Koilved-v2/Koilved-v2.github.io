@@ -1,0 +1,25 @@
+.searchbox {
+  display: flex;
+
+  input {
+    width: 106px;
+    border-radius: 2px 0 0 2px;
+    border: solid 1px $light-grey-blue;
+    background-color: $white;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 3px 4px 4px 9px;
+    color: $greyish-brown;
+  }
+  button {
+    width: 36px;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 2.2;
+    color: $white;
+    border-radius: 0 2px 2px 0;
+    background-color: $cool-blue;
+    margin-left: -1px;
+  }
+}

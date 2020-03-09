@@ -1,0 +1,10 @@
+node_modules
+public/**/*.html
+public/css/style.css
+public/js/bundle.js
+public/images
+styles/service/sprite.scss
+.vscode
+.idea
+.DS_Store
+

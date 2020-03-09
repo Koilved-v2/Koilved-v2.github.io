@@ -1,0 +1,67 @@
+.custom-datepicker {
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 100%;
+    height: 27px;
+    border-radius: 2px;
+    font-size: 11px;
+    color: $greyish-brown;
+    border: solid 1px $light-grey-blue;
+    padding-left: 27px;
+    padding-right: 18px;
+  }
+}
+
+.custom-datepicker--mini {
+  input {
+    font-size: 10px;
+    height: 22px;
+  }
+}
+
+.custom-datepicker__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-datepicker__box {
+  position: relative;
+  max-width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-datepicker__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 14px;
+
+  a {
+    font-size: 10px;
+  }
+}
+
+.custom-datepicker__icon-calendar {
+  position: absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  @include svg-icon-calendar;
+  pointer-events: none;
+}
+
+.custom-datepicker__close {
+  position: absolute;
+  right: 9px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  @include svg-icon-close-mini;
+}

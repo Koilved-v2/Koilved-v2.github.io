@@ -1,0 +1,195 @@
+include ../mixins/_all-mixins
+
+#popup-tree.popup.mfp-hide
+    .popup__header
+        h3 SLA
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-y
+            .popup__body-wrap
+                .custom-table.custom-table--two-row.custom-table--tree.custom-table--collapsed
+                    table
+                        thead
+                            tr
+                                th № заявки
+                                    br
+                                    | Информация
+                                th Этап
+                                    br
+                                    | Состояние
+                                th Дата
+                                    br
+                                    | пост.
+                                th(style='min-width: 348px;') Текст / заявленная неисправность
+                                th(style='min-width: 190px;') Объект
+                                th Сервис
+                                th Ответственный
+                                th КЕ
+
+                        tbody.js-line
+                            tr(data-start-main-line='1' data-nested='0')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row.custom-table__row--main
+                                            b №13243524
+                                        .custom-table__row Запрос клиента
+                                            +progress1
+                                            .custom-table__start-main-line
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--fresh-green Закрыта
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td Не работает сканер.
+
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+
+                                td Кассы
+
+                                td Славиняк Д.В.
+                                td
+
+                            tr(data-start-secondary-line='2' data-nested='1')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №54622183
+                                        .custom-table__row Решение инцидента
+                                            +progress2
+                                            .custom-table__start-secondary-line
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--fresh-green Закрыта
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td Кассы
+                                td Славиняк Д.В.
+                                td Печатный текст
+
+                            tr(data-nested='2')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №54372838
+                                        .custom-table__row Ремонт
+                                            +progress3
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--pinkish-grey Получение документов
+                                    .custom-table__row
+                                        .label-item.label-item--faded-pink В работе
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td
+                                td Славиняк Д.В.
+                                td Печатный текст
+
+                            tr(data-nested='3')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №13243524
+                                        .custom-table__row Запрос клиента
+                                            +progress4
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--fresh-green Закрыта
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td Не работает сканер.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td
+                                td Славиняк Д.В.
+                                td
+
+                            tr(data-end-secondary-line='5' data-nested='1').custom-table__active
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №76483629
+                                        .custom-table__row Восстановление из временного решения
+                                            +progress3
+                                            .custom-table__end-secondary-line
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--peach Оформление
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td Кассы
+                                td
+                                td Печатный текст
+
+                            tr(data-nested='2')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №65747382
+                                        .custom-table__row Наряд на работу
+                                            +progress4
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--light-blue Исполнение
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td (Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td Кассы
+                                td
+                                td Печатный текст
+                            tr(data-end-main-line='7' data-nested='1')
+                                td
+                                    .custom-table__wrap
+                                        .custom-table__row
+                                            b №13243524
+                                        .custom-table__row Запрос клиента
+                                            +progress2
+                                            .custom-table__end-main-line
+                                td
+                                    .custom-table__row
+                                        .label-item.label-item--fresh-green Закрыта
+                                    .custom-table__row
+                                        .label-item.label-item--lightgreen Выполнена
+                                td
+                                    .custom-table__row
+                                        b 09.09.2019
+                                    .custom-table__row 16:33
+                                td Не работает сканер.
+                                td Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)
+                                td Кассы
+                                td Славиняк Д.В.
+                                td
+
+
+
+
+
+
