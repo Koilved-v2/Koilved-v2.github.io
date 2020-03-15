@@ -1,13 +1,16 @@
 let magnificPopup = require('magnific-popup');
+import {startLines} from './line';
 
 $(document).ready(function () {
     window.updateFixedHeaderTable = function($body) {
         let isSingle = $body.find('.custom-table--single').length;
         if (isSingle) return;
-        cleanNewTable($body);
-        setNewTable($body);
-        setLightStyle($body);
-        setWidthInNewTable($body);
+        $body.each((i, body) => {
+            cleanNewTable($(body));
+            setNewTable($(body));
+            setLightStyle($(body));
+            setWidthInNewTable($(body));
+        });
     };
 
     $(document).on('click', '.js-show-popup', function (e) {
@@ -19,9 +22,12 @@ $(document).ready(function () {
             callbacks: {
                 open() {
                     let $bodies = $(this.content).find('.popup__body');
+                    let isTreeTable = $bodies.find('.b-tree').length;
                     let isTable = $bodies.find('table').length;
                     let isSingle = $bodies.find('.custom-table--single').length;
                     if (!isTable || isSingle) return;
+
+                    if (isTreeTable) startLines();
 
                     $bodies.each((i, body) => {
                         setNewTable($(body));

@@ -272,6 +272,13 @@
   top: 0;
   left: 0;
   z-index: 100;
+
+  table {
+    .button-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
 }
 
 .custom-table--single {
@@ -407,10 +414,10 @@
     // !!!!
     // !!!!
     // !!!!
-    .button-icon {
-      width: 22px;
-      height: 22px;
-    }
+    //.button-icon {
+    //  width: 22px;
+    //  height: 22px;
+    //}
 
     p {
       margin-bottom: 0;
@@ -467,6 +474,15 @@
           overflow: visible;
         }
       }
+    }
+  }
+}
+
+.custom-table--min-icon {
+  table {
+    .button-icon {
+      width: 15px;
+      height: 15px;
     }
   }
 }

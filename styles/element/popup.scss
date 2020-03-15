@@ -63,12 +63,39 @@
   }
 }
 
-#popup-fast-app-process {
+#popup-fast-app-process, #popup-tree {
   max-width: 975px;
   margin: 0 auto;
 }
 
-#popup-ke {
+#popup-call-request {
+  max-width: 400px;
+  margin: 0 auto;
+
+  .custom-table tbody tr td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .field__box input[type='text'] {
+    line-height: 18px;
+    max-width: 100px;
+  }
+
+  .custom-table__control {
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+#popup-tree {
+  .b-tree, .b-tree__wrap {
+    height: 500px;
+  }
+}
+
+#popup-ke, #popup-contracts {
   .popup__body-wrap {
     padding-bottom: 20px;
   }
@@ -83,17 +110,27 @@
   .popup__body-scroll {
     max-height: 540px;
   }
+
+  .custom-table thead tr th {
+    .button-icon {
+      margin: 0 7px;
+    }
+  }
+
+  &.popup--aside {
+    .popup__body-scroll {
+      max-height: calc(100vh - 4px - 283px - 160px);
+    }
+  }
 }
 
-
-
-#popup-moves-ke, #popup-history-change {
+#popup-moves-ke, #popup-history-change, #popup-request-files {
   .popup__body-wrap {
     padding-bottom: 10px;
   }
 }
 
-#popup-guide-zip {
+#popup-guide-zip, #popup-request-files {
   max-width: 630px;
   margin: 0 auto;
 
@@ -109,6 +146,24 @@
   .popup__body {
     min-height: 200px;
     overflow: hidden;
+  }
+
+  &.popup--aside {
+    .popup__header-checkboxs-other {
+      right: -4px;
+    }
+
+    .popup__body {
+      .popup__body-scroll {
+        max-height: 100%;
+        height: calc(100vh - 48px - 34px - 235px - 10px - 100px - ((100vh - 48px - 34px - 235px - 100px - 10px)/2));
+      }
+      &:last-child {
+        .popup__body-scroll {
+          height: calc(100vh - 48px - 34px - 235px - 10px + 100px - ((100vh - 48px - 34px - 235px + 100px - 10px)/2));
+        }
+      }
+    }
   }
 }
 
@@ -138,10 +193,41 @@
   }
 }
 
+#popup-add-new-obj {
+  width: 330px;
+  margin: 0 auto;
+
+  .popup__body-wrap {
+    padding: 10px 20px 20px;
+  }
+}
+
 .popup {
   border-radius: 3px;
   overflow: hidden;
   background-color: $white;
+}
+
+.popup--aside {
+  width: 100%;
+  border-radius: 0;
+  position: absolute;
+  right: calc(9px + 358px);
+  top: 40px;
+  z-index: 1000;
+  border-right: 1px solid rgba(151, 151, 151, 0.42);
+  height: calc(100vh - 363px + 68px + 50px);
+  transform: translateX(155%);
+  transition: .3s ease-in-out transform;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+  .popup__body-scroll {
+    max-height: calc(100vh - 4px - 283px);
+  }
+
+  &.active {
+    transform: translateX(0);
+  }
 }
 
 .popup__header {

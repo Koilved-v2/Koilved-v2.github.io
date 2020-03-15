@@ -7,6 +7,29 @@
   margin-bottom: 22px;
 }
 
+.b-id-obj--new-obj {
+  padding: 0;
+
+  .b-id-obj__form {
+    margin-bottom: 14px;
+
+    .field__box {
+      margin-right: 10px;
+    }
+
+    .b-id-obj__icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 0;
+      margin-left: 2px;
+    }
+  }
+
+  & + .popup__control {
+    text-align: center;
+  }
+}
+
 .b-id-obj__form {
   display: flex;
   flex-wrap: wrap;
@@ -40,11 +63,11 @@
 }
 
 .b-id-obj__icon {
+  display: block;
   width: 16px;
   height: 16px;
   margin-right: 4px;
   background-size: contain;
-
 }
 
 .b-id-obj__icon--ammyy {
@@ -72,9 +95,19 @@
 
 .b-id-obj__add {
   position: relative;
+}
+
+.b-id-obj__add-button {
+  position: relative;
   font-size: 11px;
   line-height: 13px;
   padding-left: 25px;
+  text-decoration: none;
+  color: $greyish-brown;
+
+  &:hover, &:focus {
+    color: $greyish-brown;
+  }
 
   &:after {
     content: '';
@@ -82,5 +115,23 @@
     top: -2px;
     left: 0;
     @include svg-icon-green-plus-lg;
+  }
+}
+
+.b-id-obj__row {
+  margin-top: 5px;
+  display: flex;
+}
+
+.b-id-obj__text {
+ margin-right: 15px;
+ font-weight: bold;
+}
+
+.b-id-obj__fields {
+  .field__box {
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
   }
 }

@@ -1,0 +1,65 @@
+include ../mixins/_all-mixins
+
+#popup-call-request.popup.mfp-hide
+    .popup__header
+        h3 Позвонить по заявке №1234
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-xy
+            .popup__body-wrap
+                .custom-table.custom-table--collapsed
+                    table.js-table-collapsed
+                        thead
+                            tr
+                                th Контактное лицо
+                                th Набираемый номер
+                        tbody
+                            tr
+                                td
+                                    .field__box
+                                        input(type='radio' id='id1-1' name='id1' checked)
+                                        label(type='radio' for='id1-1') Петров Иван Иванович
+
+
+                                td 84234234234
+
+                            tr
+                                td
+                                    .field__box
+                                        input(type='radio' id='id1-2' name='id1')
+                                        label(type='radio' for='id1-2') Мазов Иван Иванович
+
+
+                                td 84234234234
+
+                            tr
+                                td
+                                    .field__box
+                                        input(type='radio' id='id1-3' name='id1')
+                                        label(type='radio' for='id1-3') Мазов Иван Иванович
+
+
+                                td 84234234234
+
+                            tr
+                                td
+                                    .field__box
+                                        input(type='radio' id='id1-4' name='id1')
+                                        label(type='radio' for='id1-4') Мазов Иван Иванович
+
+
+                                td 84234234234
+
+                            tr
+                                td
+                                    .field__box
+                                        input(type='radio' id='id1-5' name='id1')
+                                        label(type='radio' for='id1-5') Другой
+
+
+                                td
+                                    .field__box
+                                        input(type='text')
+                .custom-table__control
+                    button.button.button--xmin.button--blue Ок

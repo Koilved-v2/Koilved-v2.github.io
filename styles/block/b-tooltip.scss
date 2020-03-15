@@ -36,6 +36,12 @@
   }
 }
 
+.b-tooltip--obj {
+  .b-tooltip__template-obj {
+    display: block;
+  }
+}
+
 
 .b-tooltip__header {
   display: flex;
@@ -61,7 +67,12 @@
 
 .b-tooltip__footer {
   padding: 0 18px;
-  display: flex;justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.b-tooltip__footer--center {
+  justify-content: center;
 }
 
 .b-tooltip__close {
@@ -100,5 +111,9 @@
 }
 
 .b-tooltip__template-confirm {
+  display: none;
+}
+
+.b-tooltip__template-obj {
   display: none;
 }

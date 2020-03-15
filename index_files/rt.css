@@ -53,7 +53,7 @@ Each line should be prefixed with
 
 *::-webkit-scrollbar {
     /*width: 6px;*/
-    width: 7px;
+    width: 4px;
     height: 7px;
     background-color: rgba(53, 120, 213, 0.5);
 }
@@ -67,7 +67,6 @@ Each line should be prefixed with
 
 *::-webkit-scrollbar-thumb {
     border-radius: 7px;
-    background-color: rgba(53, 120, 213, 0.5);
     border: 4px solid rgba(53, 120, 213, 0.5);
 }
 
@@ -168,9 +167,17 @@ Each line should be prefixed with
 }
 
 .sb-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     min-height: 40px;
     /*//height: 77px;*/
     background-color: #f5f5f5;
+}
+
+.sb-head > a {
+    margin-left: auto;
+    margin-right: -4px;
 }
 
 .sb-content {
@@ -183,13 +190,11 @@ Each line should be prefixed with
     display: flex;
     height: 50px;
     /*//height: 77px;*/
-    background-color: #f5f5f5;
+    background-color: #efefef;
+    border-top: 1px solid rgba(151, 151, 151, 0.42);
 }
 
-.sb-head a {
-    float: right;
-    margin-top: -2px;
-}
+
 
 .floatThead-wrapper {
     height: calc(100vh - 210px)
@@ -248,15 +253,11 @@ Each line should be prefixed with
 
 
 .sortable li {
-    padding: 0px;
-    border: 1px solid #ddd;
     list-style: none outside none;
-    margin: 4px;
-    padding-left: 8px;
-    cursor: normal;
-    padding: 0px;
+    margin: 4px 0;
+    cursor: default;
+    padding: 0;
     border: 0;
-    padding-left: 0;
 }
 
 .sort_item label, .sort_item span {
@@ -345,6 +346,11 @@ Each line should be prefixed with
     padding: 5px 0;
 }
 
+.menuContent--closed {
+    max-height: 300px;
+    padding: 0;
+}
+
 .menuContent[data-sideType='rightSide'] {
     right: 0;
 }
@@ -352,6 +358,23 @@ Each line should be prefixed with
 .menuContent[data-sideType='leftSide'] {
     left: 0;
 }
+
+.menuContent__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    background-color: #e9f0fb;
+    border-radius: 3px 3px 0 0;
+}
+
+.menuContent__header h3 {
+    white-space: nowrap;
+}
+.menuContent select {
+    -webkit-appearance: none;
+}
+
 
 .submenuItem {
     padding: 6px 10px;

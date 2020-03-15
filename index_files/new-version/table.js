@@ -7,7 +7,10 @@ class Table {
         this.currentTable = $('.js-current-table');
         this.scrollWrapperForCurrentTable = $('.specScroll');
         this.buttonModal = $('.js-show-modal');
+        this.buttonAside = $('.js-show-aside');
+        this.buttonShowPhone = $('.js-show-more-phones');
         this.isStop = false;
+        this.stateCurrentIdAside = '';
 
 
         setTimeout( () => {
@@ -16,6 +19,7 @@ class Table {
             this.initScroll();
             this.initSelect();
             this.initModal();
+            this.initButtons();
 
             // let table = this.currentTable;
             // this.trFixedTable.html('');
@@ -27,6 +31,38 @@ class Table {
 
         }, 4000);
 
+    }
+
+    checkActiveAside() {
+        this.buttonAside.removeClass('button-icon--disabled');
+        $('#' + this.stateCurrentIdAside + '').removeClass('active');
+    }
+
+    initButtons() {
+        var self = this;
+        this.buttonShowPhone.on('click', function () {
+            $(this).prev().show();
+            $(this).hide();
+        });
+
+        this.buttonAside.on('click', function () {
+            var $this = $(this);
+            var id = $this.data('aside');
+            var idAside = $('#' + id + '');
+            var $body = idAside.find('.popup__body');
+
+            if (self.stateCurrentIdAside && self.stateCurrentIdAside !== id) {
+                self.checkActiveAside();
+            }
+
+            self.stateCurrentIdAside = id;
+            if (idAside.hasClass('active')) self.stateCurrentIdAside = '';
+            $this.toggleClass('button-icon--disabled');
+            idAside.toggleClass('active');
+
+            if (idAside.find('.custom-table--fixed').length) return;
+            updateFixedHeaderTable($body);
+        });
     }
 
     initModal() {

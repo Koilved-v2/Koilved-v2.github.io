@@ -483,6 +483,7 @@ if (!rt) {
     rt.sb4 = new RequestSidebar({elem: $('#ajaxSidebar')});
     rt.sb5 = new RequestSidebar({elem: $('#ajaxObjectSidebar')});
     rt.sb7 = new RequestSidebar({elem: $('#sidebar-object')});
+    rt.sb8 = new RequestSidebar({elem: $('#sidebar-messenger')});
 //rt.sb6 = new RequestSidebar({elem: $('#ajaxObjectSidebar')});
     rt.SidebarLinkListener();
     rt.SidebarObjectListener();
@@ -502,6 +503,7 @@ if (!rt) {
 //    rt.deleteUserFilter();
     rt.contactForm();
     rt.autoplay(timerId);
+    rt.closeMenu();
 //    rt.menuContent();
 
 //$('#tableFilter').appendTo($(rt.sb1.pjaxElement()))

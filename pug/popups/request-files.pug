@@ -1,0 +1,28 @@
+include ../mixins/_all-mixins
+
+#popup-request-files.popup.mfp-hide
+    .popup__header
+        h3 Файлы заявки
+        .popup__header-close.js-close-popup
+
+    .popup__body
+        .popup__body-scroll.popup__body-scroll--table.js-custom-scroll-y
+            .popup__body-wrap
+                .custom-table
+                    table
+                        thead
+                            tr
+                                th №
+                                th Дата/время
+                                th Наименование файла
+                                th Комментарий
+
+                        tbody
+                            +html-r-a
+                            +html-r-a
+
+
+
+
+
+

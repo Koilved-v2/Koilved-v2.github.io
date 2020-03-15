@@ -8,6 +8,8 @@ import './tabs';
 import './label';
 import './messenger';
 
+import './app-log';
+
 
 import './datepicker';
 

@@ -18,9 +18,10 @@ html, body {
 .form-control {
   padding-left: 14px;
   font-size: 12px;
-  line-height: 32px;
+  line-height: 27px;
   font-weight: normal;
-  height: 32px;
+  height: 27px;
+  //height: 32px; юыдл так
   color: #414040;
 }
 
@@ -494,14 +495,9 @@ html, body {
 #sidebar-object {
   min-width: 358px;
 
-  .sb-head {
-
-  }
-
   .sb-content {
     height: calc(100vh - 363px);
   }
-
 
   .box-control {
     margin-top: 10px;
@@ -515,6 +511,38 @@ html, body {
 
 .JCLRgrips {
   z-index: 100;
+}
+
+#sidebar-messenger {
+  width: 360px;
+  .box-control {
+    display: flex;
+    margin-left: 15px;
+  }
+
+  .b-messages__header {
+    padding: 8px 0 8px 10px;
+    background-color: #f5f5f5;
+    height: auto;
+  }
+
+  .b-messages__body {
+    padding: 0 18px;
+    height: calc(100vh - 330px);
+  }
+
+  .b-messages__item {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &:nth-child(even) {
+      width: calc(100% - 15px);
+    }
+  }
+
+  .b-messages__footer {
+    padding: 11px 12px;
+  }
 }
 
 

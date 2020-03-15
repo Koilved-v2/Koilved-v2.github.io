@@ -17,6 +17,11 @@
   margin-top: 10px;
 }
 
+.b-contacts__list-hidden {
+  display: none;
+  margin-bottom: 12px;
+}
+
 .b-contacts__item {
   display: flex;
   align-items: center;
@@ -33,7 +38,7 @@
 }
 
 .b-contacts__add {
-  margin-top: 18px;
+  margin-top: 10px;
   margin-bottom: 16px;
   display: flex;
 }
@@ -65,5 +70,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @include svg-icon-phone-client-white;
+  }
+}
+
+.b-contacts__more {
+  margin-top: 3px;
+  padding: 5px 0;
+  display: flex;
+  cursor: pointer;
+
+  span {
+    width: 3px;
+    height: 3px;
+    margin: 0 1px;
+    border-radius: 50%;
+    background-color: $cool-blue;
   }
 }

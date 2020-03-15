@@ -38,6 +38,10 @@
   height: 30px;
 }
 
+.button-icon--disabled {
+  opacity: .5;
+}
+
 .button-icon--update {
   &:after {
     @include svg-icon-update-arrows;
@@ -152,8 +156,9 @@
   &:before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     @include svg-icon-automatic-dialing-active;
   }
 }
@@ -486,6 +491,13 @@
 
 // control
 
+
+.button-icon--close {
+  &:after {
+    @include svg-icon-close-popup;
+  }
+}
+
 .button-icon--filter {
   &:after {
     @include svg-icon-filter;
@@ -567,5 +579,25 @@
   }
 }
 
+// table
+
+
+.button-icon--remote-access {
+  &:after {
+    @include svg-icon-remote-access;
+  }
+}
+
+.button-icon--exit {
+  &:after {
+    @include svg-icon-exit;
+  }
+}
+
+.button-icon--work-office {
+  &:after {
+    @include svg-icon-work-office;
+  }
+}
 
 
