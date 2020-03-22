@@ -136,7 +136,7 @@ block content
                                     .box-text.box-text--lg
                                         h3 Контакт
                                         p.box-text__icon
-                                            i.button-icon.button-icon--phone-client
+                                            a(href='#popup-call-request').button-icon.button-icon--phone-client.js-show-popup
                                             | ЗУО Лилия (89604564536)
 
                                 .box-text.box-text--lg
@@ -795,9 +795,10 @@ block content
     include popups/new-action
     include popups/new-work
 
-    include popups/tree
-
     include popups/request-files
+
+    // app-log
+    include popups/call-request
 
 
 

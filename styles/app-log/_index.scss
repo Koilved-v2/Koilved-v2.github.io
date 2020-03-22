@@ -98,8 +98,22 @@ html, body {
   margin-left: 17px;
 }
 
-.search-form__box .help-block {
-  display: none;
+.search-form__box {
+  .help-block {
+    display: none;
+  }
+
+  .field__box {
+    input, select {
+      font-size: 12px;
+      line-height: 32px;
+    }
+
+    select {
+      height: 32px;
+    }
+  }
+
 }
 
 .requestTable-control {

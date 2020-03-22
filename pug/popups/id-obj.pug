@@ -1,7 +1,7 @@
 include ../mixins/_all-mixins
 
 #popup-id-obj.popup.mfp-hide
-    .popup__header.popup__header--light
+    .popup__header
         h3 Идентификаторы объекта
 
         .popup__header-close.js-close-popup
@@ -9,26 +9,102 @@ include ../mixins/_all-mixins
         .popup__body-wrap
             .b-id-obj
                 .b-id-obj__form
-                    .b-id-obj__input
-                        .b-id-obj__input-title
-                            .b-id-obj__icon.b-id-obj__icon--ammyy
-                            p Ammyy Admin ID
-                        input(type='text')
-                    .b-id-obj__input
-                        .b-id-obj__input-title
-                            .b-id-obj__icon.b-id-obj__icon--anyDesk
-                            p AnyDesk ID
-                        input(type='text')
-                    .b-id-obj__input
-                        .b-id-obj__input-title
-                            .b-id-obj__icon.b-id-obj__icon--teamViewer
-                            p TeamViewer ID
-                        input(type='text')
-                    .b-id-obj__input
-                        .b-id-obj__input-title
-                            .b-id-obj__icon.b-id-obj__icon--ultraVNC
-                            p UltraVNC ID
-                        input(type='text')
+                    .b-id-obj__row
+                        .b-id-obj__row-wrap
+                            .field
+                                .field__title
+                                    .button-icon.button-icon--i-obj.button-icon--ammyy
+                                    h3 Ammyy Admin ID
+                                .field__box
+                                    input(type='text')
+                            .field
+                                .field__title
+                                    h3 Комментарий
+                                .field__box
+                                    input(type='text')
+                        .button-icon.button-icon--close-red
+
+                    .b-id-obj__row
+                        .b-id-obj__row-wrap
+                            .field
+                                .field__title
+                                    .button-icon.button-icon--i-obj.button-icon--anyDesk
+                                    h3 AnyDesk ID
+                                .field__box
+                                    input(type='text')
+                            .field
+                                .field__title
+                                    h3 Комментарий
+                                .field__box
+                                    input(type='text')
+                        .button-icon.button-icon--close-red
+                    .b-id-obj__row
+                        .b-id-obj__row-wrap
+                            .field
+                                .field__title
+                                    .button-icon.button-icon--i-obj.button-icon--teamViewer
+                                    h3 TeamViewer ID
+                                .field__box
+                                    input(type='text')
+                            .field
+                                .field__title
+                                    h3 Комментарий
+                                .field__box
+                                    input(type='text')
+                        .button-icon.button-icon--close-red
+                    .b-id-obj__row
+                        .b-id-obj__row-wrap
+                            .field
+                                .field__title
+                                    .button-icon.button-icon--i-obj.button-icon--ultraVNC
+                                    h3 UltraVNC ID
+                                .field__box
+                                    input(type='text')
+                            .field
+                                .field__title
+                                    h3 Комментарий
+                                .field__box
+                                    input(type='text')
+                        .button-icon.button-icon--close-red
                 .b-id-obj__control
-                    .button.button--blue.button--control.button--middle Сохранить
+                    .b-id-obj__row
+                        .b-id-obj__row-wrap
+                            button.button.button--blue.button--control Сохранить
+                            button.button.button--blue.button--control.js-show-tooltip(data-type='obj') Новый идентификатор
+
+
+    .b-tooltip
+        .b-tooltip__close.js-close-tooltip
+        .b-tooltip__template--obj
+            .b-tooltip__header
+                h3 Новый идентификатор
+            .b-tooltip__body
+                .b-id-obj.b-id-obj--new-obj
+                    .b-id-obj__row
+                        .b-id-obj__text Тип:
+                        .b-id-obj__form
+                            .field__box
+                                input(id='a1' type="radio" name="radio-obj" checked)
+                                label(type="radio" for='a1')
+                                    span.button-icon.button-icon--i-obj.button-icon--ammyy
+                            .field__box
+                                input(id='a2' type="radio" name="radio-obj")
+                                label(type="radio" for='a2')
+                                    span.button-icon.button-icon--i-obj.button-icon--anyDesk
+                            .field__box
+                                input(id='a3' type="radio" name="radio-obj")
+                                label(type="radio" for='a3')
+                                    span.button-icon.button-icon--i-obj.button-icon--teamViewer
+                            .field__box
+                                input(id='a4' type="radio" name="radio-obj")
+                                label(type="radio" for='a4')
+                                    span.button-icon.button-icon--i-obj.button-icon--ultraVNC
+                    .b-id-obj__fields
+                        .field__box
+                            input(type="text" placeholder="Идентификатор")
+                        .field__box
+                            input(type="text" placeholder="Комментарий")
+
+            .b-tooltip__footer.b-tooltip__footer--center
+                button.button.button--min.button--blue Сохранить
 

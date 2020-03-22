@@ -34,7 +34,8 @@ $(document).ready(function () {
                 setTimeout(() => {
                     setNewTable(treeBlock);
                     setWidthInNewTable(treeBlock);
-                    startLines()
+                    startLines();
+                    console.log(treeBlock);
                 }, 300);
                 flagFirst = false
             }

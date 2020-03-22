@@ -600,4 +600,51 @@
   }
 }
 
+.button-icon--close-red {
+  &:after {
+    @include svg-icon-close-red;
+  }
+}
+
+// obj-id
+
+.button-icon--i-obj {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  
+  
+  &:after {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+  }
+}
+
+.button-icon--ammyy {
+  &:after {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../images/icon-id-obj/icon-ammyy@2x.png");
+  }
+}
+
+.button-icon--anyDesk {
+  &:after {
+    background-image: url("../images/icon-id-obj/icon-anyDesk@2x.png");
+  }
+}
+
+.button-icon--teamViewer {
+  &:after {
+    background-image: url("../images/icon-id-obj/icon-teamViewer@2x.png");
+  }
+}
+
+.button-icon--ultraVNC {
+  &:after {
+    background-image: url("../images/icon-id-obj/icon-UlraVNC@2x.png");
+  }
+}
+
 

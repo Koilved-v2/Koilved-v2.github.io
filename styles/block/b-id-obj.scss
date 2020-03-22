@@ -1,32 +1,52 @@
 .b-id-obj {
-  padding: 19px;
+  padding: 5px 18px;
 }
 
 .b-id-obj--sidebar {
   padding: 0;
   margin-bottom: 22px;
+
+  .b-id-obj__form {
+    justify-content: space-between;
+    padding-right: 28px;
+    margin-bottom: 10px;
+
+    .field {
+      width: 120px;
+    }
+  }
 }
 
 .b-id-obj--new-obj {
+  margin-top: 5px;
   padding: 0;
 
   .b-id-obj__form {
-    margin-bottom: 14px;
-
     .field__box {
       margin-right: 10px;
-    }
 
-    .b-id-obj__icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 0;
-      margin-left: 2px;
+      label[type='radio'] {
+        padding-left: 18px;
+      }
     }
+  }
+
+  .b-id-obj__fields {
+    margin-top: 15px;
   }
 
   & + .popup__control {
     text-align: center;
+  }
+
+  .button-icon--i-obj {
+    width: 20px;
+    height: 20px;
+
+    &:after {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -35,62 +55,39 @@
   flex-wrap: wrap;
 }
 
-.b-id-obj__input {
-  width: 50%;
-
-  margin-bottom: 16px;
-  input {
-    width: 116px;
-    height: 27px;
-    border-radius: 2px;
-    border: solid 1px $light-grey-blue;
-    font-size: 11px;
-    color: $greyish-brown;
-    line-height: 27px;
-    padding: 0 9px;
-  }
-}
-
-.b-id-obj__input-title {
+.b-id-obj__row {
+  position: relative;
   display: flex;
-  align-items: center;
-  margin-bottom: 8px;
+  width: 100%;
 
-  p {
-    font-weight: bold;
-    margin-bottom: 0;
+  .button-icon--close-red {
+    position: absolute;
+    bottom: 2px;
+    right: -7px;
   }
 }
 
-.b-id-obj__icon {
-  display: block;
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-  background-size: contain;
-}
+.b-id-obj__row-wrap {
+  width: 100%;
+  display: flex;
 
-.b-id-obj__icon--ammyy {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("../images/icon-id-obj/icon-ammyy@2x.png");
-}
+  & > * {
 
-.b-id-obj__icon--anyDesk {
-  background-image: url("../images/icon-id-obj/icon-anyDesk@2x.png");
-}
+    &:first-child {
+      width: calc(39% - 13px);
+      margin-right: 13px;
+    }
+    &:last-child {
+      margin-left: 13px;
+      margin-right: 22px;
+      width: calc(61% - 13px - 22px);
+    }
 
-.b-id-obj__icon--teamViewer {
-  background-image: url("../images/icon-id-obj/icon-teamViewer@2x.png");
-}
-
-.b-id-obj__icon--ultraVNC {
-  background-image: url("../images/icon-id-obj/icon-UlraVNC@2x.png");
+  }
 }
 
 .b-id-obj__control {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 15px 0;
 }
 
 .b-id-obj__add {
@@ -116,11 +113,6 @@
     left: 0;
     @include svg-icon-green-plus-lg;
   }
-}
-
-.b-id-obj__row {
-  margin-top: 5px;
-  display: flex;
 }
 
 .b-id-obj__text {

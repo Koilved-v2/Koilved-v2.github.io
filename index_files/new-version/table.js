@@ -1,5 +1,5 @@
 class Table {
-    constructor(name, sound) {
+    constructor() {
 
         this.fixedTable = $('.js-fixed-table');
         this.trFixedTable = this.fixedTable.find('tr');
@@ -9,26 +9,17 @@ class Table {
         this.buttonModal = $('.js-show-modal');
         this.buttonAside = $('.js-show-aside');
         this.buttonShowPhone = $('.js-show-more-phones');
-        this.isStop = false;
         this.stateCurrentIdAside = '';
+        this.closeButtonForSidebarObj = $('#sidebar-object .button-icon--close');
 
 
-        setTimeout( () => {
-            $('.applications__container').removeClass('hidden-block')
+        setTimeout(() => {
+            $('.applications__container').removeClass('hidden-block');
             this.initResizableTable();
             this.initScroll();
             this.initSelect();
             this.initModal();
             this.initButtons();
-
-            // let table = this.currentTable;
-            // this.trFixedTable.html('');
-            // this.fixedTable.css({
-            //     width: `${table.innerWidth()}px`,
-            //     minWidth: `${table.innerWidth()}px`});
-            // this.trFixedTable.append(table.find('th').clone());
-            // this.fixedTable.parent().scrollLeft(this.scrollWrapperForCurrentTable.scrollLeft());
-
         }, 4000);
 
     }
@@ -63,6 +54,10 @@ class Table {
             if (idAside.find('.custom-table--fixed').length) return;
             updateFixedHeaderTable($body);
         });
+
+        this.closeButtonForSidebarObj.on('click', function () {
+            self.checkActiveAside();
+        });
     }
 
     initModal() {
@@ -78,41 +73,19 @@ class Table {
     }
 
     initResizableTable() {
-
-        // fix link https://github.com/alvaro-prieto/colResizable/issues/56
         this.currentTable.colResizable({
             liveDrag: true,
             resizeMode: 'overflow',
-            // onDrag: $.throttle(100, this.updateLengthFixedTable.bind(this)),
-            // onResize: $.throttle(100, this.updateLengthFixedTable.bind(this)),
         });
     }
 
-    copyCurrentThead() {
-
-    }
-
-    stopDrag(e) {
-        let table = $(e.currentTarget);
-        setTimeout(() => {
-            this.isStop = false;
-            console.log('2')
-        }, 200);
-
-        // this.trFixedTable.html('');
-        // this.fixedTable.css({
-        //     width: `${table.innerWidth() + 3}px`,
-        //     minWidth: `${table.innerWidth() + 3}px`});
-        // this.trFixedTable.append(table.find('th').clone());
-    }
-
     updateLengthFixedTable(e) {
-        //this.isStop = true;
         let table = $(e.currentTarget);
         this.trFixedTable.html('');
         this.fixedTable.css({
             width: `${table.innerWidth()}px`,
-            minWidth: `${table.innerWidth()}px`});
+            minWidth: `${table.innerWidth()}px`
+        });
         this.trFixedTable.append(table.find('th').clone());
         this.fixedTable.parent().scrollLeft(this.scrollWrapperForCurrentTable.scrollLeft());
     }
@@ -150,22 +123,8 @@ class Table {
         $('#select-show-count').select2(custon_show);
         $('#autoplay').select2(custon_show);
         jQuery.when(jQuery('#custon-Listname').select2(custon_Listname_option)).done(initS2Loading('custon-Listname', 's2options_c4acac00'));
-        // jQuery('#custon-Listname').on('select2:select', function (data) {
-        //     counterSelectElement(data)
-        // });
-        // jQuery('#custon-Listname').on('select2:unselecting', function (data) {
-        //     counterSelectElement(data)
-        // });
-        // jQuery('#custon-Listname').on('select2:unselect', function (data) {
-        //     counterSelectElement(data)
-        // });
     }
 }
 
 new Table();
-// !!!!!!!!!!
-// !!!!!!!!!!
-// !!!!!!!!!!
-// !!!!!!!!!!
-// !!!!!!!!!! RequestTable.js  add new function
 

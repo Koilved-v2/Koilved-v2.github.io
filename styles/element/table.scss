@@ -5,16 +5,6 @@
     width: 100%;
     border-collapse: collapse;
 
-    // !!!!!!!!!!
-    // !!!!!!!!!!
-    // !!!!!!!!!! установить для таблиц только для 1го проекта
-    // !!!!!!!!!!
-    // !!!!!!!!!!
-    //.button-icon {
-    //  width: 15px;
-    //  height: 15px;
-    //}
-
     .simple-tree-table {
       &-icon {
         display: inline-block;
@@ -472,6 +462,10 @@
 
         &.is-visible {
           overflow: visible;
+
+          .custom-table__row {
+            overflow: visible;
+          }
         }
       }
     }

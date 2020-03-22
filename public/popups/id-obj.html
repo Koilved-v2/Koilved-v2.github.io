@@ -1,6 +1,6 @@
 
 <div class="popup mfp-hide" id="popup-id-obj">
-  <div class="popup__header popup__header--light">
+  <div class="popup__header">
     <h3>Идентификаторы объекта</h3>
     <div class="popup__header-close js-close-popup"></div>
   </div>
@@ -8,38 +8,147 @@
     <div class="popup__body-wrap">
       <div class="b-id-obj">
         <div class="b-id-obj__form">
-          <div class="b-id-obj__input">
-            <div class="b-id-obj__input-title">
-              <div class="b-id-obj__icon b-id-obj__icon--ammyy"></div>
-              <p>Ammyy Admin ID</p>
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__row-wrap">
+              <div class="field">
+                <div class="field__title">
+                  <div class="button-icon button-icon--i-obj button-icon--ammyy"></div>
+                  <h3>Ammyy Admin ID</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__title">
+                  <h3>Комментарий</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
             </div>
-            <input type="text"/>
+            <div class="button-icon button-icon--close-red"></div>
           </div>
-          <div class="b-id-obj__input">
-            <div class="b-id-obj__input-title">
-              <div class="b-id-obj__icon b-id-obj__icon--anyDesk"></div>
-              <p>AnyDesk ID</p>
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__row-wrap">
+              <div class="field">
+                <div class="field__title">
+                  <div class="button-icon button-icon--i-obj button-icon--anyDesk"></div>
+                  <h3>AnyDesk ID</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__title">
+                  <h3>Комментарий</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
             </div>
-            <input type="text"/>
+            <div class="button-icon button-icon--close-red"></div>
           </div>
-          <div class="b-id-obj__input">
-            <div class="b-id-obj__input-title">
-              <div class="b-id-obj__icon b-id-obj__icon--teamViewer"></div>
-              <p>TeamViewer ID</p>
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__row-wrap">
+              <div class="field">
+                <div class="field__title">
+                  <div class="button-icon button-icon--i-obj button-icon--teamViewer"></div>
+                  <h3>TeamViewer ID</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__title">
+                  <h3>Комментарий</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
             </div>
-            <input type="text"/>
+            <div class="button-icon button-icon--close-red"></div>
           </div>
-          <div class="b-id-obj__input">
-            <div class="b-id-obj__input-title">
-              <div class="b-id-obj__icon b-id-obj__icon--ultraVNC"></div>
-              <p>UltraVNC ID</p>
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__row-wrap">
+              <div class="field">
+                <div class="field__title">
+                  <div class="button-icon button-icon--i-obj button-icon--ultraVNC"></div>
+                  <h3>UltraVNC ID</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
+              <div class="field">
+                <div class="field__title">
+                  <h3>Комментарий</h3>
+                </div>
+                <div class="field__box">
+                  <input type="text"/>
+                </div>
+              </div>
             </div>
-            <input type="text"/>
+            <div class="button-icon button-icon--close-red"></div>
           </div>
         </div>
         <div class="b-id-obj__control">
-          <div class="button button--blue button--control button--middle">Сохранить</div>
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__row-wrap">
+              <button class="button button--blue button--control">Сохранить</button>
+              <button class="button button--blue button--control js-show-tooltip" data-type="obj">Новый идентификатор</button>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-tooltip">
+    <div class="b-tooltip__close js-close-tooltip"></div>
+    <div class="b-tooltip__template--obj">
+      <div class="b-tooltip__header">
+        <h3>Новый идентификатор</h3>
+      </div>
+      <div class="b-tooltip__body">
+        <div class="b-id-obj b-id-obj--new-obj">
+          <div class="b-id-obj__row">
+            <div class="b-id-obj__text">Тип:</div>
+            <div class="b-id-obj__form">
+              <div class="field__box">
+                <input id="a1" type="radio" name="radio-obj" checked="checked"/>
+                <label type="radio" for="a1"><span class="button-icon button-icon--i-obj button-icon--ammyy"></span></label>
+              </div>
+              <div class="field__box">
+                <input id="a2" type="radio" name="radio-obj"/>
+                <label type="radio" for="a2"><span class="button-icon button-icon--i-obj button-icon--anyDesk"></span></label>
+              </div>
+              <div class="field__box">
+                <input id="a3" type="radio" name="radio-obj"/>
+                <label type="radio" for="a3"><span class="button-icon button-icon--i-obj button-icon--teamViewer"></span></label>
+              </div>
+              <div class="field__box">
+                <input id="a4" type="radio" name="radio-obj"/>
+                <label type="radio" for="a4"><span class="button-icon button-icon--i-obj button-icon--ultraVNC"></span></label>
+              </div>
+            </div>
+          </div>
+          <div class="b-id-obj__fields">
+            <div class="field__box">
+              <input type="text" placeholder="Идентификатор"/>
+            </div>
+            <div class="field__box">
+              <input type="text" placeholder="Комментарий"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-tooltip__footer b-tooltip__footer--center">
+        <button class="button button--min button--blue">Сохранить</button>
       </div>
     </div>
   </div>

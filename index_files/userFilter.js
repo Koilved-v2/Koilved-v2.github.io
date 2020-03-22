@@ -20,6 +20,7 @@ class RenderList {
     createHandle = function () {
         let moveElement = document.createElement('span');
         let moveimage = document.createElement('i');
+        // ###-правка
         moveimage.classList.add('button-icon', 'button-icon--move');
         moveElement.append(moveimage);
         moveElement.classList.add('move', 'handle', 'col-lg-1');
@@ -33,7 +34,7 @@ class RenderList {
         textwrap.classList.add('contenteditable');
         textwrap.setAttribute('contenteditable', 'true');
         textwrap.dataset.id = element.id;
-
+        // ###-правка
         textColumn.classList.add('text-filter', 'col-lg-8');
         textColumn.append(textwrap);
         return textColumn;

@@ -7,11 +7,13 @@
 /* global RequestSidebar */
 
 class RequestTable {
-    hiddenClass = function () {
-        return 'rtHide';
-    }
+    // ###-правка
     constructor(url) {
         this.currentSelectorMenu = null;
+    }
+
+    hiddenClass = function () {
+        return 'rtHide';
     }
 
     conf() {
@@ -166,6 +168,7 @@ class RequestTable {
             if (!div.is(e.target) // если клик был не по нашему блоку
                     && div.has(e.target).length === 0) { // и не по его дочерним элементам
                 div.hide(); // скрываем его
+                // ###-правка
                 if (self.currentSelectorMenu) {
                     self.updateStateCell(self.currentSelectorMenu);
                     self.resetSelectorMenu();
@@ -174,14 +177,17 @@ class RequestTable {
         });
     }
 
+    // ###-правка
     updateStateCell(menu) {
         menu.closest('td').toggleClass('is-visible');
     }
 
+    // ###-правка
     resetSelectorMenu() {
         this.currentSelectorMenu = null;
     }
 
+    // ###-правка
     checkPositionClickOnScreen = function (e) {
         var halfScreenWidth = $(window).width()/2;
         var positionClick = e.pageX;
@@ -196,13 +202,16 @@ class RequestTable {
                 return e;
             }
 
+            // ###-правка
             var sideType = rt.checkPositionClickOnScreen(e);
 
             var _tis = this;
             setTimeout(function () {
+                // ###-правка
                 $('.menuContent').hide().attr('data-sideType', '');
                 var group = $(_tis).data('menu-target_div');
                 let conteiner = '.' + group;
+                // ###-правка
                 _this.currentSelectorMenu = $(conteiner);
                 _this.updateStateCell(_this.currentSelectorMenu);
 
@@ -213,7 +222,7 @@ class RequestTable {
                     scrollTo: false,
                     container: conteiner,
                 })
-
+                // ###-правка
                 $(conteiner).attr('data-sideType', sideType).show();
             }, 200)
         })
@@ -477,6 +486,7 @@ if (!rt) {
     var rt = new RequestTable;
 
 
+    // добавлены новые сайдбары ###-правка
     rt.sb1 = new RequestSidebar({elem: $('#sidebar1')});
     rt.sb2 = new RequestSidebar({elem: $('#sidebar2')});
     rt.sb3 = new RequestSidebar({elem: $('#newFilter')});

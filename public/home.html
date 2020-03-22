@@ -133,7 +133,7 @@
                     </div>
                     <div class="box-text box-text--lg">
                       <h3>Контакт</h3>
-                      <p class="box-text__icon"><i class="button-icon button-icon--phone-client"></i>ЗУО Лилия (89604564536)</p>
+                      <p class="box-text__icon"><a class="button-icon button-icon--phone-client js-show-popup" href="#popup-call-request"></a>ЗУО Лилия (89604564536)</p>
                     </div>
                   </div>
                   <div class="box-text box-text--lg">
@@ -1084,7 +1084,7 @@
       <div class="popup__body">
         <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-y">
           <div class="popup__body-wrap">
-            <div class="custom-table custom-table--scroll">
+            <div class="custom-table custom-table--scroll custom-table--min-icon">
               <table>
                 <thead>
                   <tr>
@@ -6123,7 +6123,7 @@
       </div>
     </div>
     <div class="popup mfp-hide" id="popup-id-obj">
-      <div class="popup__header popup__header--light">
+      <div class="popup__header">
         <h3>Идентификаторы объекта</h3>
         <div class="popup__header-close js-close-popup"></div>
       </div>
@@ -6131,38 +6131,147 @@
         <div class="popup__body-wrap">
           <div class="b-id-obj">
             <div class="b-id-obj__form">
-              <div class="b-id-obj__input">
-                <div class="b-id-obj__input-title">
-                  <div class="b-id-obj__icon b-id-obj__icon--ammyy"></div>
-                  <p>Ammyy Admin ID</p>
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__row-wrap">
+                  <div class="field">
+                    <div class="field__title">
+                      <div class="button-icon button-icon--i-obj button-icon--ammyy"></div>
+                      <h3>Ammyy Admin ID</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
                 </div>
-                <input type="text">
+                <div class="button-icon button-icon--close-red"></div>
               </div>
-              <div class="b-id-obj__input">
-                <div class="b-id-obj__input-title">
-                  <div class="b-id-obj__icon b-id-obj__icon--anyDesk"></div>
-                  <p>AnyDesk ID</p>
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__row-wrap">
+                  <div class="field">
+                    <div class="field__title">
+                      <div class="button-icon button-icon--i-obj button-icon--anyDesk"></div>
+                      <h3>AnyDesk ID</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
                 </div>
-                <input type="text">
+                <div class="button-icon button-icon--close-red"></div>
               </div>
-              <div class="b-id-obj__input">
-                <div class="b-id-obj__input-title">
-                  <div class="b-id-obj__icon b-id-obj__icon--teamViewer"></div>
-                  <p>TeamViewer ID</p>
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__row-wrap">
+                  <div class="field">
+                    <div class="field__title">
+                      <div class="button-icon button-icon--i-obj button-icon--teamViewer"></div>
+                      <h3>TeamViewer ID</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
                 </div>
-                <input type="text">
+                <div class="button-icon button-icon--close-red"></div>
               </div>
-              <div class="b-id-obj__input">
-                <div class="b-id-obj__input-title">
-                  <div class="b-id-obj__icon b-id-obj__icon--ultraVNC"></div>
-                  <p>UltraVNC ID</p>
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__row-wrap">
+                  <div class="field">
+                    <div class="field__title">
+                      <div class="button-icon button-icon--i-obj button-icon--ultraVNC"></div>
+                      <h3>UltraVNC ID</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="field__title">
+                      <h3>Комментарий</h3>
+                    </div>
+                    <div class="field__box">
+                      <input type="text">
+                    </div>
+                  </div>
                 </div>
-                <input type="text">
+                <div class="button-icon button-icon--close-red"></div>
               </div>
             </div>
             <div class="b-id-obj__control">
-              <div class="button button--blue button--control button--middle">Сохранить</div>
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__row-wrap">
+                  <button class="button button--blue button--control">Сохранить</button>
+                  <button class="button button--blue button--control js-show-tooltip" data-type="obj">Новый идентификатор</button>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-tooltip">
+        <div class="b-tooltip__close js-close-tooltip"></div>
+        <div class="b-tooltip__template--obj">
+          <div class="b-tooltip__header">
+            <h3>Новый идентификатор</h3>
+          </div>
+          <div class="b-tooltip__body">
+            <div class="b-id-obj b-id-obj--new-obj">
+              <div class="b-id-obj__row">
+                <div class="b-id-obj__text">Тип:</div>
+                <div class="b-id-obj__form">
+                  <div class="field__box">
+                    <input id="a1" type="radio" name="radio-obj" checked>
+                    <label type="radio" for="a1"><span class="button-icon button-icon--i-obj button-icon--ammyy"></span></label>
+                  </div>
+                  <div class="field__box">
+                    <input id="a2" type="radio" name="radio-obj">
+                    <label type="radio" for="a2"><span class="button-icon button-icon--i-obj button-icon--anyDesk"></span></label>
+                  </div>
+                  <div class="field__box">
+                    <input id="a3" type="radio" name="radio-obj">
+                    <label type="radio" for="a3"><span class="button-icon button-icon--i-obj button-icon--teamViewer"></span></label>
+                  </div>
+                  <div class="field__box">
+                    <input id="a4" type="radio" name="radio-obj">
+                    <label type="radio" for="a4"><span class="button-icon button-icon--i-obj button-icon--ultraVNC"></span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="b-id-obj__fields">
+                <div class="field__box">
+                  <input type="text" placeholder="Идентификатор">
+                </div>
+                <div class="field__box">
+                  <input type="text" placeholder="Комментарий">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-tooltip__footer b-tooltip__footer--center">
+            <button class="button button--min button--blue">Сохранить</button>
           </div>
         </div>
       </div>
@@ -6381,7 +6490,7 @@
       <div class="popup__body">
         <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-y">
           <div class="popup__body-wrap">
-            <div class="custom-table">
+            <div class="custom-table custom-table--min-icon">
               <table>
                 <thead>
                   <tr>
@@ -6718,7 +6827,7 @@
       <div class="popup__body">
         <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-y">
           <div class="popup__body-wrap">
-            <div class="custom-table custom-table--scroll">
+            <div class="custom-table custom-table--scroll custom-table--min-icon">
               <table>
                 <thead>
                   <tr>
@@ -7929,7 +8038,7 @@
       <div class="popup__body">
         <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-y">
           <div class="popup__body-wrap">
-            <div class="custom-table custom-table--scroll">
+            <div class="custom-table custom-table--scroll custom-table--min-icon">
               <table>
                 <thead>
                   <tr>
@@ -9356,285 +9465,6 @@
         </div>
       </div>
     </div>
-    <div class="popup mfp-hide" id="popup-tree">
-      <div class="popup__header">
-        <h3>Связи заявок</h3>
-        <div class="popup__header-close js-close-popup"></div>
-      </div>
-      <div class="popup__body">
-        <div class="b-tree">
-          <div class="b-tree__wrap popup__body-wrap js-custom-scroll-xy">
-            <div class="custom-table custom-table--two-row custom-table--tree custom-table--collapsed">
-              <table>
-                <thead>
-                  <tr>
-                    <th>№ заявки<br>Информация</th>
-                    <th>Этап<br>Состояние</th>
-                    <th>Дата<br>пост.</th>
-                    <th style="min-width: 348px;">Текст / заявленная неисправность</th>
-                    <th style="min-width: 190px;">Объект</th>
-                    <th>Сервис</th>
-                    <th>Ответственный</th>
-                    <th>КЕ</th>
-                  </tr>
-                </thead>
-                <tbody class="js-line">
-                  <tr data-start-main-line="1" data-nested="0">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row custom-table__row--main"><b>№13243524</b></div>
-                        <div class="custom-table__row">Запрос клиента
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                          <div class="custom-table__start-main-line"></div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--fresh-green">Закрыта</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>Не работает сканер.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td>Кассы</td>
-                    <td>Славиняк Д.В.</td>
-                    <td></td>
-                  </tr>
-                  <tr data-start-secondary-line="2" data-nested="1">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№54622183</b></div>
-                        <div class="custom-table__row">Решение инцидента
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                          <div class="custom-table__start-secondary-line"></div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--fresh-green">Закрыта</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>(Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td>Кассы</td>
-                    <td>Славиняк Д.В.</td>
-                    <td>Печатный текст</td>
-                  </tr>
-                  <tr data-nested="2">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№54372838</b></div>
-                        <div class="custom-table__row">Ремонт
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--pinkish-grey">Получение документов</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--faded-pink">В работе</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td></td>
-                    <td>Славиняк Д.В.</td>
-                    <td>Печатный текст</td>
-                  </tr>
-                  <tr data-nested="3">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№13243524</b></div>
-                        <div class="custom-table__row">Запрос клиента
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--fresh-green">Закрыта</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>Не работает сканер.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td></td>
-                    <td>Славиняк Д.В.</td>
-                    <td></td>
-                  </tr>
-                  <tr class="custom-table__active" data-end-secondary-line="5" data-nested="1">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№76483629</b></div>
-                        <div class="custom-table__row">Восстановление из временного решения
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                          <div class="custom-table__end-secondary-line"></div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--peach">Оформление</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>(Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td>Кассы</td>
-                    <td></td>
-                    <td>Печатный текст</td>
-                  </tr>
-                  <tr data-nested="2">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№65747382</b></div>
-                        <div class="custom-table__row">Наряд на работу
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--light-blue">Исполнение</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>(Казарин П.Н.) - Сканер штрихкода HONEYWELL VOYAGER 1450G2DHR - #787464 (635426352) не работает. Отключается при работе.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td>Кассы</td>
-                    <td></td>
-                    <td>Печатный текст</td>
-                  </tr>
-                  <tr data-end-main-line="7" data-nested="1">
-                    <td>
-                      <div class="custom-table__wrap">
-                        <div class="custom-table__row"><b>№13243524</b></div>
-                        <div class="custom-table__row">Запрос клиента
-                              <div class="custom-table__progress">
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item custom-table__progress-item--active"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                                <div class="custom-table__progress-item"></div>
-                              </div>
-                          <div class="custom-table__end-main-line"></div>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--fresh-green">Закрыта</div>
-                      </div>
-                      <div class="custom-table__row">
-                        <div class="label-item label-item--lightgreen">Выполнена</div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="custom-table__row"><b>09.09.2019</b></div>
-                      <div class="custom-table__row">16:33</div>
-                    </td>
-                    <td>Не работает сканер.</td>
-                    <td>Щедрый вечер-5 (г.Барнаул, Космонавтов, 14Л, Горлов В.А.)</td>
-                    <td>Кассы</td>
-                    <td>Славиняк Д.В.</td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="popup mfp-hide" id="popup-request-files">
       <div class="popup__header">
         <h3>Файлы заявки</h3>
@@ -9692,6 +9522,83 @@
                       </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- app-log-->
+    <div class="popup mfp-hide" id="popup-call-request">
+      <div class="popup__header">
+        <h3>Позвонить по заявке №1234</h3>
+        <div class="popup__header-close js-close-popup"></div>
+      </div>
+      <div class="popup__body">
+        <div class="popup__body-scroll popup__body-scroll--table js-custom-scroll-xy">
+          <div class="popup__body-wrap">
+            <div class="custom-table custom-table--collapsed">
+              <table class="js-table-collapsed">
+                <thead>
+                  <tr>
+                    <th>Контактное лицо</th>
+                    <th>Набираемый номер</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="field__box">
+                        <input type="radio" id="id1-1" name="id1" checked>
+                        <label type="radio" for="id1-1">Петров Иван Иванович</label>
+                      </div>
+                    </td>
+                    <td>84234234234</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="field__box">
+                        <input type="radio" id="id1-2" name="id1">
+                        <label type="radio" for="id1-2">Мазов Иван Иванович</label>
+                      </div>
+                    </td>
+                    <td>84234234234</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="field__box">
+                        <input type="radio" id="id1-3" name="id1">
+                        <label type="radio" for="id1-3">Мазов Иван Иванович</label>
+                      </div>
+                    </td>
+                    <td>84234234234</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="field__box">
+                        <input type="radio" id="id1-4" name="id1">
+                        <label type="radio" for="id1-4">Мазов Иван Иванович</label>
+                      </div>
+                    </td>
+                    <td>84234234234</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="field__box">
+                        <input type="radio" id="id1-5" name="id1">
+                        <label type="radio" for="id1-5">Другой</label>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="field__box">
+                        <input type="text">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="custom-table__control">
+              <button class="button button--xmin button--blue">Ок</button>
             </div>
           </div>
         </div>

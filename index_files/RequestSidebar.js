@@ -42,17 +42,28 @@ class RequestSidebar {
         }
         this.elem.css(conf);
     }
-    close() {
+    // ###-правка
+    close(name) {
+        var nameSelector = '.js-' + name + '';
+        $(nameSelector).removeClass('is-active');
         this.t.addClass(rt.hiddenClass())
-
     }
-    open() {
+    // ###-правка
+    open(name) {
+        var nameSelector = '.js-' + name + '';
+        if ($(nameSelector).hasClass('is-active')) {
+            $(nameSelector).removeClass('is-active');
+            this.close();
+            return
+        }
+        $(nameSelector).addClass('is-active');
+
         var zarray = [];
         $.each(rt.collection(), function (i, index) {
-            var container = (index)
+            var container = (index);
             let   zindex = parseInt($(container.t).css('z-index'));
             zarray.push(zindex);
-        })
+        });
 
         let  maxz = Math.max.apply(null, zarray);
         this.t.css('z-index', maxz + 2);
@@ -61,6 +72,4 @@ class RequestSidebar {
     pjaxElement() {
         return '.' + this.container.attr('class').split(' ').join(".");
     }
-
 }
-

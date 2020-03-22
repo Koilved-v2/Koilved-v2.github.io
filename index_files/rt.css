@@ -8,6 +8,9 @@ Each line should be prefixed with
     Created on : 01.10.2019, 12:14:34
     Author     : Gonnyh.I
 */
+
+/*много правок надо сравнить для наглядности ###-правка*/
+
 .sortable li, .sortable {
     border: 0px;
 
@@ -247,7 +250,6 @@ Each line should be prefixed with
     /*calc(100vh - 290px);*/
     display: inline-block;
     width: 100%;
-    /*width: calc(100% + 14px);*/
 
 }
 
