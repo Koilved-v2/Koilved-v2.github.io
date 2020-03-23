@@ -1,17 +1,17 @@
 @mixin svg-common {
-	background: url("../images/sprite/sprite-198213e1.svg") no-repeat;
+	background: url("../images/sprite/sprite-3fdbcf99.svg") no-repeat;
 }
 
 @mixin svg-icon-add-inner-app {
 	@include svg-common;
-	background-position: 52% 28.395061728395063%;
+	background-position: 24.858757062146893% 54.93827160493827%;
 	width: 22px;
 	height: 23px;
 }
 
 @mixin svg-icon-add-new-zip {
 	@include svg-common;
-	background-position: 86.63101604278074% 86.85714285714286%;
+	background-position: 98.94179894179894% 57.714285714285715%;
 	width: 10px;
 	height: 10px;
 }
@@ -25,126 +25,133 @@
 
 @mixin svg-icon-add-step-state {
 	@include svg-common;
-	background-position: 83.24324324324324% 74.25149700598803%;
+	background-position: 81.81818181818181% 32.93413173652694%;
 	width: 12px;
 	height: 18px;
 }
 
 @mixin svg-icon-arrow-down-mini {
 	@include svg-common;
-	background-position: 74.05405405405405% 68.71508379888269%;
+	background-position: 100% 15.083798882681565%;
 	width: 12px;
 	height: 6px;
 }
 
 @mixin svg-icon-arrow-select {
 	@include svg-common;
-	background-position: 83.24324324324324% 80.22598870056497%;
+	background-position: 100% 18.64406779661017%;
 	width: 12px;
 	height: 8px;
 }
 
 @mixin svg-icon-automatic-dialing {
 	@include svg-common;
-	background-position: 37.64705882352941% 0;
+	background-position: 37.2093023255814% 0;
 	width: 27px;
 	height: 25px;
 }
 
 @mixin svg-icon-automatic-dialing-active {
 	@include svg-common;
-	background-position: 94.50549450549451% 72.09302325581395%;
+	background-position: 93.47826086956522% 81.3953488372093%;
 	width: 15px;
 	height: 13px;
 }
 
 @mixin svg-icon-bin-blue {
 	@include svg-common;
-	background-position: 54.94505494505494% 89.94082840236686%;
+	background-position: 93.47826086956522% 0;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-calendar {
 	@include svg-common;
-	background-position: 36.612021857923494% 77.77777777777777%;
+	background-position: 80% 88.88888888888889%;
 	width: 14px;
 	height: 14px;
 }
 
 @mixin svg-icon-call-cancel {
 	@include svg-common;
-	background-position: 85.0828729281768% 52.69461077844311%;
+	background-position: 74.31693989071039% 23.952095808383234%;
 	width: 16px;
 	height: 18px;
 }
 
 @mixin svg-icon-chat {
 	@include svg-common;
-	background-position: 65.3409090909091% 12.883435582822086%;
+	background-position: 64.6067415730337% 13.496932515337424%;
 	width: 21px;
 	height: 22px;
 }
 
 @mixin svg-icon-chat-mess {
 	@include svg-common;
-	background-position: 65.3409090909091% 45.39877300613497%;
+	background-position: 64.6067415730337% 0;
 	width: 21px;
 	height: 22px;
 }
 
 @mixin svg-icon-checkbox-ok {
 	@include svg-common;
-	background-position: 35.35911602209945% 100%;
+	background-position: 26.229508196721312% 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-clear {
 	@include svg-common;
-	background-position: 0 0;
+	background-position: 0 20.915032679738562%;
 	width: 32px;
 	height: 32px;
 }
 
 @mixin svg-icon-close-item-filter {
 	@include svg-common;
-	background-position: 100% 5.714285714285714%;
+	background-position: 98.94179894179894% 52%;
 	width: 10px;
 	height: 10px;
 }
 
 @mixin svg-icon-close-mini {
 	@include svg-common;
-	background-position: 100% 0;
+	background-position: 98.94179894179894% 36%;
 	width: 10px;
 	height: 10px;
 }
 
 @mixin svg-icon-close-popup {
 	@include svg-common;
-	background-position: 94.50549450549451% 80.58823529411765%;
+	background-position: 93.47826086956522% 73.52941176470588%;
 	width: 15px;
 	height: 15px;
 }
 
 @mixin svg-icon-close-red {
 	@include svg-common;
-	background-position: 57.608695652173914% 98.25581395348837%;
+	background-position: 73.65591397849462% 98.25581395348837%;
 	width: 13px;
 	height: 13px;
 }
 
 @mixin svg-icon-contracts {
 	@include svg-common;
-	background-position: 52.60115606936416% 0;
+	background-position: 52% 28.395061728395063%;
+	width: 24px;
+	height: 23px;
+}
+
+@mixin svg-icon-copy {
+	@include svg-common;
+	background-position: 52% 0;
 	width: 24px;
 	height: 23px;
 }
 
 @mixin svg-icon-delete {
 	@include svg-common;
-	background-position: 99.46808510638297% 11.363636363636363%;
+	background-position: 98.42105263157895% 63.06818181818182%;
 	width: 9px;
 	height: 9px;
 }
@@ -158,539 +165,539 @@
 
 @mixin svg-icon-delete-btn {
 	@include svg-common;
-	background-position: 0 20.915032679738562%;
+	background-position: 19.161676646706585% 0;
 	width: 32px;
 	height: 32px;
 }
 
 @mixin svg-icon-delete-zip {
 	@include svg-common;
-	background-position: 94.50549450549451% 0;
+	background-position: 93.47826086956522% 47.337278106508876%;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-edit-app {
 	@include svg-common;
-	background-position: 12.571428571428571% 54.93827160493827%;
+	background-position: 12.429378531073446% 54.93827160493827%;
 	width: 22px;
 	height: 23px;
 }
 
 @mixin svg-icon-edit-text {
 	@include svg-common;
-	background-position: 66.29213483146067% 67.06586826347305%;
+	background-position: 42.22222222222222% 79.64071856287426%;
 	width: 19px;
 	height: 18px;
 }
 
 @mixin svg-icon-edit-zip {
 	@include svg-common;
-	background-position: 94.50549450549451% 89.41176470588235%;
+	background-position: 93.47826086956522% 90%;
 	width: 15px;
 	height: 15px;
 }
 
 @mixin svg-icon-email-close {
 	@include svg-common;
-	background-position: 48.87640449438202% 52.662721893491124%;
+	background-position: 35% 66.27218934911242%;
 	width: 19px;
 	height: 16px;
 }
 
 @mixin svg-icon-email-open {
 	@include svg-common;
-	background-position: 55.61797752808989% 67.06586826347305%;
+	background-position: 31.666666666666668% 79.64071856287426%;
 	width: 19px;
 	height: 18px;
 }
 
 @mixin svg-icon-equal {
 	@include svg-common;
-	background-position: 81.28342245989305% 95.48022598870057%;
+	background-position: 98.94179894179894% 46.89265536723164%;
 	width: 10px;
 	height: 8px;
 }
 
 @mixin svg-icon-exit {
 	@include svg-common;
-	background-position: 52.298850574712645% 41.07142857142857%;
+	background-position: 51.70454545454545% 41.07142857142857%;
 	width: 23px;
 	height: 17px;
 }
 
 @mixin svg-icon-export {
 	@include svg-common;
-	background-position: 76.11111111111111% 12.121212121212121%;
+	background-position: 74.72527472527473% 0;
 	width: 17px;
 	height: 20px;
 }
 
 @mixin svg-icon-export-csv {
 	@include svg-common;
-	background-position: 28.333333333333332% 90.47619047619048%;
+	background-position: 70.87912087912088% 79.16666666666667%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-export-excel {
 	@include svg-common;
-	background-position: 18.88888888888889% 90.47619047619048%;
+	background-position: 18.681318681318682% 90.47619047619048%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-export-html {
 	@include svg-common;
-	background-position: 94.50549450549451% 9.467455621301776%;
+	background-position: 93.47826086956522% 28.402366863905325%;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-export-json {
 	@include svg-common;
-	background-position: 0 90.47619047619048%;
+	background-position: 74.72527472527473% 53.57142857142857%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-export-pdf {
 	@include svg-common;
-	background-position: 94.50549450549451% 28.402366863905325%;
+	background-position: 27.717391304347824% 89.94082840236686%;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-export-text {
 	@include svg-common;
-	background-position: 37.77777777777778% 90.47619047619048%;
+	background-position: 9.340659340659341% 90.47619047619048%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-files {
 	@include svg-common;
-	background-position: 27.745664739884393% 39.50617283950617%;
+	background-position: 13.714285714285714% 39.50617283950617%;
 	width: 24px;
 	height: 23px;
 }
 
 @mixin svg-icon-files-doc {
 	@include svg-common;
-	background-position: 85.55555555555556% 21.55688622754491%;
+	background-position: 84.06593406593407% 43.712574850299404%;
 	width: 17px;
 	height: 18px;
 }
 
 @mixin svg-icon-files-in-appLog {
 	@include svg-common;
-	background-position: 76.11111111111111% 52.976190476190474%;
+	background-position: 0 90.47619047619048%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-filter {
 	@include svg-common;
-	background-position: 25.142857142857142% 53.93939393939394%;
+	background-position: 49.717514124293785% 53.93939393939394%;
 	width: 22px;
 	height: 20px;
 }
 
 @mixin svg-icon-green-plus {
 	@include svg-common;
-	background-position: 75.93582887700535% 96.57142857142857%;
+	background-position: 98.94179894179894% 41.714285714285715%;
 	width: 10px;
 	height: 10px;
 }
 
 @mixin svg-icon-green-plus-lg {
 	@include svg-common;
-	background-position: 76.11111111111111% 42.857142857142854%;
+	background-position: 52.1978021978022% 79.16666666666667%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-guide-zip {
 	@include svg-common;
-	background-position: 50.810810810810814% 98.83040935672514%;
+	background-position: 100% 0;
 	width: 12px;
 	height: 14px;
 }
 
 @mixin svg-icon-heart-bg {
 	@include svg-common;
-	background-position: 36.36363636363637% 27.976190476190474%;
+	background-position: 12.359550561797754% 66.66666666666667%;
 	width: 21px;
 	height: 17px;
 }
 
 @mixin svg-icon-heart-cancel-bg {
 	@include svg-common;
-	background-position: 65.71428571428571% 0;
+	background-position: 0 68.29268292682927%;
 	width: 22px;
 	height: 21px;
 }
 
 @mixin svg-icon-heart-ok-bg {
 	@include svg-common;
-	background-position: 65.71428571428571% 32.72727272727273%;
+	background-position: 37.28813559322034% 53.93939393939394%;
 	width: 22px;
 	height: 20px;
 }
 
 @mixin svg-icon-heart-plus {
 	@include svg-common;
-	background-position: 64.97175141242938% 56.80473372781065%;
+	background-position: 24.022346368715084% 66.27218934911242%;
 	width: 20px;
 	height: 16px;
 }
 
 @mixin svg-icon-history-all-app {
 	@include svg-common;
-	background-position: 13.872832369942197% 39.50617283950617%;
+	background-position: 27.428571428571427% 39.50617283950617%;
 	width: 24px;
 	height: 23px;
 }
 
 @mixin svg-icon-history-call {
 	@include svg-common;
-	background-position: 0 68.29268292682927%;
+	background-position: 64.24581005586592% 39.63414634146341%;
 	width: 20px;
 	height: 21px;
 }
 
 @mixin svg-icon-history-change {
 	@include svg-common;
-	background-position: 76.11111111111111% 0;
+	background-position: 74.72527472527473% 12.121212121212121%;
 	width: 17px;
 	height: 20px;
 }
 
 @mixin svg-icon-history-step-state {
 	@include svg-common;
-	background-position: 65.71428571428571% 24.71264367816092%;
+	background-position: 36.15819209039548% 27.011494252873565%;
 	width: 22px;
 	height: 11px;
 }
 
 @mixin svg-icon-id-obj {
 	@include svg-common;
-	background-position: 52.60115606936416% 14.197530864197532%;
+	background-position: 52% 14.197530864197532%;
 	width: 24px;
 	height: 23px;
 }
 
 @mixin svg-icon-ke {
 	@include svg-common;
-	background-position: 18.823529411764707% 20.253164556962027%;
+	background-position: 18.6046511627907% 20.253164556962027%;
 	width: 27px;
 	height: 27px;
 }
 
 @mixin svg-icon-mess-files {
 	@include svg-common;
-	background-position: 85.55555555555556% 41.91616766467066%;
+	background-position: 84.06593406593407% 54.49101796407186%;
 	width: 17px;
 	height: 18px;
 }
 
 @mixin svg-icon-mess-flag {
 	@include svg-common;
-	background-position: 63.97849462365591% 98.25581395348837%;
+	background-position: 99.46808510638297% 8.13953488372093%;
 	width: 11px;
 	height: 13px;
 }
 
 @mixin svg-icon-mess-plus-blue {
 	@include svg-common;
-	background-position: 57.377049180327866% 77.32558139534883%;
+	background-position: 51.891891891891895% 98.25581395348837%;
 	width: 14px;
 	height: 13px;
 }
 
 @mixin svg-icon-mess-plus-green {
 	@include svg-common;
-	background-position: 65.02732240437159% 77.32558139534883%;
+	background-position: 59.45945945945946% 98.25581395348837%;
 	width: 14px;
 	height: 13px;
 }
 
 @mixin svg-icon-mess-plus-red {
 	@include svg-common;
-	background-position: 72.28260869565217% 77.32558139534883%;
+	background-position: 66.66666666666667% 98.25581395348837%;
 	width: 13px;
 	height: 13px;
 }
 
 @mixin svg-icon-mess-ring {
 	@include svg-common;
-	background-position: 94.50549450549451% 55.55555555555556%;
+	background-position: 93.47826086956522% 64.91228070175438%;
 	width: 15px;
 	height: 14px;
 }
 
 @mixin svg-icon-mess-submit {
 	@include svg-common;
-	background-position: 37.2093023255814% 15.337423312883436%;
+	background-position: 36.7816091954023% 15.337423312883436%;
 	width: 25px;
 	height: 22px;
 }
 
 @mixin svg-icon-messenger {
 	@include svg-common;
-	background-position: 10.112359550561798% 78.69822485207101%;
+	background-position: 45.55555555555556% 66.27218934911242%;
 	width: 19px;
 	height: 16px;
 }
 
 @mixin svg-icon-move {
 	@include svg-common;
-	background-position: 76.11111111111111% 63.095238095238095%;
+	background-position: 74.72527472527473% 34.523809523809526%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-moves-ke {
 	@include svg-common;
-	background-position: 28.961748633879782% 77.77777777777777%;
+	background-position: 51.891891891891895% 88.88888888888889%;
 	width: 14px;
 	height: 14px;
 }
 
 @mixin svg-icon-new-app {
 	@include svg-common;
-	background-position: 34.26966292134831% 67.46987951807229%;
+	background-position: 85% 0;
 	width: 19px;
 	height: 19px;
 }
 
 @mixin svg-icon-open-files {
 	@include svg-common;
-	background-position: 93.98907103825137% 47.05882352941177%;
+	background-position: 92.97297297297297% 56.470588235294116%;
 	width: 14px;
 	height: 15px;
 }
 
 @mixin svg-icon-phone-call {
 	@include svg-common;
-	background-position: 40% 39.02439024390244%;
+	background-position: 39.56043956043956% 39.02439024390244%;
 	width: 17px;
 	height: 21px;
 }
 
 @mixin svg-icon-phone-client {
 	@include svg-common;
-	background-position: 0 100%;
+	background-position: 8.743169398907105% 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-phone-client-white {
 	@include svg-common;
-	background-position: 8.839779005524862% 100%;
+	background-position: 17.48633879781421% 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-print-app {
 	@include svg-common;
-	background-position: 0 80.12048192771084%;
+	background-position: 11.049723756906078% 80.12048192771084%;
 	width: 18px;
 	height: 19px;
 }
 
 @mixin svg-icon-printer {
 	@include svg-common;
-	background-position: 86.03351955307262% 0;
+	background-position: 84.5303867403315% 22.15568862275449%;
 	width: 18px;
 	height: 18px;
 }
 
 @mixin svg-icon-refresh-gradient {
 	@include svg-common;
-	background-position: 49.72677595628415% 77.77777777777777%;
+	background-position: 72.43243243243244% 88.88888888888889%;
 	width: 14px;
 	height: 14px;
 }
 
 @mixin svg-icon-remote-access {
 	@include svg-common;
-	background-position: 9.444444444444445% 90.47619047619048%;
+	background-position: 61.53846153846154% 79.16666666666667%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-repeat-app {
 	@include svg-common;
-	background-position: 23.163841807909606% 67.46987951807229%;
+	background-position: 0 80.12048192771084%;
 	width: 20px;
 	height: 19px;
 }
 
 @mixin svg-icon-reset-column {
 	@include svg-common;
-	background-position: 37.5% 53.293413173652695%;
+	background-position: 64.6067415730337% 51.49700598802395%;
 	width: 21px;
 	height: 18px;
 }
 
 @mixin svg-icon-save {
 	@include svg-common;
-	background-position: 19.393939393939394% 0;
+	background-position: 0 0;
 	width: 32px;
 	height: 32px;
 }
 
 @mixin svg-icon-setting-filter {
 	@include svg-common;
-	background-position: 11.363636363636363% 68.29268292682927%;
+	background-position: 64.6067415730337% 26.829268292682926%;
 	width: 21px;
 	height: 21px;
 }
 
 @mixin svg-icon-state-phone {
 	@include svg-common;
-	background-position: 85.55555555555556% 63.47305389221557%;
+	background-position: 84.06593406593407% 65.26946107784431%;
 	width: 17px;
 	height: 18px;
 }
 
 @mixin svg-icon-summ {
 	@include svg-common;
-	background-position: 43.31550802139037% 77.77777777777777%;
+	background-position: 65.60846560846561% 88.88888888888889%;
 	width: 10px;
 	height: 14px;
 }
 
 @mixin svg-icon-table-arrow-down-red {
 	@include svg-common;
-	background-position: 26.519337016574585% 100%;
+	background-position: 55.19125683060109% 66.27218934911242%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-arrow-up {
 	@include svg-common;
-	background-position: 17.679558011049725% 100%;
+	background-position: 43.71584699453552% 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-arrow-up-blue {
 	@include svg-common;
-	background-position: 71.8232044198895% 89.94082840236686%;
+	background-position: 34.97267759562842% 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-arrow-up-green {
 	@include svg-common;
-	background-position: 80.66298342541437% 89.94082840236686%;
+	background-position: 0 100%;
 	width: 16px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-att-red {
 	@include svg-common;
-	background-position: 63.18681318681319% 89.94082840236686%;
+	background-position: 93.47826086956522% 9.467455621301776%;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-att-yellow {
 	@include svg-common;
-	background-position: 46.7032967032967% 89.94082840236686%;
+	background-position: 63.58695652173913% 66.27218934911242%;
 	width: 15px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-dots {
 	@include svg-common;
-	background-position: 86.01036269430051% 71.67630057803468%;
+	background-position: 95.8974358974359% 29.479768786127167%;
 	width: 4px;
 	height: 12px;
 }
 
 @mixin svg-icon-table-heart {
 	@include svg-common;
-	background-position: 76.11111111111111% 23.529411764705884%;
+	background-position: 74.72527472527473% 44.11764705882353%;
 	width: 17px;
 	height: 15px;
 }
 
 @mixin svg-icon-table-info {
 	@include svg-common;
-	background-position: 92.97297297297297% 18.93491124260355%;
+	background-position: 91.97860962566845% 37.8698224852071%;
 	width: 12px;
 	height: 16px;
 }
 
 @mixin svg-icon-table-ok-green {
 	@include svg-common;
-	background-position: 43.71584699453552% 98.83040935672514%;
+	background-position: 59.45945945945946% 88.88888888888889%;
 	width: 14px;
 	height: 14px;
 }
 
 @mixin svg-icon-table-play {
 	@include svg-common;
-	background-position: 98.94179894179894% 16.384180790960453%;
+	background-position: 100% 28.8135593220339%;
 	width: 8px;
 	height: 8px;
 }
 
 @mixin svg-icon-table-speaker {
 	@include svg-common;
-	background-position: 70.27027027027027% 96.57142857142857%;
+	background-position: 100% 23.428571428571427%;
 	width: 12px;
 	height: 10px;
 }
 
 @mixin svg-icon-table-stop {
 	@include svg-common;
-	background-position: 93.98907103825137% 64.11764705882354%;
+	background-position: 44.32432432432432% 89.41176470588235%;
 	width: 14px;
 	height: 15px;
 }
 
 @mixin svg-icon-table-time {
 	@include svg-common;
-	background-position: 93.47826086956522% 37.8698224852071%;
+	background-position: 92.47311827956989% 18.93491124260355%;
 	width: 13px;
 	height: 16px;
 }
 
 @mixin svg-icon-tree {
 	@include svg-common;
-	background-position: 44.943820224719104% 67.06586826347305%;
+	background-position: 21.11111111111111% 79.64071856287426%;
 	width: 19px;
 	height: 18px;
 }
 
 @mixin svg-icon-update-arrows {
 	@include svg-common;
-	background-position: 20.441988950276244% 78.23529411764706%;
+	background-position: 36.0655737704918% 89.41176470588235%;
 	width: 16px;
 	height: 15px;
 }
 
 @mixin svg-icon-upload-files {
 	@include svg-common;
-	background-position: 86.03351955307262% 31.952662721893493%;
+	background-position: 84.5303867403315% 75.14792899408285%;
 	width: 18px;
 	height: 16px;
 }
 
 @mixin svg-icon-work-office {
 	@include svg-common;
-	background-position: 76.11111111111111% 32.73809523809524%;
+	background-position: 74.72527472527473% 63.69047619047619%;
 	width: 17px;
 	height: 17px;
 }
 
 @mixin svg-icon-works {
 	@include svg-common;
-	background-position: 86.03351955307262% 10.778443113772456%;
+	background-position: 84.5303867403315% 11.377245508982035%;
 	width: 18px;
 	height: 18px;
 }

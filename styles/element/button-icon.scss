@@ -647,4 +647,10 @@
   }
 }
 
+//
 
+.button-icon--copy {
+  &:after {
+    @include svg-icon-copy;
+  }
+}

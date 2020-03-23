@@ -212,11 +212,11 @@
   width: 100%;
   border-radius: 0;
   position: absolute;
-  right: calc(9px + 358px);
+  right: calc(39px + 358px);
   top: 40px;
   z-index: 1000;
   border-right: 1px solid rgba(151, 151, 151, 0.42);
-  height: calc(100vh - 363px + 68px + 50px);
+  height: calc(100vh - 363px + 68px + 52px);
   transform: translateX(155%);
   transition: .3s ease-in-out transform;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
